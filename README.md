@@ -12,6 +12,8 @@
 
 **10% of the final grade**
 
+You can find our first milestone [here](https://github.com/com-480-data-visualization/com-480-project-onvagagner/blob/master/Milestone1.pdf).
+
 
 ## Milestone 2 (Friday 1st May, 5pm)
 
