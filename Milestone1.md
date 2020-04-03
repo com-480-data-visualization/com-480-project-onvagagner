@@ -1,4 +1,6 @@
-![plz](./img/milestone1_label.svg)
+<p align="center">
+  <img src="./img/milestone1_label.svg" />
+</p>
 
 ## Dataset(s)
 
