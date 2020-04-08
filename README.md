@@ -12,7 +12,7 @@
 
 **10% of the final grade**
 
-You can find our first milestone in a nicer PDF format [here](Milestone1.pdf) or a markdown version [here](Milestone1.md).
+You can find our first milestone in a nicer PDF format [here](milestones/Milestone1.pdf) or a markdown version [here](milestones/Milestone1.md).
 
 
 ## Milestone 2 (Friday 1st May, 5pm)
