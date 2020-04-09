@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./img/milestone1_label.svg" />
+  <img src="./../img/milestone1_label.svg" />
 </p>
 
 ## Dataset(s)
@@ -26,7 +26,7 @@ The main targeted audience is beginners in wine tasting. Anyone who wants to dis
 
 ## Exploratory Data Analysis
 
-For our data analysis, we used the pandas python library. You can find it the [following jupyter notebook](https://github.com/com-480-data-visualization/com-480-project-onvagagner/blob/master/Wine101.ipynb). As mentioned in the section about the datasets, we only extracted some simple statistics about our data such as the number of wine varieties or the number of unique flavours.
+For our data analysis, we used the pandas python library. You can find it the [following jupyter notebook](https://github.com/com-480-data-visualization/com-480-project-onvagagner/blob/master/milestones/Wine101.ipynb). As mentioned in the section about the datasets, we only extracted some simple statistics about our data such as the number of wine varieties or the number of unique flavours.
 
 ## Related Work & Inspiration
 
