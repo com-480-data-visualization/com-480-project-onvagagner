@@ -1,4 +1,4 @@
-d3.csv("../data/food_pairing.csv", function (d) {
+d3.csv("./data/food_pairing.csv", function (d) {
     return [d.WineType, d.Food, +1]
 }).then(function (data) {
     const colors = {
