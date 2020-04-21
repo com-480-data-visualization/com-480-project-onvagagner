@@ -1,0 +1,100 @@
+{
+  "wineColors": [
+    {
+      "color": "Red Wine Tints",
+      "mainColor": "red",
+      "indicatorTop": "Young red wine",
+      "indicatorBot": "Old red wine",
+      "variations": [
+        {
+          "weight": 50,
+          "hex": "#49011A",
+          "name": "Near Black"
+        },
+        {
+          "weight": 100,
+          "hex": "#A50946",
+          "name": "Crimson"
+        },
+        {
+          "weight": 200,
+          "hex": "#9A0C63",
+          "name": "Purple"
+        },
+        {
+          "weight": 300,
+          "hex": "#7D2B50",
+          "name": "Garnet"
+        },
+        {
+          "weight": 400,
+          "hex": "#F9245F",
+          "name": "Raspberry"
+        },
+        {
+          "weight": 500,
+          "hex": "#E70F30",
+          "name": "Cherry"
+        },
+        {
+          "weight": 600,
+          "hex": "#C50B13",
+          "name": "Ruby"
+        },
+        {
+          "weight": 700,
+          "hex": "#95210D",
+          "name": "Tile"
+        }
+      ]
+    },
+    {
+      "color": "White Wine Tints",
+      "mainColor": "white",
+      "indicatorTop": "Dry white wine",
+      "indicatorBot": "Sweet white wine",
+      "variations": [
+        {
+          "weight": 50,
+          "hex": "#DED782",
+          "name": "Yellow Green"
+        },
+        {
+          "weight": 100,
+          "hex": "#E8DA51",
+          "name": "Crimson"
+        },
+        {
+          "weight": 200,
+          "hex": "#EDC851",
+          "name": "Purple"
+        },
+        {
+          "weight": 300,
+          "hex": "#FED951",
+          "name": "Garnet"
+        },
+        {
+          "weight": 400,
+          "hex": "#D7AB2B",
+          "name": "Raspberry"
+        },
+        {
+          "weight": 500,
+          "hex": "#D68F2B",
+          "name": "Cherry"
+        },
+        {
+          "weight": 600,
+          "hex": "#EC8A28",
+          "name": "Ruby"
+        },
+        {
+          "weight": 700,
+          "hex": "#CD7921",
+          "name": "Tile"
+        }
+      ]
+    }
+  ]
+}
