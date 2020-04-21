@@ -33,7 +33,7 @@ img {
 }
 
 html {
-  background-color: #b0bec5;
+  background-color: white;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
@@ -195,6 +195,7 @@ html {
   transition: transform 250ms;
   transition: transform 250ms, -webkit-transform 250ms;
   cursor: pointer;
+  color: white;
 }
 .color-palette__item:hover {
   -webkit-transform: scale(1.05);
