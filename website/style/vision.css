@@ -1,0 +1,203 @@
+@import url(
+  https://fonts.googleapis.com/css?family=Roboto:400,
+  500|Roboto + Mono:500
+);
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *:before,
+  *:after {
+    -webkit-animation-duration: 0ms !important;
+    animation-duration: 0ms !important;
+    -webkit-transition-duration: 0ms !important;
+    transition-duration: 0ms !important;
+  }
+}
+
+body {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  padding: 1em;
+}
+
+.material-color-picker {
+  display: -webkit-box;
+  display: flex;
+  width: 32em;
+  margin: 0 auto;
+  background-color: black;
+  border: 1px solid #78909c;
+  border-radius: 0.5em;
+  box-shadow: 0 1em 8em rgba(0, 0, 0, 0.35);
+}
+.material-color-picker__left-panel {
+  z-index: 1;
+}
+.material-color-picker__right-panel {
+  position: relative;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.color-selector {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  padding: 1em 0;
+  border-right: 0.25em solid #e0e0e0;
+  min-height: 500px;
+  -webkit-box-pack: center;
+  justify-content: center;
+}
+.color-selector input[type="radio"] {
+  display: none;
+}
+.color-selector label {
+  position: relative;
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  cursor: pointer;
+}
+.color-selector label:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.75em;
+  background-color: currentColor;
+  border-radius: 50%;
+}
+.color-selector label:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  padding: 0.5em;
+  border: 0.25em solid;
+  border-radius: 50%;
+  -webkit-transition: padding 250ms;
+  transition: padding 250ms;
+}
+.color-selector input[type="radio"]:checked + label:after {
+  padding: 1em;
+}
+
+.color-palette-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  padding: 1.5em;
+}
+.color-palette-wrapper.js-active {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.color-palette-header {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 1em;
+  font-weight: 400;
+  color: #757575;
+}
+
+.color-palette-subtitle-top {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 1em;
+  font-weight: 400;
+  color: #757575;
+}
+
+.color-palette-subtitle-bot {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin: 0;
+  margin-top: 1em;
+  font-weight: 400;
+  color: #757575;
+}
+
+.color-palette {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+}
+.color-palette__item {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  margin: 0.25em 0;
+  padding: 0 1em;
+  border-radius: 0.25em;
+  font-family: "Roboto Mono", monospace;
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
+  cursor: pointer;
+  color: white;
+}
+.color-palette__item:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}

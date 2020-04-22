@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.0/knockout-min.js"></script>
+    <script src="js/vision.js"></script>
+    <link rel="stylesheet" href="./style/vision.css" />
+    <title>Vision</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="material-color-picker">
+        <div class="material-color-picker__left-panel">
+          <ol class="color-selector" data-bind="foreach: wineColors">
+            <li>
+              <input
+                name="material-color"
+                type="radio"
+                data-bind="attr: { id: 'wineColor' + $index() }, checked: selectedColor, value: color"
+              />
+              <label
+                data-bind="attr: { for: 'wineColor' + $index(), title: color }, style: { 'color': $data.mainColor }"
+              ></label>
+            </li>
+          </ol>
+        </div>
+        <div
+          class="material-color-picker__right-panel"
+          data-bind="foreach: wineColors"
+        >
+          <div
+            class="color-palette-wrapper"
+            data-bind="css: { 'js-active': selectedColor() === color }"
+          >
+            <h2 class="color-palette-header" data-bind="text: color"></h2>
+            <p
+              class="color-palette-subtitle-top"
+              data-bind="text: indicatorTop"
+            ></p>
+            <ol class="color-palette" data-bind="foreach: variations">
+              <li
+                class="color-palette__item"
+                data-bind="attr: { 'chosen-tint': hex }, style: { 'background-color': hex }"
+              >
+                <span data-bind="text: name"></span>
+                <span data-bind="text: hex"></span>
+              </li>
+            </ol>
+            <p
+              class="color-palette-subtitle-bot"
+              data-bind="text: indicatorBot"
+            ></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
