@@ -54,5 +54,5 @@ d3.csv("./data/food_pairing.csv", function (d) {
         .sortSecondary(sortSecondary())
         .data(data)
 
-    d3.select("g").call(bP)
+    d3.select("#one").call(bP)
 })

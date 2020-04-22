@@ -1,0 +1,304 @@
+{
+    "wines": [
+        {
+            "id": 0,
+            "name": "Dry White",
+            "color": "#e5ecb8",
+            "varieties": [
+                "White Table Wine",
+                "Sauvignon Blanc",
+                "Grüner Veltiner",
+                "Pinot Grigio",
+                "Albariño"
+            ]
+        },
+        {
+            "id": 1,
+            "name": "Sweet White",
+            "color": "#fecf03",
+            "varieties": [
+                "Gewürztraminer",
+                "Müller-Thurgau",
+                "Malvasia",
+                "Moscato",
+                "Riesling"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Rich White",
+            "color": "#fdda7c",
+            "varieties": [
+                "Chardonnay",
+                "Roussanne",
+                "Marsanne",
+                "Viognier"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Sparkling",
+            "color": "#dedede",
+            "varieties": [
+                "Sparkling Wine",
+                "Champagne",
+                "Prosecco",
+                "Cava"
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Light Red",
+            "color": "#d20331",
+            "varieties": [
+                "St. Laurent",
+                "Pinot Noir",
+                "Zweigelt",
+                "Gamay"
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Medium Red",
+            "color": "#87032b",
+            "varieties": [
+                "Red Table Wine",
+                "Tempranillo",
+                "Sangiovese",
+                "Zinfandel",
+                "Grenache",
+                "Merlot"
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Bold Red",
+            "color": "#511322",
+            "varieties": [
+                "Cabernet Sauvignon",
+                "Monastrell",
+                "Aglianico",
+                "Malbec",
+                "Syrah"
+            ]
+        },
+        {
+            "id": 7,
+            "name": "Dessert",
+            "color": "#c94f04",
+            "varieties": [
+                "Late Harvest",
+                "Ice Wine",
+                "Sherry",
+                "Port"
+            ]
+        }
+    ],
+    "foods": [
+        {
+            "id": 0,
+            "name": "Vegetables",
+            "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32361-carrot-icon.png"
+        },
+        {
+            "id": 1,
+            "name": "Roasted Vegetables",
+            "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32367-broccoli-icon.png"
+        },
+        {
+            "id": 2,
+            "name": "Soft Cheese",
+            "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/1024/32377-cheese-wedge-icon.png"
+        },
+        {
+            "id": 3,
+            "name": "Hard Cheese",
+            "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/1024/32377-cheese-wedge-icon.png"
+        },
+        {
+            "id": 4,
+            "name": "Starches",
+            "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32371-bread-icon.png"
+        },
+        {
+            "id": 5,
+            "name": "Fish",
+            "img": "http://icons.iconarchive.com/icons/apathae/poisson/128/2-Fish-icon.png"
+        },
+        {
+            "id": 6,
+            "name": "Rich Fish",
+            "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32409-fried-shrimp-icon.png"
+        },
+        {
+            "id": 7,
+            "name": "White Meat",
+            "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32379-poultry-leg-icon.png"
+        },
+        {
+            "id": 8,
+            "name": "Red Meat",
+            "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32380-cut-of-meat-icon.png"
+        },
+        {
+            "id": 9,
+            "name": "Cured Meat",
+            "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32378-meat-on-bone-icon.png"
+        },
+        {
+            "id": 10,
+            "name": "Sweets",
+            "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32424-pie-icon.png"
+        }
+    ],
+    "links": [
+        {
+            "wine": 0,
+            "food": 0
+        },
+        {
+            "wine": 0,
+            "food": 1
+        },
+        {
+            "wine": 0,
+            "food": 4
+        },
+        {
+            "wine": 0,
+            "food": 5
+        },
+        {
+            "wine": 1,
+            "food": 2
+        },
+        {
+            "wine": 1,
+            "food": 3
+        },
+        {
+            "wine": 1,
+            "food": 9
+        },
+        {
+            "wine": 1,
+            "food": 10
+        },
+        {
+            "wine": 2,
+            "food": 2
+        },
+        {
+            "wine": 2,
+            "food": 4
+        },
+        {
+            "wine": 2,
+            "food": 5
+        },
+        {
+            "wine": 2,
+            "food": 6
+        },
+        {
+            "wine": 2,
+            "food": 7
+        },
+        {
+            "wine": 3,
+            "food": 0
+        },
+        {
+            "wine": 3,
+            "food": 2
+        },
+        {
+            "wine": 3,
+            "food": 3
+        },
+        {
+            "wine": 3,
+            "food": 4
+        },
+        {
+            "wine": 3,
+            "food": 5
+        },
+        {
+            "wine": 4,
+            "food": 1
+        },
+        {
+            "wine": 4,
+            "food": 4
+        },
+        {
+            "wine": 4,
+            "food": 6
+        },
+        {
+            "wine": 4,
+            "food": 7
+        },
+        {
+            "wine": 4,
+            "food": 9
+        },
+        {
+            "wine": 5,
+            "food": 1
+        },
+        {
+            "wine": 5,
+            "food": 3
+        },
+        {
+            "wine": 5,
+            "food": 4
+        },
+        {
+            "wine": 5,
+            "food": 7
+        },
+        {
+            "wine": 5,
+            "food": 8
+        },
+        {
+            "wine": 5,
+            "food": 9
+        },
+        {
+            "wine": 6,
+            "food": 3
+        },
+        {
+            "wine": 6,
+            "food": 4
+        },
+        {
+            "wine": 6,
+            "food": 8
+        },
+        {
+            "wine": 6,
+            "food": 9
+        },
+        {
+            "wine": 7,
+            "food": 2
+        },
+        {
+            "wine": 7,
+            "food": 4
+        },
+        {
+            "wine": 7,
+            "food": 9
+        },
+        {
+            "wine": 7,
+            "food": 10
+        }
+    ]
+}
