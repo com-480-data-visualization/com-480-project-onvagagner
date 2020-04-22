@@ -77,6 +77,7 @@ d3.json("./data/food_pairing.json").then(data => {
             .attr("stroke-width", strokeWidthLink)
 
         // put info into panel
+        panel.style.display = "block"
         panel.innerHTML = formatWineInfo(s, relevantFoods)
     }
 
@@ -139,6 +140,7 @@ d3.json("./data/food_pairing.json").then(data => {
             .attr("opacity", opacity)
             .attr("stroke-width", strokeWidthLink)
 
+        panel.style.display = "block"
         panel.innerHTML = formatFoodInfo(s, relevantWines)
     }
 
@@ -180,6 +182,9 @@ d3.json("./data/food_pairing.json").then(data => {
             .delay((d, i) => i * 10)
             .attr("opacity", 0.5)
             .attr("stroke-width", strokeWidthLink)
+
+        panel.innerHTML = ""
+        panel.style.display = "none"
     }
 
     const innerMargin = 150;
