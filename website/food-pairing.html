@@ -38,12 +38,45 @@
             box-shadow: 0.2rem 0.2rem 0.5rem #aaa;
         }
 
+        .side-panel {
+            width: 20rem;
+            margin: 2rem;
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 1rem;
+            border-radius: 1rem;
+            box-shadow: 0.2rem 0.2rem 0.5rem #aaa;
+        }
+
+        .food-icon {
+            width: 30%;
+            float: left;
+            height: 6rem;
+            padding: 0.5rem;
+            font-size: 0.8rem;
+        }
+
+        .food-icon p {
+            text-align: center;
+        }
+
+        .food-icon img, .food-icon svg {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
         p {
             text-align: justify;
         }
 
         h1 {
             border-bottom: 2px solid black;
+        }
+
+        h2 {
+            text-align: center;
         }
 
         a {
@@ -72,16 +105,16 @@
 </head>
 
 <body>
+
     <div class="width-limited">
         <h1>PAIRING WINE WITH FOOD</h1>
-        <svg width="100%" height="500">
-            <g transform="translate(200,50)"></g>
-        </svg>
+        <div id="my-viz"></div>
     </div>
+    <div id="info-panel" class="side-panel" style="display: none;"></div>
 
     <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="lib/viz.v1.js"></script>
-    <script src="js/food-pairing.js"></script>
+    <!--<script src="lib/viz.v1.js"></script>-->
+    <script src="js/food-pairing-bis.js"></script>
 </body>
 
 </html>
