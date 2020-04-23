@@ -33,26 +33,36 @@
             class="color-palette-wrapper"
             data-bind="css: { 'js-active': selectedColor() === color }"
           >
-            <h2 class="color-palette-header" data-bind="text: color"></h2>
-            <p
-              class="color-palette-subtitle-top"
-              data-bind="text: indicatorTop"
-            ></p>
+            <div class="color-palette-header">
+              <h2 class="color-palette__item" data-bind="text: color"></h2>
+              <h3 class="color-palette__detail" data-bind="text: details"></h3>
+            </div>
             <ol class="color-palette" data-bind="foreach: variations">
-              <li
-                class="color-palette__item"
-                data-bind="attr: { 'chosen-tint': hex }, style: { 'background-color': hex }"
-              >
-                <span data-bind="text: name"></span>
-                <span data-bind="text: hex"></span>
+              <li>
+                <div class="color-palette-item-container">
+                  <div
+                    class="color-palette__item"
+                    data-bind="attr: { 'chosen-tint': hex }, style: { 'background-color': hex }"
+                  >
+                    <span data-bind="text: name"></span>
+                  </div>
+                  <span class="color-palette__detail""><span
+                    data-bind="text: details"
+                  ></span>
+                </div>
               </li>
             </ol>
-            <p
-              class="color-palette-subtitle-bot"
-              data-bind="text: indicatorBot"
-            ></p>
           </div>
         </div>
+      </div>
+
+      <div class="info-panel" data-bind="visible: selectedColor() != ''">
+        <h2 class="color-palette-header">Infos</h2>
+        <ol class="color-palette">
+          <li>Cépage :</li>
+          <li>Vin :</li>
+          <li>Infos :</li>
+        </ol>
       </div>
     </div>
   </body>
