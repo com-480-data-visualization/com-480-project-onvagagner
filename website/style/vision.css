@@ -128,11 +128,13 @@ html {
   -webkit-box-direction: normal;
   flex-direction: column;
   padding: 1.5em;
+  visibility: hidden;
 }
 
 .color-palette-wrapper.js-active {
   -webkit-transform: translateX(0);
   transform: translateX(0);
+  visibility: visible !important;
 }
 
 .color-palette-header {
@@ -140,7 +142,6 @@ html {
   display: flex;
   align-items: center;
   -webkit-box-pack: justify;
-  justify-content: space-around;
   margin: 0;
   font-weight: 400;
   color: #757575;
@@ -210,13 +211,13 @@ html {
   display: -webkit-box;
   display: flex;
   flex-direction: column;
-  width: 20rem;
+  width: 20em;
   margin-left: 10px;
   border: 1px solid #78909c;
   border-radius: 0.5em;
+  box-shadow: 0 1em 8em rgba(0, 0, 0, 0.35);
   padding: 30px;
   border-radius: 1rem;
-  box-shadow: 0.2rem 0.2rem 0.5rem #aaa;
   color: white;
   background-color: black;
 }
