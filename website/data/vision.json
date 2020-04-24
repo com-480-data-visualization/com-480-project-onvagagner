@@ -3,96 +3,110 @@
     {
       "color": "Red Wine Tints",
       "mainColor": "red",
-      "indicatorTop": "Young red wine",
-      "indicatorBot": "Old red wine",
+      "details": "Age",
       "variations": [
         {
           "weight": 50,
           "hex": "#49011A",
-          "name": "Near Black"
+          "name": "Near Black",
+          "details": "very young"
         },
         {
           "weight": 100,
           "hex": "#A50946",
-          "name": "Crimson"
+          "name": "Crimson",
+          "details": ""
         },
         {
           "weight": 200,
           "hex": "#9A0C63",
-          "name": "Purple"
+          "name": "Purple",
+          "details": "young"
         },
         {
           "weight": 300,
           "hex": "#7D2B50",
-          "name": "Garnet"
+          "name": "Garnet",
+          "details": ""
         },
         {
           "weight": 400,
           "hex": "#F9245F",
-          "name": "Raspberry"
+          "name": "Raspberry",
+          "details": "old"
         },
         {
           "weight": 500,
           "hex": "#E70F30",
-          "name": "Cherry"
+          "name": "Cherry",
+          "details": ""
         },
         {
           "weight": 600,
           "hex": "#C50B13",
-          "name": "Ruby"
+          "name": "Ruby",
+          "details": ""
         },
         {
           "weight": 700,
           "hex": "#95210D",
-          "name": "Tile"
+          "name": "Tile",
+          "details": "very old"
         }
       ]
     },
     {
       "color": "White Wine Tints",
       "mainColor": "white",
-      "indicatorTop": "Dry white wine",
-      "indicatorBot": "Sweet white wine",
+      "details": "Sweetness",
       "variations": [
         {
           "weight": 50,
           "hex": "#DED782",
-          "name": "Yellow Green"
+          "name": "Yellow Green",
+          "details": "++ dry"
         },
         {
           "weight": 100,
           "hex": "#E8DA51",
-          "name": "Crimson"
+          "name": "Crimson",
+          "details": ""
         },
         {
           "weight": 200,
           "hex": "#EDC851",
-          "name": "Purple"
+          "name": "Purple",
+          "details": ""
         },
         {
           "weight": 300,
           "hex": "#FED951",
-          "name": "Garnet"
+          "name": "Garnet",
+          "details": ""
         },
         {
           "weight": 400,
           "hex": "#D7AB2B",
-          "name": "Raspberry"
+          "name": "Raspberry",
+          "details": ""
         },
         {
           "weight": 500,
           "hex": "#D68F2B",
-          "name": "Cherry"
+          "name": "Cherry",
+          "details": ""
         },
         {
           "weight": 600,
           "hex": "#EC8A28",
-          "name": "Ruby"
+          "name": "Ruby",
+          "details": ""
         },
         {
           "weight": 700,
           "hex": "#CD7921",
-          "name": "Tile"
+          "name": "Tile",
+          "details": "++ sweet"
         }
       ]
     }
