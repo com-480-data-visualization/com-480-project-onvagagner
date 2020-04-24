@@ -210,13 +210,15 @@ html {
   display: -webkit-box;
   display: flex;
   flex-direction: column;
-  width: 20em;
+  width: 20rem;
   margin-left: 10px;
-  background-color: white;
   border: 1px solid #78909c;
   border-radius: 0.5em;
   padding: 30px;
-  box-shadow: 0 1em 8em rgba(0, 0, 0, 0.35);
+  border-radius: 1rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem #aaa;
+  color: white;
+  background-color: black;
 }
 
 .info-panel-list {
@@ -229,4 +231,14 @@ html {
   flex-direction: column;
   -webkit-box-flex: 1;
   flex-grow: 1;
+}
+
+.info-panel-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-around;
+  margin: 0;
+  font-weight: 400;
 }
