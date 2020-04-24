@@ -34,6 +34,8 @@
 
             padding: 1rem;
 
+            background-color: black;
+            color: white;
             border-radius: 1rem;
             box-shadow: 0.2rem 0.2rem 0.5rem #aaa;
         }
@@ -44,6 +46,8 @@
             position: absolute;
             right: 0;
             top: 0;
+            color: white;
+            background-color: black;
             padding: 1rem;
             border-radius: 1rem;
             box-shadow: 0.2rem 0.2rem 0.5rem #aaa;
@@ -61,7 +65,8 @@
             text-align: center;
         }
 
-        .food-icon img, .food-icon svg {
+        .food-icon img,
+        .food-icon svg {
             margin-left: auto;
             margin-right: auto;
             display: block;
@@ -87,20 +92,6 @@
         a:hover {
             border-bottom: 2px solid orangered;
         }
-
-        .viz-biPartite-subBar {
-            shape-rendering: crispEdges;
-        }
-
-        .viz-biPartite-mainBar {
-            fill-opacity: 1;
-        }
-
-        .viz-biPartite-label {
-            fill-opacity: 1;
-            fill: black;
-            font-size: 0.8rem;
-        }
     </style>
 </head>
 
@@ -108,13 +99,14 @@
 
     <div class="width-limited">
         <h1>PAIRING WINE WITH FOOD</h1>
-        <div id="my-viz"></div>
+        <div id="food-pairing-viz">
+            <svg width="100%" height="500"></svg>
+        </div>
     </div>
-    <div id="info-panel" class="side-panel" style="display: none;"></div>
+    <div id="food-pairing-info-panel" class="side-panel" style="display: none;"></div>
 
     <script src="https://d3js.org/d3.v5.min.js"></script>
-    <!--<script src="lib/viz.v1.js"></script>-->
-    <script src="js/food-pairing-bis.js"></script>
+    <script src="js/food-pairing.js"></script>
 </body>
 
 </html>
