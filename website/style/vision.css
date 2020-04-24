@@ -3,15 +3,12 @@ html {
   height: 100%;
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   box-sizing: inherit;
 }
+
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *:before,
-  *:after {
+  *, *:before, *:after {
     -webkit-animation-duration: 0ms !important;
     animation-duration: 0ms !important;
     -webkit-transition-duration: 0ms !important;
@@ -51,9 +48,11 @@ html {
   border-radius: 0.5em;
   box-shadow: 0 1em 8em rgba(0, 0, 0, 0.35);
 }
+
 .material-color-picker__left-panel {
   z-index: 1;
 }
+
 .material-color-picker__right-panel {
   position: relative;
   -webkit-box-flex: 1;
@@ -76,15 +75,18 @@ html {
   -webkit-box-pack: center;
   justify-content: center;
 }
+
 .color-selector input[type="radio"] {
   display: none;
 }
+
 .color-selector label {
   position: relative;
   display: inline-block;
   padding: 0.5em 1.5em;
   cursor: pointer;
 }
+
 .color-selector label:before {
   content: "";
   display: inline-block;
@@ -93,6 +95,7 @@ html {
   background-color: currentColor;
   border-radius: 50%;
 }
+
 .color-selector label:after {
   content: "";
   position: absolute;
@@ -106,7 +109,8 @@ html {
   -webkit-transition: padding 250ms;
   transition: padding 250ms;
 }
-.color-selector input[type="radio"]:checked + label:after {
+
+.color-selector input[type="radio"]:checked+label:after {
   padding: 1em;
 }
 
@@ -125,6 +129,7 @@ html {
   flex-direction: column;
   padding: 1.5em;
 }
+
 .color-palette-wrapper.js-active {
   -webkit-transform: translateX(0);
   transform: translateX(0);
@@ -185,6 +190,7 @@ html {
   color: white;
   width: 75%;
 }
+
 .color-palette__item:hover {
   -webkit-transform: scale(1.05);
   transform: scale(1.05);
@@ -206,9 +212,21 @@ html {
   flex-direction: column;
   width: 20em;
   margin-left: 10px;
-  background-color: rgb(34, 34, 34);
+  background-color: white;
   border: 1px solid #78909c;
   border-radius: 0.5em;
   padding: 30px;
   box-shadow: 0 1em 8em rgba(0, 0, 0, 0.35);
+}
+
+.info-panel-list {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
 }

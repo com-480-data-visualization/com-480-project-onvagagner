@@ -6,4 +6,5 @@ fetch("./data/vision.json")
     ko.applyBindings(data);
   });
 
-var selectedColor = ko.observable(""); // lazy
+var selectedColor = ko.observable("red");
+var selectedTint = ko.observable("");

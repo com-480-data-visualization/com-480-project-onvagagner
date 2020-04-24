@@ -42,7 +42,7 @@
                 <div class="color-palette-item-container">
                   <div
                     class="color-palette__item"
-                    data-bind="attr: { 'chosen-tint': hex }, style: { 'background-color': hex }"
+                    data-bind="attr: { 'chosen-tint': hex }, style: { 'background-color': hex }, click:selectedTint"
                   >
                     <span data-bind="text: name"></span>
                   </div>
@@ -56,9 +56,12 @@
         </div>
       </div>
 
-      <div class="info-panel" data-bind="visible: selectedColor() != ''">
-        <h2 class="color-palette-header">Infos</h2>
-        <ol class="color-palette">
+      <div class="info-panel" data-bind="visible: selectedTint() != ''">
+        <h2 class="color-palette-header">I want to know more...</h2>
+        <ol class="info-panel-list">
+          <li>
+            Tint name : <span data-bind="text: selectedTint().name"></span>
+          </li>
           <li>Cépage :</li>
           <li>Vin :</li>
           <li>Infos :</li>
