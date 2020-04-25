@@ -69,43 +69,43 @@
         {
           "weight": 100,
           "hex": "#E8DA51",
-          "name": "Crimson",
+          "name": "Green Gold",
           "details": ""
         },
         {
           "weight": 200,
           "hex": "#EDC851",
-          "name": "Purple",
+          "name": "Pale Gold",
           "details": ""
         },
         {
           "weight": 300,
           "hex": "#FED951",
-          "name": "Garnet",
+          "name": "Staw Yello",
           "details": ""
         },
         {
           "weight": 400,
           "hex": "#D7AB2B",
-          "name": "Raspberry",
+          "name": "Golden",
           "details": ""
         },
         {
           "weight": 500,
           "hex": "#D68F2B",
-          "name": "Cherry",
+          "name": "Old Gold",
           "details": ""
         },
         {
           "weight": 600,
           "hex": "#EC8A28",
-          "name": "Ruby",
+          "name": "Amber",
           "details": ""
         },
         {
           "weight": 700,
           "hex": "#CD7921",
-          "name": "Tile",
+          "name": "Ginger",
           "details": "++ sweet"
         }
       ]
