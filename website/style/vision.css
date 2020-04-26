@@ -243,3 +243,19 @@ html {
   margin: 0;
   font-weight: 400;
 }
+
+.color-variations {
+  list-style: none;
+  display: block;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.color-variations li {
+  display: inline;
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 50%;
+}

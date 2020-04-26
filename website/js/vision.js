@@ -23,8 +23,6 @@ const hueGenerator = (color) => {
     console.log(c);
     var li = document.createElement("li");
     li.style.backgroundColor = "rgb(" + c[0] + "," + c[1] + "," + c[2] + ")";
-    li.style.width = "40px";
-    li.style.height = "40px";
     palette.append(li);
   });
 };
