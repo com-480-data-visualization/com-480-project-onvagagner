@@ -6,6 +6,7 @@
       "details": "Age",
       "variations": [
         {
+          "mainColor": "red",
           "weight": 50,
           "hex": "#49011A",
           "name": "Near Black",
@@ -14,6 +15,7 @@
           "age": "Young"
         },
         {
+          "mainColor": "red",
           "weight": 100,
           "hex": "#A50946",
           "name": "Crimson",
@@ -22,6 +24,7 @@
           "age": "Young"
         },
         {
+          "mainColor": "red",
           "weight": 200,
           "hex": "#9A0C63",
           "name": "Purple",
@@ -30,6 +33,7 @@
           "age": "Young"
         },
         {
+          "mainColor": "red",
           "weight": 300,
           "hex": "#7D2B50",
           "name": "Garnet",
@@ -38,6 +42,7 @@
           "age": "Young"
         },
         {
+          "mainColor": "red",
           "weight": 400,
           "hex": "#F9245F",
           "name": "Raspberry",
@@ -46,6 +51,7 @@
           "age": "Young"
         },
         {
+          "mainColor": "red",
           "weight": 500,
           "hex": "#E70F30",
           "name": "Cherry",
@@ -54,6 +60,7 @@
           "age": "Old"
         },
         {
+          "mainColor": "red",
           "weight": 600,
           "hex": "#C50B13",
           "name": "Ruby",
@@ -62,6 +69,7 @@
           "age": "Old"
         },
         {
+          "mainColor": "red",
           "weight": 700,
           "hex": "#95210D",
           "name": "Tile",
@@ -77,6 +85,7 @@
       "details": "Sweetness",
       "variations": [
         {
+          "mainColor": "white",
           "weight": 50,
           "hex": "#DED782",
           "name": "Yellow Green",
@@ -85,6 +94,7 @@
           "sweetness": "Dry"
         },
         {
+          "mainColor": "white",
           "weight": 100,
           "hex": "#E8DA51",
           "name": "Green Gold",
@@ -93,6 +103,7 @@
           "sweetness": "Dry"
         },
         {
+          "mainColor": "white",
           "weight": 200,
           "hex": "#EDC851",
           "name": "Pale Gold",
@@ -101,6 +112,7 @@
           "sweetness": "Dry"
         },
         {
+          "mainColor": "white",
           "weight": 300,
           "hex": "#FED951",
           "name": "Staw Yello",
@@ -109,6 +121,7 @@
           "sweetness": "Dry"
         },
         {
+          "mainColor": "white",
           "weight": 400,
           "hex": "#D7AB2B",
           "name": "Golden",
@@ -117,6 +130,7 @@
           "sweetness": "Dry"
         },
         {
+          "mainColor": "white",
           "weight": 500,
           "hex": "#D68F2B",
           "name": "Old Gold",
@@ -125,6 +139,7 @@
           "sweetness": "Sweet"
         },
         {
+          "mainColor": "white",
           "weight": 600,
           "hex": "#EC8A28",
           "name": "Amber",
@@ -133,6 +148,7 @@
           "sweetness": "Sweet"
         },
         {
+          "mainColor": "white",
           "weight": 700,
           "hex": "#CD7921",
           "name": "Ginger",

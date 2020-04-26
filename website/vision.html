@@ -17,7 +17,7 @@
               <input
                 name="material-color"
                 type="radio"
-                data-bind="attr: { id: 'wineColor' + $index() }, checked: selectedColor, value: color"
+                data-bind="attr: { id: 'wineColor' + $index() }, checked: selectedColor, value: mainColor"
               />
               <label
                 data-bind="attr: { for: 'wineColor' + $index(), title: color }, style: { 'color': $data.mainColor }"
@@ -31,7 +31,7 @@
         >
           <div
             class="color-palette-wrapper"
-            data-bind="css: { 'js-active': selectedColor() === color }"
+            data-bind="css: { 'js-active': selectedColor() === mainColor }"
           >
             <div class="color-palette-header">
               <h2 class="color-palette__item" data-bind="text: color"></h2>
@@ -66,13 +66,17 @@
             Typical grape variety :
             <span data-bind="text: selectedTint().variety"></span>
           </li>
-          <li>
+          <li data-bind="if: selectedTint().mainColor === 'red'">
             Typical wine age :
             <span data-bind="text: selectedTint().age"></span>
           </li>
+          <li data-bind="if: selectedTint().mainColor === 'white'">
+            Typical wine sweetness :
+            <span data-bind="text: selectedTint().age"></span>
+          </li>
           <li>
-            About this color :
-            <span data-bind="text: selectedTint().About"></span>
+            4 variations of this color :
+            <ol id="color-variations"></ol>
           </li>
         </ol>
       </div>
