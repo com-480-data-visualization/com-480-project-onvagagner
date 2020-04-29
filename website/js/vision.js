@@ -12,17 +12,33 @@ const hueGenerator = (color) => {
   // console.log("r " + r + " g " + g + " b " + b);
   const hsl = rgbToHsl(r, g, b);
   console.log("hsl " + hsl);
-  const hue = hsl[0];
-
-  const hueVariations = [hue - 0.05, hue - 0.01, hue + 0.01, hue + 0.05];
-  const colorVariations = hueVariations.map((h) => hslToRgb(h, hsl[1], hsl[2]));
-  const palette = document.getElementById("color-variations");
-  palette.innerHTML = "";
+  const [hue, saturation, lightness] = hsl;
+  const hueVariations = [hue - 0.03, hue - 0.01, hue + 0.01, hue + 0.03];
+  const shades = [
+    lightness - 0.2,
+    lightness - 0.05,
+    lightness + 0.05,
+    lightness + 0.2,
+  ];
+  const colorVariations = hueVariations.map((h) =>
+    hslToRgb(h, saturation, lightness)
+  );
+  const shadesVariations = shades.map((sh) => hslToRgb(hue, saturation, sh));
+  const variationDiv = document.getElementById("color-variations");
+  const shadesDiv = document.getElementById("color-shades");
+  variationDiv.innerHTML = "";
+  shadesDiv.innerHTML = "";
   colorVariations.map((c) => {
-    console.log(c);
+    // console.log(c);
     var li = document.createElement("li");
     li.style.backgroundColor = "rgb(" + c[0] + "," + c[1] + "," + c[2] + ")";
-    palette.append(li);
+    variationDiv.append(li);
+  });
+  shadesVariations.map((sh) => {
+    // console.log(sh);
+    var li = document.createElement("li");
+    li.style.backgroundColor = "rgb(" + sh[0] + "," + sh[1] + "," + sh[2] + ")";
+    shadesDiv.append(li);
   });
 };
 
