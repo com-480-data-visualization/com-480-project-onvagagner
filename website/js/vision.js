@@ -13,16 +13,19 @@ const hueGenerator = (color) => {
   const hsl = rgbToHsl(r, g, b);
   console.log("hsl " + hsl);
   const [hue, saturation, lightness] = hsl;
-  const hueVariations = [hue - 0.03, hue - 0.01, hue + 0.01, hue + 0.03];
+  const hueVariations = [
+    saturation - 0.5,
+    saturation - 0.3,
+    saturation + 0.3,
+    saturation + 0.5,
+  ];
   const shades = [
     lightness - 0.2,
-    lightness - 0.05,
-    lightness + 0.05,
+    lightness - 0.1,
+    lightness + 0.1,
     lightness + 0.2,
   ];
-  const colorVariations = hueVariations.map((h) =>
-    hslToRgb(h, saturation, lightness)
-  );
+  const colorVariations = hueVariations.map((h) => hslToRgb(hue, h, lightness));
   const shadesVariations = shades.map((sh) => hslToRgb(hue, saturation, sh));
   const variationDiv = document.getElementById("color-variations");
   const shadesDiv = document.getElementById("color-shades");
