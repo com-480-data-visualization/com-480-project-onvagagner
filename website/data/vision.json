@@ -6,52 +6,76 @@
       "details": "Age",
       "variations": [
         {
+          "mainColor": "red",
           "weight": 50,
           "hex": "#49011A",
           "name": "Near Black",
-          "details": "very young"
+          "details": "very young",
+          "variety": "Pinot Noir",
+          "age": "Young"
         },
         {
+          "mainColor": "red",
           "weight": 100,
           "hex": "#A50946",
           "name": "Crimson",
-          "details": ""
+          "details": "",
+          "variety": "Cabernet Sauvignon, Merlot",
+          "age": "Young"
         },
         {
+          "mainColor": "red",
           "weight": 200,
           "hex": "#9A0C63",
           "name": "Purple",
-          "details": "young"
+          "details": "young",
+          "variety": "Syrah, Beaujolais Nouveau",
+          "age": "Young"
         },
         {
+          "mainColor": "red",
           "weight": 300,
           "hex": "#7D2B50",
           "name": "Garnet",
-          "details": ""
+          "details": "",
+          "variety": "Malbec, Syrah",
+          "age": "Young"
         },
         {
+          "mainColor": "red",
           "weight": 400,
           "hex": "#F9245F",
           "name": "Raspberry",
-          "details": "old"
+          "details": "old",
+          "variety": "Malbec, Syrah",
+          "age": "Young"
         },
         {
+          "mainColor": "red",
           "weight": 500,
           "hex": "#E70F30",
           "name": "Cherry",
-          "details": ""
+          "details": "",
+          "variety": "Syrah, Beaujolais Nouveau",
+          "age": "Old"
         },
         {
+          "mainColor": "red",
           "weight": 600,
           "hex": "#C50B13",
           "name": "Ruby",
-          "details": ""
+          "details": "",
+          "variety": "Cabernet Sauvignon, Merlot",
+          "age": "Old"
         },
         {
+          "mainColor": "red",
           "weight": 700,
           "hex": "#95210D",
           "name": "Tile",
-          "details": "very old"
+          "details": "very old",
+          "variety": "Pinot Noir",
+          "age": "Old"
         }
       ]
     },
@@ -61,52 +85,76 @@
       "details": "Sweetness",
       "variations": [
         {
+          "mainColor": "white",
           "weight": 50,
           "hex": "#DED782",
           "name": "Yellow Green",
-          "details": "++ dry"
+          "details": "++ dry",
+          "variety": "Sauvignon Blanc, Sémillon, Pinot Gris, Vinho Verde",
+          "sweetness": "Dry"
         },
         {
+          "mainColor": "white",
           "weight": 100,
           "hex": "#E8DA51",
-          "name": "Crimson",
-          "details": ""
+          "name": "Green Gold",
+          "details": "",
+          "variety": "Chardonnay, White Rioja (Aged),",
+          "sweetness": "Dry"
         },
         {
+          "mainColor": "white",
           "weight": 200,
           "hex": "#EDC851",
-          "name": "Purple",
-          "details": ""
+          "name": "Pale Gold",
+          "details": "",
+          "variety": "Chenin Blanc, Marsanne",
+          "sweetness": "Dry"
         },
         {
+          "mainColor": "white",
           "weight": 300,
           "hex": "#FED951",
-          "name": "Garnet",
-          "details": ""
+          "name": "Staw Yello",
+          "details": "",
+          "variety": "Chardonnay",
+          "sweetness": "Dry"
         },
         {
+          "mainColor": "white",
           "weight": 400,
           "hex": "#D7AB2B",
-          "name": "Raspberry",
-          "details": ""
+          "name": "Golden",
+          "details": "",
+          "variety": "Sherry, Pinot Gris (Aged)",
+          "sweetness": "Dry"
         },
         {
+          "mainColor": "white",
           "weight": 500,
           "hex": "#D68F2B",
-          "name": "Cherry",
-          "details": ""
+          "name": "Old Gold",
+          "details": "",
+          "variety": "Sauvignon Blanc, Sémillon",
+          "sweetness": "Sweet"
         },
         {
+          "mainColor": "white",
           "weight": 600,
           "hex": "#EC8A28",
-          "name": "Ruby",
-          "details": ""
+          "name": "Amber",
+          "details": "",
+          "variety": "Chardonay",
+          "sweetness": "Sweet"
         },
         {
+          "mainColor": "white",
           "weight": 700,
           "hex": "#CD7921",
-          "name": "Tile",
-          "details": "++ sweet"
+          "name": "Ginger",
+          "details": "++ sweet",
+          "variety": "Sherry",
+          "sweetness": "Sweet"
         }
       ]
     }

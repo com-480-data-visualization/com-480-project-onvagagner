@@ -17,7 +17,7 @@
               <input
                 name="material-color"
                 type="radio"
-                data-bind="attr: { id: 'wineColor' + $index() }, checked: selectedColor, value: color"
+                data-bind="attr: { id: 'wineColor' + $index() }, checked: selectedColor, value: mainColor"
               />
               <label
                 data-bind="attr: { for: 'wineColor' + $index(), title: color }, style: { 'color': $data.mainColor }"
@@ -31,7 +31,7 @@
         >
           <div
             class="color-palette-wrapper"
-            data-bind="css: { 'js-active': selectedColor() === color }"
+            data-bind="css: { 'js-active': selectedColor() === mainColor }"
           >
             <div class="color-palette-header">
               <h2 class="color-palette__item" data-bind="text: color"></h2>
@@ -42,7 +42,7 @@
                 <div class="color-palette-item-container">
                   <div
                     class="color-palette__item"
-                    data-bind="attr: { 'chosen-tint': hex }, style: { 'background-color': hex }"
+                    data-bind="attr: { 'chosen-tint': hex }, style: { 'background-color': hex }, click:selectedTint"
                   >
                     <span data-bind="text: name"></span>
                   </div>
@@ -56,12 +56,34 @@
         </div>
       </div>
 
-      <div class="info-panel" data-bind="visible: selectedColor() != ''">
-        <h2 class="color-palette-header">Infos</h2>
-        <ol class="color-palette">
-          <li>Cépage :</li>
-          <li>Vin :</li>
-          <li>Infos :</li>
+      <div class="info-panel" data-bind="visible: selectedTint() != ''">
+        <h2 class="info-panel-header">I want to know more...</h2>
+        <hr />
+        <ol class="info-panel-list">
+          <li>
+            <h3>Tint name :</h3>
+            <span data-bind="text: selectedTint().name"></span>
+          </li>
+          <li>
+            <h3>Typical grape variety :</h3>
+            <span data-bind="text: selectedTint().variety"></span>
+          </li>
+          <li data-bind="if: selectedTint().mainColor === 'red'">
+            <h3>Typical wine age :</h3>
+            <span data-bind="text: selectedTint().age"></span>
+          </li>
+          <li data-bind="if: selectedTint().mainColor === 'white'">
+            <h3>Typical wine sweetness :</h3>
+            <span data-bind="text: selectedTint().sweetness"></span>
+          </li>
+          <li>
+            <h3>Variations of this color :</h3>
+            <ol class="color-variations" id="color-variations"></ol>
+          </li>
+          <li>
+            <h3>Shades of this color :</h3>
+            <ol class="color-variations" id="color-shades"></ol>
+          </li>
         </ol>
       </div>
     </div>
