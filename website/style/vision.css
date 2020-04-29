@@ -31,6 +31,12 @@ html {
   font-weight: 500;
 }
 
+hr {
+  border: 1px solid white;
+  margin: auto;
+  width: 100%;
+}
+
 .container {
   padding: 1em;
   display: -webkit-box;
@@ -224,6 +230,7 @@ html {
 
 .info-panel-list {
   list-style: none;
+  margin: 0;
   padding: 0;
   display: -webkit-box;
   display: flex;
@@ -234,6 +241,10 @@ html {
   flex-grow: 1;
 }
 
+.info-panel-list li {
+  margin-bottom: 10px;
+}
+
 .info-panel-header {
   position: relative;
   display: flex;
@@ -242,19 +253,21 @@ html {
   justify-content: space-around;
   margin: 0;
   font-weight: 400;
+  margin-bottom: 10px;
 }
 
 .color-variations {
   list-style: none;
   display: block;
   width: 100%;
-  padding-top: 10px;
 }
 
 .color-variations li {
   display: inline;
   float: left;
+  /* do not remove */
   width: 40px;
+  /* do not remove */
   height: 40px;
   margin: 5px;
   border-radius: 50%;

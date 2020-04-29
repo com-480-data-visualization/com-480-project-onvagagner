@@ -9,13 +9,12 @@ const hueGenerator = (color) => {
   const r = parseInt(color.substr(1, 2), 16); // Grab the hex representation of red (chars 1-2) and convert to decimal (base 10).
   const g = parseInt(color.substr(3, 2), 16);
   const b = parseInt(color.substr(5, 2), 16);
-  console.log("r " + r + " g " + g + " b " + b);
+  // console.log("r " + r + " g " + g + " b " + b);
   const hsl = rgbToHsl(r, g, b);
   console.log("hsl " + hsl);
   const hue = hsl[0];
 
   const hueVariations = [hue - 0.05, hue - 0.01, hue + 0.01, hue + 0.05];
-  console.log(hueVariations);
   const colorVariations = hueVariations.map((h) => hslToRgb(h, hsl[1], hsl[2]));
   const palette = document.getElementById("color-variations");
   palette.innerHTML = "";

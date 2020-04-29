@@ -58,24 +58,26 @@
 
       <div class="info-panel" data-bind="visible: selectedTint() != ''">
         <h2 class="info-panel-header">I want to know more...</h2>
+        <hr />
         <ol class="info-panel-list">
           <li>
-            Tint name : <span data-bind="text: selectedTint().name"></span>
+            <h3>Tint name :</h3>
+            <span data-bind="text: selectedTint().name"></span>
           </li>
           <li>
-            Typical grape variety :
+            <h3>Typical grape variety :</h3>
             <span data-bind="text: selectedTint().variety"></span>
           </li>
           <li data-bind="if: selectedTint().mainColor === 'red'">
-            Typical wine age :
+            <h3>Typical wine age :</h3>
             <span data-bind="text: selectedTint().age"></span>
           </li>
           <li data-bind="if: selectedTint().mainColor === 'white'">
-            Typical wine sweetness :
-            <span data-bind="text: selectedTint().age"></span>
+            <h3>Typical wine sweetness :</h3>
+            <span data-bind="text: selectedTint().sweetness"></span>
           </li>
           <li>
-            Variations of this color :
+            <h3>Variations of this color :</h3>
             <ol class="color-variations" id="color-variations"></ol>
           </li>
         </ol>
