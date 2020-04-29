@@ -77,7 +77,7 @@ hr {
   flex-direction: column;
   padding: 1em 0;
   border-right: 0.25em solid #e0e0e0;
-  min-height: 500px;
+  min-height: 550px;
   -webkit-box-pack: center;
   justify-content: center;
 }
@@ -122,9 +122,7 @@ hr {
 
 .color-palette-wrapper {
   position: absolute;
-  top: 0;
   right: 0;
-  bottom: 0;
   left: 0;
   -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
@@ -135,6 +133,7 @@ hr {
   flex-direction: column;
   padding: 1.5em;
   visibility: hidden;
+  height: 100%;
 }
 
 .color-palette-wrapper.js-active {
@@ -179,8 +178,7 @@ hr {
 
 .color-palette__item {
   margin: 0;
-  padding: 10px;
-  padding-top: 10px;
+  padding: 15px;
   border-radius: 0.25em;
   position: relative;
   display: flex;
@@ -239,10 +237,6 @@ hr {
   flex-direction: column;
   -webkit-box-flex: 1;
   flex-grow: 1;
-}
-
-.info-panel-list li {
-  margin-bottom: 10px;
 }
 
 .info-panel-header {
