@@ -120,21 +120,21 @@ svg {
 
 a {
     text-decoration: none;
-    color: orangered;
+    color: black;
 }
 
 a:hover {
-    border-bottom: 2px solid orangered;
+    border-bottom: 2px solid black;
 }
 
-.switchable {
+#project01 .switchable {
     cursor: pointer;
     background: rgba(128,128,128,0.5);
     border-radius: 1rem;
     padding: 0.5rem;
 }
 
-circle {
+#project01 circle {
     stroke: #aaa;
     stroke-width: 0.1;
     opacity: 0.8;
@@ -142,7 +142,7 @@ circle {
     cursor: pointer;
 }
 
-circle:hover {
+#project01 circle:hover {
     opacity: 1;
 }
 
