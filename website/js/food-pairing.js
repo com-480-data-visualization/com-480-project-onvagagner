@@ -1,6 +1,6 @@
-const margin = { top: 10, right: 30, bottom: 30, left: 40 },
-    width = 700 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+const margin_food = { top: 10, right: 30, bottom: 30, left: 40 },
+    width_food = 700 - margin_food.left - margin_food.right,
+    height_food = 500 - margin_food.top - margin_food.bottom;
 
 const dark = true;
 
@@ -21,17 +21,17 @@ class FoodPairingViz {
         const g = this.svg
             .append("g")
             .attr("transform",
-                "translate(" + margin.left + "," + margin.top + ")");
-        this.width = svgViewbox.width - margin.left - margin.right
-        this.height = svgViewbox.height - margin.top - margin.bottom
-        console.log(this.width, this.height)
+                "translate(" + margin_food.left + "," + margin_food.top + ")");
+        this.width_food = svgViewbox.width - margin_food.left - margin_food.right
+        this.height_food = svgViewbox.height - margin_food.top - margin_food.bottom
+        console.log(this.width_food, this.height_food)
 
         this.opacity = 0.3;
         this.strokeWidth = 7;
         this.strokeWidthLink = 2;
 
-        const wineY = d3.scaleLinear().domain([0, data.wines.length - 1]).range([0, this.height])
-        const foodY = d3.scaleLinear().domain([0, data.foods.length - 1]).range([0, this.height])
+        const wineY = d3.scaleLinear().domain([0, data.wines.length - 1]).range([0, this.height_food])
+        const foodY = d3.scaleLinear().domain([0, data.foods.length - 1]).range([0, this.height_food])
 
         const color = function (d) {
             const colors = ["#e5ecb8", "#fecf03", "#fdda7c", "#dedede", "#EC1D4B", "#A11D45", "#854756", "#c94f04"]
@@ -209,7 +209,7 @@ class FoodPairingViz {
             .enter()
             .append("line")
             .attr("x1", innerMargin).attr("y1", d => wineY(d.wine))
-            .attr("x2", this.width - innerMargin).attr("y2", d => foodY(d.food))
+            .attr("x2", this.width_food - innerMargin).attr("y2", d => foodY(d.food))
             .attr("stroke", d => color(d.wine))
             .attr("stroke-width", this.strokeWidthLink)
             .attr("opacity", 0.5)
@@ -232,7 +232,7 @@ class FoodPairingViz {
             .data(data.foods)
             .enter()
             .append("g")
-            .attr("transform", d => "translate(" + (this.width - innerMargin) + "," + foodY(d.id) + ")")
+            .attr("transform", d => "translate(" + (this.width_food - innerMargin) + "," + foodY(d.id) + ")")
             .attr("class", "foodNode")
             .style("cursor", "pointer")
             .attr("opacity", 1)
