@@ -19,8 +19,11 @@ You can find our first milestone in a nicer PDF format [here](milestones/Milesto
 
 **10% of the final grade**
 
+You can find our second milestone [here](milestones/Milestone2.pdf).
+Please make sure to download the PDF in order to make the links work!
 
-
+You can also find our website [here](https://com-480-data-visualization.github.io/com-480-project-onvagagner/index.html).
+We focused on structure and visualization, a prettier version is coming soon! 
 
 ## Milestone 3 (Thursday 28th May, 5pm)
 
