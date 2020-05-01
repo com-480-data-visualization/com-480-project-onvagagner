@@ -7,7 +7,7 @@ const fillToPercent = d3.scaleLinear()
 
 const customEaseElastic = d3.easeElastic.period(0.5)
 
-const svg = d3.select("svg")
+const svg = d3.select("svg#basic1viz")
 const glass = d3.select("#filling-wine-glass").style("cursor", "pointer")
 const wine = d3.select("#wine").attr("y", fillToPercent(0))
 const handle = glass.append("rect")
