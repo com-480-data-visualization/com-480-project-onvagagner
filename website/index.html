@@ -14,8 +14,91 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="“icon”" href="favicon.ico" />
     <script src="https://d3js.org/d3.v5.min.js"></script>
+
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>  -->
   </head>
   <body>
+    <div class="cursor"></div>
+
+    <ul class="toc" id="toc">
+      <li class="toc__item">
+        <div class="toc__label">&nbsp;</div>
+      </li>
+      <li class="toc__item toc__item--upcoming">
+        <div class="toc__label">&nbsp;</div>
+      </li>
+      <li class="toc__item toc__item--upcoming">
+        <div class="toc__label">&nbsp;</div>
+      </li>
+      <li class="toc__item toc__item--upcoming">
+        <div class="toc__label">&nbsp;</div>
+      </li>
+    </ul>
+
+    <section class="intro" id="intro">
+      <svg class="intro__shapes" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+        <path id="intro-triangle" d="M200 200 L100 0 L0 200 Z" />
+        <path
+          style="visibility: hidden"
+          id="intro-circle"
+          d="M 100, 100 m -100, 0 a 100,100 0 1,0 200,0 a 100,100 0 1,0 -200,0"
+        />
+      </svg>
+      <div class="intro__circles">
+        <div class="circle intro__circle intro__circle--1"></div>
+        <div class="circle intro__circle intro__circle--2"></div>
+        <div class="circle intro__circle intro__circle--3"></div>
+        <div class="circle intro__circle intro__circle--4"></div>
+        <div class="circle intro__circle intro__circle--5"></div>
+        <div class="circle intro__circle intro__circle--6"></div>
+      </div>
+    </section>
+   <section class="section about" id="about">
+      <h2 class="heading-primary about__heading" data-splitting>
+        <div class="font--light-grey">The place where</div>
+        <span class="font--color-primary"
+          >a chart speaks more<span class="hide-mobile"><br /></span> than a thousand words.</span
+        >
+      </h2>
+      <div class="about__description">
+        <p class="paragraph font--light-grey">
+          <span class="about__finally font--color-primary subheadline">Finally!</span>
+          A place where you can upload your visuals regardless of the tool you used to create them.
+          <br />
+          <br />
+          Share them with other like minded artists and increase own brand awareness with professional portfolio.
+        </p>
+      </div>
+
+      <svg class="about__shapes" xmlns="http://www.w3.org/2000/svg">
+        <circle class="about__shape" id="about__circle-1" stroke-width="1" r="170" />
+        <circle class="about__shape" id="about__circle-2" stroke-width="1" r="170" />
+        <path class="about__shape" id="about__triangle-1" stroke-width="2" d="M100 0 L0 200 L200 200 Z" />
+        <path class="about__shape" id="about__triangle-2" stroke-width="2" d="M100 0 L0 200 L200 200 Z" />
+      </svg>
+      <div class="about__arrow">
+      </div>
+    </section>
+
+    <div class="section chartipedia" id="chartipedia">
+      <div class="chartipedia__container">
+        <h2 class="chartipedia__heading font--color-primary">Wine101</h2>
+      </div>
+    </div>
+
+    <section class="section benefits" id="benefits">
+    </section>
+
+    <section class="section community" id="community">
+    </section>
+
+    <section class="section getstarted" id="getstarted">
+    
+    </section>
+
     <h1>Intro</h1>
 
     <h1><a href="basics.html">Learn the Basics</a></h1>
@@ -27,15 +110,12 @@
     <h1><a href="taste.html">Taste</a></h1>
 
     <h1><a href="food-pairing.html">Food</a></h1>
-    <!--
-<script src="lib/d3.min.js"></script>
-<script src="https://d3js.org/d3-array.v2.min.js"></script>
-<script src="https://d3js.org/d3-color.v1.min.js"></script>
-<script src="https://d3js.org/d3-format.v1.min.js"></script>
-<script src="https://d3js.org/d3-interpolate.v1.min.js"></script>
-<script src="https://d3js.org/d3-time.v1.min.js"></script>
-<script src="https://d3js.org/d3-time-format.v2.min.js"></script>
-<script src="https://d3js.org/d3-scale.v3.min.js"></script>
 
- --></body>
+ </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+<script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+<script src="js/chartpedia.js"></script>
+
 </html>
