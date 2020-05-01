@@ -1,6 +1,4 @@
-const margin = { top: 10, right: 30, bottom: 30, left: 40 },
-    width = 700 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+const margin = { top: 10, right: 30, bottom: 30, left: 40 }
 
 const dark = true;
 
@@ -38,6 +36,14 @@ class FoodPairingViz {
             return colors[d]
         }
 
+        this.computePath = (d, factor) => {
+            const start = { x: innerMargin, y: wineY(d.wine) },
+                end = { x: (this.width - innerMargin), y: foodY(d.food) },
+                mid = { x: ((start.x + end.x) / 2), y: (factor * start.y + (1 - factor) * end.y) }
+
+            return `M ${start.x} ${start.y} Q ${mid.x} ${mid.y} ${end.x} ${end.y}`
+        }
+
         // INTERACTION FUNCTIONS
         this.onWineSelected = (s) => {
 
@@ -72,17 +78,22 @@ class FoodPairingViz {
                 .attr("opacity", f => relevantFoods.includes(f.id) ? 1 : this.opacity)
 
             // highlight links
-            const links = this.svg.selectAll("line")
+            const links = this.svg.selectAll("path")
+            //.attr("x2", innerMargin).attr("y2", d => wineY(d.wine))
+
             links.filter(d => relevantLinks.includes(d))
                 .moveToFront()
                 .transition()
                 .delay((d, i) => i * 50 + 200)
+                .attr("d", d => this.computePath(d, 0.1))
                 .attr("opacity", 1)
                 .attr("stroke-width", this.strokeWidth)
+            //.attr("x2", this.width - innerMargin).attr("y2", d => foodY(d.food))
             links.filter(d => !relevantLinks.includes(d))
                 .transition()
                 .attr("opacity", this.opacity)
                 .attr("stroke-width", this.strokeWidthLink)
+                .attr("d", d => this.computePath(d, 0.9))
 
             // put info into panel
             this.panel.style.display = "block"
@@ -138,17 +149,19 @@ class FoodPairingViz {
                 .attr("opacity", w => relevantWines.includes(w.id) ? 1 : this.opacity)
 
             // highlight links
-            const links = this.svg.selectAll("line")
+            const links = this.svg.selectAll("path")
             links.filter(d => relevantLinks.includes(d))
                 .moveToFront()
                 .transition()
                 .delay((d, i) => i * 50 + 200)
                 .attr("opacity", 1)
                 .attr("stroke-width", this.strokeWidth)
+                .attr("d", d => this.computePath(d, 0.9))
             links.filter(d => !relevantLinks.includes(d))
                 .transition()
                 .attr("opacity", this.opacity)
                 .attr("stroke-width", this.strokeWidthLink)
+                .attr("d", d => this.computePath(d, 0.9))
 
             this.panel.style.display = "block"
             this.panel.innerHTML = this.formatFoodInfo(s, relevantWines)
@@ -188,11 +201,20 @@ class FoodPairingViz {
                 .attr("r", 10)
                 .attr("stroke-width", this.strokeWidth)
 
-            this.svg.selectAll("line")
+            /*
+            const factor = d3.scaleLinear()
+                .domain([innerMargin, this.width - innerMargin])
+                .range([0, 1])
+                .clamp(true)
+           
+            const f = factor(d3.mouse(this.svg.select("g").node())[0])
+            */
+            this.svg.selectAll("path")
                 .transition()
                 .duration(500)
                 .attr("opacity", 0.5)
-                .attr("stroke-width", this.strokeWidthLink)
+                .attr("stroke-width", this.strokeWidth)
+                .attr("d", d => this.computePath(d, 0.9))   
 
             this.panel.innerHTML = ""
             this.panel.style.display = "none"
@@ -203,6 +225,7 @@ class FoodPairingViz {
 
         // Initialize the links
         const lineContainer = g.append("g")
+        /*
         const links = lineContainer
             .selectAll("line")
             .data(this.data.links)
@@ -212,6 +235,17 @@ class FoodPairingViz {
             .attr("x2", this.width - innerMargin).attr("y2", d => foodY(d.food))
             .attr("stroke", d => color(d.wine))
             .attr("stroke-width", this.strokeWidthLink)
+            .attr("opacity", 0.5)
+            */
+
+        const paths = lineContainer.selectAll("path")
+            .data(this.data.links)
+            .enter()
+            .append("path")
+            .attr("d", d => this.computePath(d, 0.9))
+            .attr("stroke", d => color(d.wine))
+            .attr("stroke-width", this.strokeWidth)
+            .attr("fill", "transparent")
             .attr("opacity", 0.5)
 
         // Initialize the nodes
