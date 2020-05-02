@@ -8,12 +8,13 @@ d3.selection.prototype.moveToFront = function () {
 
 class FoodPairingViz {
     constructor(data, parentDiv, panelDiv) {
-        const margin = { top: 10, right: 30, bottom: 30, left: 40 }
+        const margin = { top: 10, right: 10, bottom: 10, left: 10 }
         this.data = data
         this.panel = document.getElementById(panelDiv)
 
         this.svg = d3.select("#" + parentDiv + " svg")
         const svgViewbox = this.svg.node().getBoundingClientRect();
+        console.log(svgViewbox)
 
         const g = this.svg
             .append("g")
@@ -218,23 +219,10 @@ class FoodPairingViz {
             this.panel.style.display = "none"
         }
 
-
         const innerMargin = 150;
 
         // Initialize the links
         const lineContainer = g.append("g")
-        /*
-        const links = lineContainer
-            .selectAll("line")
-            .data(this.data.links)
-            .enter()
-            .append("line")
-            .attr("x1", innerMargin).attr("y1", d => wineY(d.wine))
-            .attr("x2", this.width - innerMargin).attr("y2", d => foodY(d.food))
-            .attr("stroke", d => color(d.wine))
-            .attr("stroke-width", this.strokeWidthLink)
-            .attr("opacity", 0.5)
-            */
 
         const paths = lineContainer.selectAll("path")
             .data(this.data.links)
@@ -245,6 +233,7 @@ class FoodPairingViz {
             .attr("stroke-width", this.strokeWidth)
             .attr("fill", "transparent")
             .attr("opacity", 0.5)
+            .style("mix-blend-mode", "screen")
 
         // Initialize the nodes
         const wineNodes = g
@@ -282,6 +271,7 @@ class FoodPairingViz {
             .attr("y", 6)
             .attr("fill", dark ? "#fff" : "#000")
             .attr("text-anchor", "end")
+            //.style("font-size", function(d) { return Math.min(10, (innerMargin) / this.getComputedTextLength() * 10) + "px"; })
             .attr("opacity", 1)
 
         foodNodes.append("circle")
@@ -296,6 +286,7 @@ class FoodPairingViz {
             .attr("y", 6)
             .attr("fill", dark ? "#fff" : "#000")
             .attr("text-anchor", "start")
+            //.style("font-size", function(d) { return Math.min(10, (innerMargin) / this.getComputedTextLength() * 10) + "px"; })
             .attr("opacity", 1)
 
         this.svg.on("click", this.onRemoveSelection)
