@@ -37,7 +37,7 @@ hr {
   width: 100%;
 }
 
-.container {
+.container-palette {
   padding: 1em;
   display: -webkit-box;
   display: flex;
@@ -45,7 +45,6 @@ hr {
 }
 
 .material-color-picker {
-  display: -webkit-box;
   display: flex;
   width: 40em;
   margin: 0;
@@ -61,7 +60,6 @@ hr {
 
 .material-color-picker__right-panel {
   position: relative;
-  -webkit-box-flex: 1;
   flex-grow: 1;
   overflow: hidden;
 }
@@ -70,16 +68,12 @@ hr {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   flex-direction: column;
   padding: 1em 0;
   border-right: 0.25em solid #e0e0e0;
-  min-height: 550px;
-  -webkit-box-pack: center;
   justify-content: center;
+  min-height: 600px;
 }
 
 .color-selector input[type="radio"] {
@@ -124,16 +118,11 @@ hr {
   position: absolute;
   right: 0;
   left: 0;
-  -webkit-transform: translateX(-100%);
   transform: translateX(-100%);
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
   flex-direction: column;
   padding: 1.5em;
   visibility: hidden;
-  height: 100%;
 }
 
 .color-palette-wrapper.js-active {
@@ -257,7 +246,6 @@ hr {
 }
 
 .color-variations li {
-  display: inline;
   float: left;
   /* do not remove */
   width: 40px;

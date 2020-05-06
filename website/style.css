@@ -1,10 +1,6 @@
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
-html,
-button,
-input,
-select,
-textarea {
+html, button, input, select, textarea {
     color: #222;
 }
 
@@ -32,10 +28,7 @@ hr {
     padding: 0;
 }
 
-audio,
-canvas,
-img,
-video {
+audio, canvas, img, video {
     vertical-align: middle;
 }
 
@@ -49,27 +42,16 @@ textarea {
     resize: vertical;
 }
 
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-
 body {
     font: 16px/1.5 Helvetica, Helvetica Neue, Arial;
-}
-
-.wrapper {
-    width: 90%;
-    margin: 0 5%;
 }
 
 /* ==========================================================================
    Our styles
    ========================================================================== */
+
 /* =Main */
+
 #intro {
     height: 100vh;
     background: #ffb6c1;
@@ -77,12 +59,7 @@ body {
     /*color: #fff;*/
     color: black;
 }
-#intro .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+
 .project {
     text-align: center;
     /*padding: 200px 0;*/
@@ -91,10 +68,12 @@ body {
     transform: translateY(50px);
     transition: all 1s ease-out;
 }
+
 .project.fade-in {
     opacity: 1;
     transform: translateY(0);
 }
+
 .project p {
     max-width: 300px;
     margin: 0 auto;
@@ -105,17 +84,15 @@ svg {
     text-align: center;
 }
 
-.left{
-    width:55%;
-    margin-right:2%;
+.left {
+    width: 55%;
+    margin-right: 2%;
     float: left;
 }
+
 .right {
-    width:42%;
+    width: 42%;
     float: left;
-}
-.clearfix{
-    clear:both
 }
 
 a {
@@ -129,7 +106,7 @@ a:hover {
 
 #project01 .switchable {
     cursor: pointer;
-    background: rgba(128,128,128,0.5);
+    background: rgba(128, 128, 128, 0.5);
     border-radius: 1rem;
     padding: 0.5rem;
 }
@@ -137,7 +114,6 @@ a:hover {
 .side-panel {
     width: 20rem;
     margin: 2rem;
-    position: absolute;
     right: 0;
     top: 0;
     color: white;
@@ -145,6 +121,7 @@ a:hover {
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0.2rem 0.2rem 0.5rem #aaa;
+    display: flexbox;
 }
 
 .food-icon {
@@ -159,8 +136,7 @@ a:hover {
     text-align: center;
 }
 
-.food-icon img,
-.food-icon svg {
+.food-icon img, .food-icon svg {
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -174,10 +150,6 @@ h1 {
     border-bottom: 2px solid black;
 }
 
-h2 {
-    text-align: center;
-}
-
 a {
     text-decoration: none;
     color: orangered;
@@ -189,38 +161,19 @@ a:hover {
 
 .width-limited {
     max-width: 50rem;
-
     /* Center horizontally: */
     margin-left: auto;
     margin-right: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
-
-    padding: 1rem;
-
+    padding: 20px;
     background-color: black;
     color: white;
     border-radius: 1rem;
     box-shadow: 0.2rem 0.2rem 0.5rem #aaa;
 }
 
-/* =Footer */
-.footer-container {
-    text-align: left;
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.5);
-    background-color: #06060d; 
-}
-.footer-container .wrapper {
-    width: 80%;
-    max-width: none;
-    margin: 0 10%; 
-}
-.footer-container h3 {
-    margin: 0;
-    padding: 20px 0;
-    font-weight: normal; 
-}
-.footer-container a {
-    color: rgba(255, 255, 255, 0.5); 
+.title {
+    padding-bottom: 50px;
+    margin-top: -50px;
 }
