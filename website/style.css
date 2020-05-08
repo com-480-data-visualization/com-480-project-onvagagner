@@ -111,8 +111,18 @@ a:hover {
     padding: 0.5rem;
 }
 
+.food-pairing-main {
+    /* Center horizontally: */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.5rem #aaa;
+}
+
 .side-panel {
-    width: 20rem;
     margin: 2rem;
     right: 0;
     top: 0;
@@ -121,7 +131,7 @@ a:hover {
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0.2rem 0.2rem 0.5rem #aaa;
-    display: flexbox;
+    min-height: 500px;
 }
 
 .food-icon {
@@ -157,20 +167,6 @@ a {
 
 a:hover {
     border-bottom: 2px solid orangered;
-}
-
-.width-limited {
-    max-width: 50rem;
-    /* Center horizontally: */
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding: 20px;
-    background-color: black;
-    color: white;
-    border-radius: 1rem;
-    box-shadow: 0.2rem 0.2rem 0.5rem #aaa;
 }
 
 .title {

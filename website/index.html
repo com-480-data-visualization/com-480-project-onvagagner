@@ -116,9 +116,20 @@
 
       <section id="project02" class="section project">
         <div class="container">
-          <h2 class="title">Vision</h2>
-          <p>Lorem ipsum</p>
-          <div class="container container-palette">
+          <div class="columns">
+            <div class="column">
+              <h2 class="title">Vision</h2>
+              <p>Lorem ipsum</p>
+            </div>
+            <div class="column"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="color_viz" class="section">
+        <div class="container">
+          <h2 class="title has-text-centered">Color Variations</h2>
+          <div class="container-palette">
             <div class="material-color-picker">
               <div class="material-color-picker__left-panel">
                 <ol class="color-selector" data-bind="foreach: wineColors">
@@ -147,10 +158,6 @@
                       class="color-palette__item"
                       data-bind="text: color"
                     ></h2>
-                    <h3
-                      class="color-palette__detail"
-                      data-bind="text: details"
-                    ></h3>
                   </div>
                   <ol class="color-palette" data-bind="foreach: variations">
                     <li>
@@ -161,9 +168,6 @@
                         >
                           <span data-bind="text: name"></span>
                         </div>
-                        <span class="color-palette__detail""><span
-                          data-bind="text: details"
-                        ></span>
                       </div>
                     </li>
                   </ol>
@@ -247,13 +251,15 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in
             dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed.
           </p>
+        </div>
+      </section>
 
+      <section id="food_pariring_viz" class="section">
+        <div class="container">
           <div class="columns">
-            <div class="column">
-              <div class="width-limited" id="food-pairing-box">
-                <div id="food-pairing-viz">
-                  <svg width="100%" height="500"></svg>
-                </div>
+            <div class="column is-two-thirds">
+              <div id="food-pairing-viz" class="food-pairing-main">
+                <svg width="100%" height="500"></svg>
               </div>
             </div>
             <div class="column">
@@ -295,44 +301,6 @@
   <script src="https://d3js.org/d3.v5.js"></script>
   <script src="js/smell-circle.js"></script>
   <script src="js/radarChart.js"></script>
-  <script>
-    /* Radar chart design created by Nadieh Bremer - VisualCinnamon.com */
-
-    //////////////////////////////////////////////////////////////
-    //////////////////////// Set-Up //////////////////////////////
-    //////////////////////////////////////////////////////////////
-
-    var margin = { top: 100, right: 100, bottom: 100, left: 100 },
-      width =
-        Math.min(700, window.innerWidth - 10) - margin.left - margin.right,
-      height = Math.min(
-        width,
-        window.innerHeight - margin.top - margin.bottom - 20
-      );
-
-    //////////////////////////////////////////////////////////////
-    ////////////////////////// Data //////////////////////////////
-    //////////////////////////////////////////////////////////////
-
-    d3.json("data/taste.json").then(function (data) {
-      data = data.slice(0, 1);
-
-      var radarChartOptions = {
-        w: width,
-        h: height,
-        margin: margin,
-        maxValue: 5,
-        levels: 5,
-        roundStrokes: true,
-      };
-      //Call function to draw the Radar chart
-      RadarChart(".radarChart", data, radarChartOptions);
-    });
-
-    //////////////////////////////////////////////////////////////
-    //////////////////// Draw the Chart //////////////////////////
-    //////////////////////////////////////////////////////////////
-  </script>
 
   <script src="js/food-pairing.js"></script>
 </html>
