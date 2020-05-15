@@ -1,13 +1,13 @@
-
-
 class FillCupViz {
     constructor(svg_id) {
         const svg = d3.select("#" + svg_id)
         const glass = svg.append("g").attr("transform", "translate(-31.879 -105.47)").style("cursor", "pointer")
 
-        const whiteColor = "rgb(222, 215, 130)", // "rgb(245, 245, 200)",
-        redColor = "rgb(132, 38, 36)",
-        bgColor = "white"
+        const   whitePalette = {"wine": "rgb(222, 215, 130)", "text": "white", "textColor": "rgb(222, 215, 130)"},
+                redPalette = {"wine": "rgb(132, 38, 36)", "text": "red", "textColor": "rgb(255,100,100)"},
+                bgColor = "white"
+
+        let currentPalette = redPalette
 
         const fillToPercent = d3.scaleLinear()
                 .domain([0, 100])
@@ -20,7 +20,7 @@ class FillCupViz {
             .attr("fill", "#b1b1b1").attr("fill-opacity", 0.39216)
 
         const wine = glass.append("rect").attr("x", 42.871).attr("y", fillToPercent(0)).attr("width", 18.672).attr("height", 0)
-            .attr("fill", redColor).style("paint-order", "normal")
+            .attr("fill", currentPalette.wine).style("paint-order", "normal")
 
         glass.append("path").attr("d", "m47.634 108.57s-2.6807 8.4008-2.6128 12.733c-0.01956 2.0105 1.1833 2.9494 2.9104 3.8695-1.2517-1.2815-1.6201-2.4471-1.5214-4.068 0.2348-4.1626 1.6206-12.402 1.6206-12.402")
             .attr("fill", "#fff").attr("fill-opacity", 0.39216)
@@ -50,12 +50,12 @@ class FillCupViz {
         const text = svg.append("text")
             .attr("x", "35").attr("y", "50%").attr("font-size", 2).attr("fill", "#000")
 
-            const updateText = function (y) {
-                let verdict = "A little more..."
-                if (y > 35) verdict = "Perfect !"
-                if (y > 50) verdict = "Whoa ! Calm down !"
-                text.text(verdict)
-            }
+        const updateText = function (y) {
+            let verdict = "A little more..."
+            if (y > 35) verdict = "Perfect !"
+            if (y > 50) verdict = "Whoa ! Calm down !"
+            text.text(verdict)
+        }
 
         glass.on("click", function () {
             let y = d3.mouse(glass.node())[1]
@@ -86,15 +86,14 @@ class FillCupViz {
 
         handle.call(dragToFill)
 
-        let currentColor = redColor
-
-        const colorTextSwitch = d3.select("#colorSwitch").style("color", currentColor)
+        const colorTextSwitch = d3.select("#colorSwitch").style("color", currentPalette.text)
 
         const updateColor = function () {
-            const isWhite = currentColor == whiteColor
-            currentColor = isWhite ? redColor : whiteColor
-            colorTextSwitch.style("color", currentColor).text(isWhite ? "red" : "white")
-            wine.transition().duration(500).attr("fill", currentColor)
+            currentPalette = currentPalette == whitePalette ? redPalette : whitePalette
+            colorTextSwitch
+                .style("color", currentPalette.textColor)
+                .text(currentPalette.text)
+            wine.transition().duration(500).attr("fill", currentPalette.wine)
         }
 
         colorTextSwitch.on("click", updateColor)

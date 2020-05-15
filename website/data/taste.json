@@ -1,2510 +1,2966 @@
 [
-    [
-        {
-            "axis": "Sweetness",
-            "value": 1
-        },
-        {
-            "axis": "Body",
-            "value": 4
-        },
-        {
-            "axis": "Tannins",
-            "value": 4
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 1
-        },
-        {
-            "axis": "Body",
-            "value": 5
-        },
-        {
-            "axis": "Tannins",
-            "value": 5
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 1
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 1
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 5
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 5
-        },
-        {
-            "axis": "Tannins",
-            "value": 4
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 1
-        },
-        {
-            "axis": "Body",
-            "value": 1
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 5
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 1
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 5
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 1
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 2
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 1
-        },
-        {
-            "axis": "Body",
-            "value": 1
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 5
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 4
-        },
-        {
-            "axis": "Tannins",
-            "value": 5
-        },
-        {
-            "axis": "Acidity",
-            "value": 5
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 1
-        },
-        {
-            "axis": "Body",
-            "value": 4
-        },
-        {
-            "axis": "Tannins",
-            "value": 2
-        },
-        {
-            "axis": "Acidity",
-            "value": 5
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 3
-        },
-        {
-            "axis": "Tannins",
-            "value": 4
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 3
-        },
-        {
-            "axis": "Tannins",
-            "value": 4
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 3
-        },
-        {
-            "axis": "Tannins",
-            "value": 3
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 1
-        },
-        {
-            "axis": "Body",
-            "value": 4
-        },
-        {
-            "axis": "Tannins",
-            "value": 4
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 4
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 1
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 3
-        },
-        {
-            "axis": "Tannins",
-            "value": 4
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 5
-        },
-        {
-            "axis": "Tannins",
-            "value": 4
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 3
-        },
-        {
-            "axis": "Tannins",
-            "value": 3
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 3
-        },
-        {
-            "axis": "Tannins",
-            "value": 3
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 3
-        },
-        {
-            "axis": "Body",
-            "value": 3
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 2
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 3
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 1
-        },
-        {
-            "axis": "Body",
-            "value": 1
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 5
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 3
-        },
-        {
-            "axis": "Body",
-            "value": 4
-        },
-        {
-            "axis": "Tannins",
-            "value": 3
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 2
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 1
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 5
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 1
-        },
-        {
-            "axis": "Body",
-            "value": 1
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 3
-        },
-        {
-            "axis": "Tannins",
-            "value": 2
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 3
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 1
-        },
-        {
-            "axis": "Body",
-            "value": 3
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 1
-        },
-        {
-            "axis": "Body",
-            "value": 1
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 4
-        },
-        {
-            "axis": "Tannins",
-            "value": 2
-        },
-        {
-            "axis": "Acidity",
-            "value": 2
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 1
-        },
-        {
-            "axis": "Body",
-            "value": 1
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 5
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 2
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 2
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 1
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 5
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 1
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 5
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 1
-        },
-        {
-            "axis": "Body",
-            "value": 3
-        },
-        {
-            "axis": "Tannins",
-            "value": 4
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 2
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 3
-        },
-        {
-            "axis": "Body",
-            "value": 3
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 1
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 5
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 1
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 5
-        },
-        {
-            "axis": "Alcohol",
-            "value": 2
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 1
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 4
-        },
-        {
-            "axis": "Tannins",
-            "value": 3
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 5
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 1
-        },
-        {
-            "axis": "Body",
-            "value": 3
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 2
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 1
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 5
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 3
-        },
-        {
-            "axis": "Tannins",
-            "value": 2
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 2
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 5
-        },
-        {
-            "axis": "Tannins",
-            "value": 3
-        },
-        {
-            "axis": "Acidity",
-            "value": 2
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 4
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 2
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 3
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 2
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 1
-        },
-        {
-            "axis": "Body",
-            "value": 1
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 5
-        },
-        {
-            "axis": "Alcohol",
-            "value": 2
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 4
-        },
-        {
-            "axis": "Tannins",
-            "value": 4
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 1
-        },
-        {
-            "axis": "Body",
-            "value": 4
-        },
-        {
-            "axis": "Tannins",
-            "value": 4
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 5
-        },
-        {
-            "axis": "Tannins",
-            "value": 5
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 4
-        },
-        {
-            "axis": "Tannins",
-            "value": 4
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 3
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 3
-        },
-        {
-            "axis": "Body",
-            "value": 1
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 3
-        },
-        {
-            "axis": "Body",
-            "value": 3
-        },
-        {
-            "axis": "Tannins",
-            "value": 3
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 2
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 3
-        },
-        {
-            "axis": "Body",
-            "value": 1
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 1
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 4
-        },
-        {
-            "axis": "Body",
-            "value": 3
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 1
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 1
-        },
-        {
-            "axis": "Body",
-            "value": 4
-        },
-        {
-            "axis": "Tannins",
-            "value": 5
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 4
-        },
-        {
-            "axis": "Tannins",
-            "value": 4
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 1
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 3
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 4
-        },
-        {
-            "axis": "Tannins",
-            "value": 4
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 4
-        },
-        {
-            "axis": "Tannins",
-            "value": 4
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 1
-        },
-        {
-            "axis": "Body",
-            "value": 3
-        },
-        {
-            "axis": "Tannins",
-            "value": 4
-        },
-        {
-            "axis": "Acidity",
-            "value": 2
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 1
-        },
-        {
-            "axis": "Body",
-            "value": 1
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 2
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 5
-        },
-        {
-            "axis": "Body",
-            "value": 5
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 2
-        },
-        {
-            "axis": "Alcohol",
-            "value": 1
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 5
-        },
-        {
-            "axis": "Tannins",
-            "value": 5
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 5
-        },
-        {
-            "axis": "Tannins",
-            "value": 4
-        },
-        {
-            "axis": "Acidity",
-            "value": 1
-        },
-        {
-            "axis": "Alcohol",
-            "value": 5
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 4
-        },
-        {
-            "axis": "Tannins",
-            "value": 3
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 3
-        },
-        {
-            "axis": "Body",
-            "value": 1
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 5
-        },
-        {
-            "axis": "Alcohol",
-            "value": 1
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 3
-        },
-        {
-            "axis": "Tannins",
-            "value": 2
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 1
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 5
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 3
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 5
-        },
-        {
-            "axis": "Tannins",
-            "value": 5
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 5
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 1
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 5
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 1
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 1
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 2
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 2
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 1
-        },
-        {
-            "axis": "Body",
-            "value": 5
-        },
-        {
-            "axis": "Tannins",
-            "value": 5
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 1
-        },
-        {
-            "axis": "Body",
-            "value": 4
-        },
-        {
-            "axis": "Tannins",
-            "value": 4
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 5
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 3
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 2
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 2
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 2
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 3
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 3
-        },
-        {
-            "axis": "Tannins",
-            "value": 2
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 5
-        },
-        {
-            "axis": "Tannins",
-            "value": 4
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 5
-        },
-        {
-            "axis": "Tannins",
-            "value": 5
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 4
-        },
-        {
-            "axis": "Tannins",
-            "value": 4
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 3
-        },
-        {
-            "axis": "Tannins",
-            "value": 4
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 5
-        },
-        {
-            "axis": "Tannins",
-            "value": 5
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 5
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 1
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 1
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 1
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 3
-        },
-        {
-            "axis": "Body",
-            "value": 3
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 5
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 3
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 2
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 1
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 3
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 1
-        },
-        {
-            "axis": "Body",
-            "value": 1
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 5
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 4
-        },
-        {
-            "axis": "Tannins",
-            "value": 5
-        },
-        {
-            "axis": "Acidity",
-            "value": 5
-        },
-        {
-            "axis": "Alcohol",
-            "value": 4
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 4
-        },
-        {
-            "axis": "Tannins",
-            "value": 4
-        },
-        {
-            "axis": "Acidity",
-            "value": 2
-        },
-        {
-            "axis": "Alcohol",
-            "value": 5
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 2
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ],
-    [
-        {
-            "axis": "Sweetness",
-            "value": 2
-        },
-        {
-            "axis": "Body",
-            "value": 2
-        },
-        {
-            "axis": "Tannins",
-            "value": 1
-        },
-        {
-            "axis": "Acidity",
-            "value": 4
-        },
-        {
-            "axis": "Alcohol",
-            "value": 3
-        }
-    ]
+    {
+        "name": "Agiorgitiko",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 1
+            },
+            {
+                "axis": "Body",
+                "value": 4
+            },
+            {
+                "axis": "Tannins",
+                "value": 4
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Aglianico",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 1
+            },
+            {
+                "axis": "Body",
+                "value": 5
+            },
+            {
+                "axis": "Tannins",
+                "value": 5
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Airén",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 1
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Albariño (Alvarinho)",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 1
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 5
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Alicante Bouschet",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 5
+            },
+            {
+                "axis": "Tannins",
+                "value": 4
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Aligoté",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 1
+            },
+            {
+                "axis": "Body",
+                "value": 1
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 5
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Arinto",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 1
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 5
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Arneis",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 1
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 2
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Assyrtiko",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 1
+            },
+            {
+                "axis": "Body",
+                "value": 1
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 5
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Baga",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 4
+            },
+            {
+                "axis": "Tannins",
+                "value": 5
+            },
+            {
+                "axis": "Acidity",
+                "value": 5
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Barbera",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 1
+            },
+            {
+                "axis": "Body",
+                "value": 4
+            },
+            {
+                "axis": "Tannins",
+                "value": 2
+            },
+            {
+                "axis": "Acidity",
+                "value": 5
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Castelão",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 3
+            },
+            {
+                "axis": "Tannins",
+                "value": 4
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Blaufränkisch",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 3
+            },
+            {
+                "axis": "Tannins",
+                "value": 4
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Bobal",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 3
+            },
+            {
+                "axis": "Tannins",
+                "value": 3
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Bonarda",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 1
+            },
+            {
+                "axis": "Body",
+                "value": 4
+            },
+            {
+                "axis": "Tannins",
+                "value": 4
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Brachetto",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 4
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Cabernet Franc",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 3
+            },
+            {
+                "axis": "Tannins",
+                "value": 4
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Cabernet Sauvignon",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 5
+            },
+            {
+                "axis": "Tannins",
+                "value": 4
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Carignan",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 3
+            },
+            {
+                "axis": "Tannins",
+                "value": 3
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Carménère",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 3
+            },
+            {
+                "axis": "Tannins",
+                "value": 3
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Catarratto",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Catawba",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 3
+            },
+            {
+                "axis": "Body",
+                "value": 3
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 2
+            }
+        ]
+    },
+    {
+        "name": "Chardonnay",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 3
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Chasselas",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 1
+            },
+            {
+                "axis": "Body",
+                "value": 1
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Chenin Blanc",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 5
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Concord",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 3
+            },
+            {
+                "axis": "Body",
+                "value": 4
+            },
+            {
+                "axis": "Tannins",
+                "value": 3
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Cinsault",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 2
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Colombard",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 1
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 5
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Cortese",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 1
+            },
+            {
+                "axis": "Body",
+                "value": 1
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Corvina",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 3
+            },
+            {
+                "axis": "Tannins",
+                "value": 2
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Cserszegi Fűszeres",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 3
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Encruzado",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 1
+            },
+            {
+                "axis": "Body",
+                "value": 3
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Godello",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 1
+            },
+            {
+                "axis": "Body",
+                "value": 1
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Dolcetto",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 4
+            },
+            {
+                "axis": "Tannins",
+                "value": 2
+            },
+            {
+                "axis": "Acidity",
+                "value": 2
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Erbaluce",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 1
+            },
+            {
+                "axis": "Body",
+                "value": 1
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 5
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Falanghina",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Fernão Pires",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 2
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Fiano",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Frappato",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 2
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Friulano",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 1
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 5
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Furmint",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 1
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 5
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Gaglioppo",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 1
+            },
+            {
+                "axis": "Body",
+                "value": 3
+            },
+            {
+                "axis": "Tannins",
+                "value": 4
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Gamay",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 2
+            }
+        ]
+    },
+    {
+        "name": "Garganega",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Gewürztraminer",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 3
+            },
+            {
+                "axis": "Body",
+                "value": 3
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 1
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Graševina",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 5
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Loureiro",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 1
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 5
+            },
+            {
+                "axis": "Alcohol",
+                "value": 2
+            }
+        ]
+    },
+    {
+        "name": "Grechetto",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 1
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Grenache",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 4
+            },
+            {
+                "axis": "Tannins",
+                "value": 3
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 5
+            }
+        ]
+    },
+    {
+        "name": "Grenache Blanc",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 1
+            },
+            {
+                "axis": "Body",
+                "value": 3
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 2
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Grillo",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 1
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Grüner Veltliner",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 5
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Listán Negro",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 3
+            },
+            {
+                "axis": "Tannins",
+                "value": 2
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 2
+            }
+        ]
+    },
+    {
+        "name": "Malbec",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 5
+            },
+            {
+                "axis": "Tannins",
+                "value": 3
+            },
+            {
+                "axis": "Acidity",
+                "value": 2
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Malvasia Fina",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 4
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 2
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Marsanne",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 3
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 2
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Melon",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 1
+            },
+            {
+                "axis": "Body",
+                "value": 1
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 5
+            },
+            {
+                "axis": "Alcohol",
+                "value": 2
+            }
+        ]
+    },
+    {
+        "name": "Mencía",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 4
+            },
+            {
+                "axis": "Tannins",
+                "value": 4
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Merlot",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 1
+            },
+            {
+                "axis": "Body",
+                "value": 4
+            },
+            {
+                "axis": "Tannins",
+                "value": 4
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Monastrell (Mourvèdre)",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 5
+            },
+            {
+                "axis": "Tannins",
+                "value": 5
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Montepulciano",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 4
+            },
+            {
+                "axis": "Tannins",
+                "value": 4
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Moschofilero",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 3
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Müller-Thurgau",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 3
+            },
+            {
+                "axis": "Body",
+                "value": 1
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Muscadine",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 3
+            },
+            {
+                "axis": "Body",
+                "value": 3
+            },
+            {
+                "axis": "Tannins",
+                "value": 3
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 2
+            }
+        ]
+    },
+    {
+        "name": "Muscat Blanc",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 3
+            },
+            {
+                "axis": "Body",
+                "value": 1
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Muscat of Alexandria",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 4
+            },
+            {
+                "axis": "Body",
+                "value": 3
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Nebbiolo",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 1
+            },
+            {
+                "axis": "Body",
+                "value": 4
+            },
+            {
+                "axis": "Tannins",
+                "value": 5
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Negroamaro",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 4
+            },
+            {
+                "axis": "Tannins",
+                "value": 4
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Nerello Mascalese",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 1
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 3
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Nero d’Avola",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 4
+            },
+            {
+                "axis": "Tannins",
+                "value": 4
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Norton",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 4
+            },
+            {
+                "axis": "Tannins",
+                "value": 4
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "País",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 1
+            },
+            {
+                "axis": "Body",
+                "value": 3
+            },
+            {
+                "axis": "Tannins",
+                "value": 4
+            },
+            {
+                "axis": "Acidity",
+                "value": 2
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Palomino Fino",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 1
+            },
+            {
+                "axis": "Body",
+                "value": 1
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 2
+            }
+        ]
+    },
+    {
+        "name": "Pedro Ximénez",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 5
+            },
+            {
+                "axis": "Body",
+                "value": 5
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 2
+            },
+            {
+                "axis": "Alcohol",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Petit Verdot",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 5
+            },
+            {
+                "axis": "Tannins",
+                "value": 5
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Pinotage",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 5
+            },
+            {
+                "axis": "Tannins",
+                "value": 4
+            },
+            {
+                "axis": "Acidity",
+                "value": 1
+            },
+            {
+                "axis": "Alcohol",
+                "value": 5
+            }
+        ]
+    },
+    {
+        "name": "Refosco",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 4
+            },
+            {
+                "axis": "Tannins",
+                "value": 3
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Ribolla Gialla",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Riesling",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 3
+            },
+            {
+                "axis": "Body",
+                "value": 1
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 5
+            },
+            {
+                "axis": "Alcohol",
+                "value": 1
+            }
+        ]
+    },
+    {
+        "name": "Pinot Noir",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 3
+            },
+            {
+                "axis": "Tannins",
+                "value": 2
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Rkatsiteli",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 1
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 5
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Roussanne",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 3
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Petite Sirah",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 5
+            },
+            {
+                "axis": "Tannins",
+                "value": 5
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 5
+            }
+        ]
+    },
+    {
+        "name": "Picpoul",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 1
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 5
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Pinot Blanc",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 1
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Pinot Gris",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Pinot Meunier",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 1
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 2
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 2
+            }
+        ]
+    },
+    {
+        "name": "Sagrantino",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 1
+            },
+            {
+                "axis": "Body",
+                "value": 5
+            },
+            {
+                "axis": "Tannins",
+                "value": 5
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Sangiovese",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 1
+            },
+            {
+                "axis": "Body",
+                "value": 4
+            },
+            {
+                "axis": "Tannins",
+                "value": 4
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Sauvignon Blanc",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 5
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Savatiano",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 3
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 2
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Schiava",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 2
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 2
+            }
+        ]
+    },
+    {
+        "name": "Sémillon",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 3
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Silvaner (Sylvaner)",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "St. Laurent",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 3
+            },
+            {
+                "axis": "Tannins",
+                "value": 2
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Syrah",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 5
+            },
+            {
+                "axis": "Tannins",
+                "value": 4
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Tannat",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 5
+            },
+            {
+                "axis": "Tannins",
+                "value": 5
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Tempranillo",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 4
+            },
+            {
+                "axis": "Tannins",
+                "value": 4
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Torrontés",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Touriga Franca",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 3
+            },
+            {
+                "axis": "Tannins",
+                "value": 4
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Touriga Nacional",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 5
+            },
+            {
+                "axis": "Tannins",
+                "value": 5
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 5
+            }
+        ]
+    },
+    {
+        "name": "Trebbiano Toscano",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Verdejo",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 1
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Verdelho",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 1
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Verdicchio",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 1
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Vermentino",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Vidal",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 3
+            },
+            {
+                "axis": "Body",
+                "value": 3
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 5
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Viognier",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 3
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 2
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Viura",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 1
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 3
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Xarel-lo",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 1
+            },
+            {
+                "axis": "Body",
+                "value": 1
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 5
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Xinomavro",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 4
+            },
+            {
+                "axis": "Tannins",
+                "value": 5
+            },
+            {
+                "axis": "Acidity",
+                "value": 5
+            },
+            {
+                "axis": "Alcohol",
+                "value": 4
+            }
+        ]
+    },
+    {
+        "name": "Zinfandel (Primitivo)",
+        "color": "rgb(255, 255, 102)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 4
+            },
+            {
+                "axis": "Tannins",
+                "value": 4
+            },
+            {
+                "axis": "Acidity",
+                "value": 2
+            },
+            {
+                "axis": "Alcohol",
+                "value": 5
+            }
+        ]
+    },
+    {
+        "name": "Zweigelt",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 2
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    },
+    {
+        "name": "Vernaccia di San Gimignano",
+        "color": "rgb(255,100,100)",
+        "profile": [
+            {
+                "axis": "Sweetness",
+                "value": 2
+            },
+            {
+                "axis": "Body",
+                "value": 2
+            },
+            {
+                "axis": "Tannins",
+                "value": 1
+            },
+            {
+                "axis": "Acidity",
+                "value": 4
+            },
+            {
+                "axis": "Alcohol",
+                "value": 3
+            }
+        ]
+    }
 ]

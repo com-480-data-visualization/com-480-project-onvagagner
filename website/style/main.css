@@ -95,20 +95,13 @@ svg {
     float: left;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-    border-bottom: 2px solid black;
-}
-
 #project01 .switchable {
     cursor: pointer;
-    background: rgba(128, 128, 128, 0.5);
+    background: black;
+    color: rgb(255, 101, 101);
+    font-weight: bold;
     border-radius: 1rem;
-    padding: 0.5rem;
+    padding: 0 5px 3px;
 }
 
 .food-pairing-main {
@@ -162,11 +155,6 @@ h1 {
 
 a {
     text-decoration: none;
-    color: orangered;
-}
-
-a:hover {
-    border-bottom: 2px solid orangered;
 }
 
 .title {
@@ -177,4 +165,9 @@ a:hover {
 .vis-smell {
     height: 700px;
     width: 100%;
+}
+
+.tooltip {
+    stroke: white;
+    fill: white;
 }
