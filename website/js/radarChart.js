@@ -4,6 +4,7 @@
 ////////////////// VisualCinnamon.com ///////////////////
 /////////// Inspired by the code of alangrafu ///////////
 /////////////////////////////////////////////////////////
+init();
 
 function RadarChart(id, data, options) {
   var cfg = {
@@ -450,3 +451,41 @@ function RadarChart(id, data, options) {
     });
   } //wrap
 } //RadarChart
+
+function init() {
+  /* Radar chart design created by Nadieh Bremer - VisualCinnamon.com */
+
+  //////////////////////////////////////////////////////////////
+  //////////////////////// Set-Up //////////////////////////////
+  //////////////////////////////////////////////////////////////
+
+  var margin = { top: 100, right: 100, bottom: 100, left: 100 },
+    width = Math.min(700, window.innerWidth - 10) - margin.left - margin.right,
+    height = Math.min(
+      width,
+      window.innerHeight - margin.top - margin.bottom - 20
+    );
+
+  //////////////////////////////////////////////////////////////
+  ////////////////////////// Data //////////////////////////////
+  //////////////////////////////////////////////////////////////
+
+  d3.json("data/taste.json").then(function (data) {
+    data = data.slice(0, 1);
+
+    var radarChartOptions = {
+      w: width,
+      h: height,
+      margin: margin,
+      maxValue: 5,
+      levels: 5,
+      roundStrokes: true,
+    };
+    //Call function to draw the Radar chart
+    RadarChart(".radarChart", data, radarChartOptions);
+  });
+
+  //////////////////////////////////////////////////////////////
+  //////////////////// Draw the Chart //////////////////////////
+  //////////////////////////////////////////////////////////////
+}

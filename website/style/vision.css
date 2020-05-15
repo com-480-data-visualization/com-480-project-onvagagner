@@ -46,7 +46,7 @@ hr {
 
 .material-color-picker {
   display: flex;
-  width: 40em;
+  width: 50em;
   margin: 0;
   background-color: black;
   border: 1px solid #78909c;
@@ -121,8 +121,9 @@ hr {
   transform: translateX(-100%);
   display: flex;
   flex-direction: column;
-  padding: 1.5em;
   visibility: hidden;
+  padding: 1.5em;
+  padding-top: 0;
 }
 
 .color-palette-wrapper.js-active {
@@ -236,7 +237,7 @@ hr {
   justify-content: space-around;
   margin: 0;
   font-weight: 400;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .color-variations {
@@ -253,4 +254,9 @@ hr {
   height: 40px;
   margin: 5px;
   border-radius: 50%;
+}
+
+.color-palette-header h2 {
+  font-weight: bold;
+  font-size: 25px;
 }

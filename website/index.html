@@ -11,7 +11,7 @@
       content="Peter Krcmar, Valentin Quelquejay-Leclère, Anton Ragot"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/main.css" />
     <link rel="stylesheet" href="style/vision.css" />
     <link rel="“icon”" href="favicon.ico" />
     <link rel="stylesheet" href="lib/fullpage.min.css" />
@@ -65,26 +65,29 @@
           <h2 class="title">Learn the basics !</h2>
         </div>
         <div class="container">
+        <div class="slide">
           <div class="columns">
-            <div class="column" id="basics1">
-              <h1>BASICS 01</h1>
-              <p>
-                Lets get started ! First pour yourself some
-                <span class="switchable" id="colorSwitch">red</span> wine.
-              </p>
-            </div>
-            <div class="column">
-              <div>
-                <svg
-                  id="basic1viz"
-                  width="100%"
-                  version="1.1"
-                  viewBox="0 0 63.902083 43.2594"
-                  xmlns="http://www.w3.org/2000/svg"
-                ></svg>
+              <div class="column" id="basics1">
+                <h1>BASICS 01</h1>
+                <p>
+                  Lets get started ! First pour yourself some
+                  <span class="switchable" id="colorSwitch">red</span> wine.
+                </p>
+              </div>
+              <div class="column">
+                <div>
+                  <svg
+                    id="basic1viz"
+                    width="100%"
+                    version="1.1"
+                    viewBox="0 0 63.902083 43.2594"
+                    xmlns="http://www.w3.org/2000/svg"
+                  ></svg>
+                </div>
               </div>
             </div>
 
+          <div class="slide">
             <div class="column" id="basics2">
               <h1>BASICS 02</h1>
               <p>Now pick up your glass !</p>
@@ -97,6 +100,7 @@
                 quas ipsa velit animi nemo enim tenetur nostrum vitae.
                 Aspernatur, necessitatibus atque!
               </p>
+              </div>
             </div>
           </div>
         </div>
@@ -104,9 +108,21 @@
 
       <section id="project02" class="section project">
         <div class="container">
-          <h2 class="title">Vision</h2>
-          <p>Lorem ipsum</p>
-          <div class="container container-palette">
+          <div class="slide">
+            <div class="columns">
+              <div class="column">
+                <h2 class="title">Vision</h2>
+                <p>Lorem ipsum</p>
+              </div>
+              <div class="column"></div>
+            </div>
+          </div>
+        </div>
+
+      <div id="color_viz" class="slide">
+        <div class="container">
+          <h2 class="title has-text-centered">Color Variations</h2>
+          <div class="container-palette">
             <div class="material-color-picker">
               <div class="material-color-picker__left-panel">
                 <ol class="color-selector" data-bind="foreach: wineColors">
@@ -135,10 +151,6 @@
                       class="color-palette__item"
                       data-bind="text: color"
                     ></h2>
-                    <h3
-                      class="color-palette__detail"
-                      data-bind="text: details"
-                    ></h3>
                   </div>
                   <ol class="color-palette" data-bind="foreach: variations">
                     <li>
@@ -149,9 +161,6 @@
                         >
                           <span data-bind="text: name"></span>
                         </div>
-                        <span class="color-palette__detail""><span
-                          data-bind="text: details"
-                        ></span>
                       </div>
                     </li>
                   </ol>
@@ -191,10 +200,12 @@
             </div>
           </div>
         </div>
+        </div>
       </section>
 
       <section id="project03" class="section project">
         <div class="container">
+        <div class="slide">
           <div class="columns">
             <div class="column">
               <h2><a href="smell.html">Smell</a></h2>
@@ -208,51 +219,62 @@
               </p>
             </div>
             <div class="column">
-              <div class="width-limited" id="basics2">
-                <svg width="100%" height="500">
-                  <g id="vis-smell-circle"></g>
-                </svg>
-              </div>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Officiis, cum? Voluptate, voluptatum dicta! Facilis molestiae,
+                iusto minima cum, autem assumenda quam dolor voluptatum aliquam
+                doloremque illum at et minus facere.
+              </p>
             </div>
+          </div>
+        </div>
+        </div>
+      
+        <div class="slide">
+          <div class="container">
+            <svg class="vis-smell">
+              <g id="vis-smell-circle"></g>
+            </svg>
           </div>
         </div>
       </section>
 
       <section id="project04" class="section project">
         <div class="container">
-          <div class="columns">
-            <div class="column">
-              <h2><a href="taste.html">Taste</a></h2>
-            </div>
-            <div class="column">
-              <div class="radarChart"></div>
-            </div>
-          </div>
+          <h2><a href="taste.html">Taste</a></h2>
+
+          <div class="radarChart"></div>
         </div>
       </section>
 
       <section id="project05" class="section project">
         <div class="container">
-          <h2><a href="food-pairing.html">Food</a></h2>
-          <p class="info">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in
-            dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed.
-          </p>
+          <div class="slide">
+            <h2><a href="food-pairing.html">Food</a></h2>
+            <p class="info">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in
+              dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed.
+            </p>
+          </div>
+        </div>
 
-          <div class="columns">
-            <div class="column">
-              <div class="width-limited" id="food-pairing-box">
-                <div id="food-pairing-viz">
+        <div id="food_pariring_viz" class="slide">
+          <div class="container">
+            <div class="columns">
+              <div class="column is-two-thirds">
+                <div id="food-pairing-viz" class="food-pairing-main">
                   <svg width="100%" height="500"></svg>
                 </div>
               </div>
-            </div>
-            <div class="column">
-              <div id="food-pairing-info-panel" class="side-panel"></div>
+              <div class="column">
+                <div id="food-pairing-info-panel" class="side-panel"></div>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
+      
     </div>
   </body>
   <script
@@ -264,6 +286,9 @@
     $(document).ready(function () {
       $("#fullpage").fullpage({
         navigation: true,
+        navigationTooltips: ["Introduction", "Basics", "Vision", "Smell", "Taste", "Food"],
+        slidesNavigation: true,
+        controlArrows: true,
       });
     });
   </script>
@@ -286,44 +311,6 @@
   <script src="https://d3js.org/d3.v5.js"></script>
   <script src="js/smell-circle.js"></script>
   <script src="js/radarChart.js"></script>
-  <script>
-    /* Radar chart design created by Nadieh Bremer - VisualCinnamon.com */
-
-    //////////////////////////////////////////////////////////////
-    //////////////////////// Set-Up //////////////////////////////
-    //////////////////////////////////////////////////////////////
-
-    var margin = { top: 100, right: 100, bottom: 100, left: 100 },
-      width =
-        Math.min(500, window.innerWidth - 10) - margin.left - margin.right,
-      height = Math.min(
-        width,
-        window.innerHeight - margin.top - margin.bottom - 20
-      );
-
-    //////////////////////////////////////////////////////////////
-    ////////////////////////// Data //////////////////////////////
-    //////////////////////////////////////////////////////////////
-
-    d3.json("data/taste.json").then(function (data) {
-      data = data.slice(0, 1);
-
-      var radarChartOptions = {
-        w: width,
-        h: height,
-        margin: margin,
-        maxValue: 5,
-        levels: 5,
-        roundStrokes: true,
-      };
-      //Call function to draw the Radar chart
-      RadarChart(".radarChart", data, radarChartOptions);
-    });
-
-    //////////////////////////////////////////////////////////////
-    //////////////////// Draw the Chart //////////////////////////
-    //////////////////////////////////////////////////////////////
-  </script>
 
   <script src="js/food-pairing.js"></script>
 </html>
