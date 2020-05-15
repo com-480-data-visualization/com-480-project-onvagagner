@@ -11,6 +11,7 @@ class FoodPairingViz {
     const margin = { top: 10, right: 10, bottom: 10, left: 10 };
     this.data = data;
     this.panel = document.getElementById(panelDiv);
+    this.panel.style.display = "none"
 
     this.svg = d3.select("#" + parentDiv + " svg");
     const svgViewbox = this.svg.node().getBoundingClientRect();
@@ -198,9 +199,7 @@ class FoodPairingViz {
         .attr("stroke-width", this.strokeWidthLink)
         .attr("d", (d) => this.computePath(d, 0.9));
 
-      this.panel.style.minHeight = document.getElementById(
-        "food-pairing-box"
-      ).offsetHeight;
+      this.panel.style.display = "block"
       this.panel.innerHTML = this.formatFoodInfo(s, relevantWines);
     };
 
@@ -217,13 +216,13 @@ class FoodPairingViz {
       this.data.wines.forEach((w) => {
         if (wineIds.includes(w.id))
           wines += `<div class="food-icon">
-                                                                <svg height="20" width="20">
-                                                                    <circle r="10" transform="translate(10,10)" fill="${color(
-                                                                      w.id
-                                                                    )}"></circle>
-                                                                </svg>
-                                                                <p>${w.name}</p>
-                                                            </div>`;
+                        <svg height="20" width="20">
+                            <circle r="10" transform="translate(10,10)" fill="${color(
+                              w.id
+                            )}"></circle>
+                        </svg>
+                        <p>${w.name}</p>
+                    </div>`;
       });
       return title + description + dishes + wines;
     };

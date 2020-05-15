@@ -293,20 +293,20 @@ class RadarChart {
     var drag = d3
       .drag()
       .on("drag", function (d, i) {
-        let y = d3.event.y;
-        let x = d3.event.x;
-        let distFromCenter = Math.sqrt(y * y + x * x);
-        d.value = rScale.invert(distFromCenter);
+        let y = d3.event.y
+        let x = d3.event.x
+        let distFromCenter = Math.sqrt(y * y + x * x)
+        d.value = Math.min(Math.max(1, rScale.invert(distFromCenter)), maxValue)
         d3.select(this)
           .attr("cx", rScale(d.value) * Math.cos(angleSlice * i - Math.PI / 2))
           .attr("cy", rScale(d.value) * Math.sin(angleSlice * i - Math.PI / 2))
 
-        const rounded = Math.min(Math.max(1, Math.round(d.value)), maxValue)
+        const rounded = Math.round(d.value)
         tooltip
           //.attr("x", rScale(d.value) * Math.cos(angleSlice * i - Math.PI / 2))
           //.attr("y", rScale(d.value) * Math.sin(angleSlice * i - Math.PI / 2) - 10)
           .text(Format2({ axis: d.axis, value: rounded }))
-          .attr("opacity", 1);
+          .attr("opacity", 1)
 
         //Move the circles
         blobWrapper

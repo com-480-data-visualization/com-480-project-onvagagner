@@ -16,7 +16,7 @@ $(document).ready(function() {
 	// build tween
 	var tween = new TimelineMax()
 		.add(TweenMax.to($annim, 1, {strokeDashoffset: 0, ease:Linear.easeNone}))
-		.add(TweenMax.to("path#annim", 1, {stroke: "#33629c", ease:Linear.easeNone}), 0);
+		.add(TweenMax.to("path#annim", 1, {stroke: "white", ease:Linear.easeNone}), 0);
 	// build scene
 	var scene = new ScrollMagic.Scene({triggerElement: "#intro", duration: 100, tweenChanges: true})
 					.setTween(tween)
