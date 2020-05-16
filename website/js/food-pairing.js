@@ -121,6 +121,7 @@ class FoodPairingViz {
 
       // put info into panel
       this.panel.innerHTML = this.formatWineInfo(s, relevantFoods);
+      this.panel.classList.add("side-panel")
     };
 
     this.formatWineInfo = (w, foodIds) => {
@@ -200,7 +201,8 @@ class FoodPairingViz {
         .attr("stroke-width", this.strokeWidthLink)
         .attr("d", (d) => this.computePath(d, 0.9));
 
-      this.panel.innerHTML = this.formatFoodInfo(s, relevantWines);
+      this.panel.innerHTML = this.formatFoodInfo(s, relevantWines)
+      this.panel.classList.add("side-panel")
     };
 
     this.formatFoodInfo = (f, wineIds) => {
@@ -252,6 +254,7 @@ class FoodPairingViz {
         .attr("d", (d) => this.computePath(d, 0.9));
 
       this.panel.innerHTML = this.panelOrigianlText
+      this.panel.classList.remove("side-panel")
     };
 
     const innerMargin = 150;

@@ -198,21 +198,16 @@ svg text {
 *******************  FOOD PAIRING  *********************
 ********************************************************/
 
-.food-pairing-main, .side-panel {
-    padding: 1rem;
-    background-color: white;
-    border-radius: 1rem;
-    /*box-shadow: 0.2rem 0.2rem 0.5rem #aaa;*/
-}
-
 .side-panel {
     overflow: hidden; /*auto*/
+    border-radius: 1rem;
+    box-shadow: 0 0 10px #ddd;
 }
 
-.side-panel h2:not(.ignore-style) {
+.side-panel h2 {
     color: white;
     background-color: black;
-    border-radius: 1rem;
+    //border-radius: 1rem;
 }
 
 .side-panel h3 {
@@ -231,7 +226,7 @@ svg text {
     font-size: 0.8rem;
 }
 
-.side-panel p:not(.ignore-style) {
+.side-panel p {
     padding: 1rem;
     font-size: 0.8rem;
     color: black;
