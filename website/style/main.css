@@ -200,19 +200,24 @@ svg text {
 
 .food-pairing-main, .side-panel {
     padding: 1rem;
-    background-color: black;
+    background-color: white;
     border-radius: 1rem;
-    box-shadow: 0.2rem 0.2rem 0.5rem #aaa;
+    /*box-shadow: 0.2rem 0.2rem 0.5rem #aaa;*/
 }
 
 .side-panel {
+    overflow: hidden; /*auto*/
+}
+
+.side-panel h2:not(.ignore-style) {
     color: white;
-    overflow: auto;
+    background-color: black;
+    border-radius: 1rem;
 }
 
 .side-panel h3 {
     font-weight: bold;
-    color: white;
+    color: black;
 }
 
 .grid-container {
@@ -226,19 +231,19 @@ svg text {
     font-size: 0.8rem;
 }
 
-.side-panel p {
+.side-panel p:not(.ignore-style) {
     padding: 1rem;
     font-size: 0.8rem;
-    color: white;
+    color: black;
     text-align: center;
 }
 
 .food-icon p {
-    padding: 0;
+    padding: 0 !important;
 }
 
 .food-icon img, .food-icon svg {
-    height: 2rem;
+    height: 30px;
     margin-left: auto;
     margin-right: auto;
 }

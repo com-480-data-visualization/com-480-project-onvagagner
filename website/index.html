@@ -99,7 +99,7 @@
             <div class="column">
 
               <svg id="wine_label" width="500" height="450">
-                <image xlink:href="img/label.png" src="img/label.png" width="500" height="450"/>
+                <image xlink:href="img/label.png" src="img/label.png" width="500" height="450" />
               </svg>
 
               <svg id="wine_label_explication" width="500" height="200">
@@ -196,20 +196,27 @@
 
     <section id="project03" class="section project">
       <div class="container">
-          <div class="columns is-vcentered">
-            <div class="column">
-              <h2>Smell</h2>
-              <p>The odor of each wine is unique and recognizing every different scent can be a challenge. To make it easier, we classified the most common scent in
+        <div class="columns is-vcentered">
+          <div class="column">
+            <h2>Smell</h2>
+            <p>The odor of each wine is unique and recognizing every different scent can be a challenge. To make it
+              easier, we classified the most common scent in
               different categories:</p>
-              <p><b>Primary aromas</b> are scent that our nose detect that are specific to the grape variety (or varieties) used to make the wine.</p>
-              <p><b>Secondary aromas</b> are scent due to chemical changes effected on the wine by the process of fermentation.</p>
-              <p><b>Tertiary aromas</b> are smells we associate with wine aging.</p>
-              <p><b>Fault and Other</b> are unwanted ordor that can be present due to some winemaking practice or poor storage condition.</p>
-              <p>To capture most aromas, we advice you to take short breaths through your nose and breathe out through your mouth. We will dive into the different scent in two steps. </p>
-              <p>First your <b>first nose</b> consists of one sniff. With this sniff, you should try to identify one family of odor.</p>
-              <p>Then, swirl the wine to release the different aromas and for the different families, try to identify the exact scent of the wine. </p>
-              
-            </div>
+            <p><b>Primary aromas</b> are scent that our nose detect that are specific to the grape variety (or
+              varieties) used to make the wine.</p>
+            <p><b>Secondary aromas</b> are scent due to chemical changes effected on the wine by the process of
+              fermentation.</p>
+            <p><b>Tertiary aromas</b> are smells we associate with wine aging.</p>
+            <p><b>Fault and Other</b> are unwanted ordor that can be present due to some winemaking practice or poor
+              storage condition.</p>
+            <p>To capture most aromas, we advice you to take short breaths through your nose and breathe out through
+              your mouth. We will dive into the different scent in two steps. </p>
+            <p>First your <b>first nose</b> consists of one sniff. With this sniff, you should try to identify one
+              family of odor.</p>
+            <p>Then, swirl the wine to release the different aromas and for the different families, try to identify the
+              exact scent of the wine. </p>
+
+          </div>
 
           <div class="column">
             <svg class="vis-smell">
@@ -253,25 +260,18 @@
 
     <section id="project05" class="section project">
       <div class="container">
-        <div class="slide">
-          <h2>Food</h2>
-          <p class="info">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in
-            dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed.
-          </p>
-        </div>
-      </div>
-
-      <div id="food_pariring_viz" class="slide">
-        <div class="container">
-          <div class="columns">
-            <div class="column is-two-thirds">
-              <div id="food-pairing-viz" class="food-pairing-main">
-                <svg width="100%" height="500"></svg>
+        <div id="food_pariring_viz">
+          <div class="columns is-vcentered">
+            <div class="column is-one-third">
+              <div id="food-pairing-info-panel" class="side-panel">
+                <h2 class="ignore-style">Pairing wine with food</h2>
+                <p class="ignore-style">Pairing wine with food is an art.</p>
               </div>
             </div>
-            <div class="column">
-              <div id="food-pairing-info-panel" class="side-panel"></div>
+            <div class="column is-two-thirds">
+              <div id="food-pairing-viz" class="food-pairing-main">
+                <svg width="100%" height="400"></svg>
+              </div>
             </div>
           </div>
         </div>
@@ -289,7 +289,7 @@
       navigation: true,
       navigationTooltips: ["Introduction", "Basics", "Vision", "Smell", "Taste", "Food"],
       slidesNavigation: true,
-      controlArrows: true,
+      controlArrows: false,
     });
   });
 </script>
