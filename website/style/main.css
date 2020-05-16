@@ -193,6 +193,28 @@ a {
     fill-opacity: 0;
 }
 
+.label_hoover {
+    rx: 1;
+    stroke: black;
+    stroke-opacity: 0;
+    stroke-width: 3;
+    stroke-dasharray: 3;
+    fill-opacity: 0;
+}
+
+.label_hoover_line {
+    rx: 1;
+    stroke: black;
+    stroke-opacity: 0;
+    stroke-width: 3;
+    stroke-dasharray: 3;
+    fill-opacity: 0;
+}
+
+.label_hoover:hover {
+    stroke-opacity: 1;
+}
+
 #basicsviz2 .handle:hover {
     stroke-opacity: 1;
 }
