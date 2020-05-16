@@ -258,7 +258,10 @@ class RadarChart {
       .attr("class", "radarCircleWrapper");
 
     //Set up the small tooltip for when you hover over a circle
-    var tooltip = g.append("text").attr("class", "tooltip").attr("opacity", 0).attr("text-anchor", "middle").style("pointer-events", "none")
+    var tooltip = g.append("text")
+      .attr("class", "tooltip").attr("opacity", 0).attr("text-anchor", "middle")
+      .attr("fill", "white")
+      .style("pointer-events", "none")
 
     //Append a set of invisible circles on top for the mouseover pop-up
     blobCircleWrapper

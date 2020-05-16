@@ -127,19 +127,23 @@ class FoodPairingViz {
     };
 
     this.formatWineInfo = (w, foodIds) => {
-      let title = `<h2 style="border-bottom: 3px solid ${w.color}">${w.name}</h2>`;
+      let title = `<h2 style="color: ${w.color}">${w.name}</h2>`;
 
-      let varieties = `<h3>Typical Varieties</h3><ul>`;
+      /*let varieties = `<h3>Typical Varieties</h3>` + `<ul>`;
       w.varieties.forEach((v) => (varieties += `<li>${v}</li>`));
-      varieties += `</ul>`;
+      varieties += `</ul>`;*/
+      let varieties = `<h3>Typical Varieties</h3><div class="grid-container">`
+      w.varieties.forEach((v) => (varieties += `<div>${v}</div>`))
+      varieties += `</div>`
 
       let description = `<h3>Description</h3><p>Some short description ?</p>`;
 
-      let foods = `<h3>Goes well with</h3>`;
+      let foods = `<h3>Goes well with</h3><div class="grid-container">`;
       this.data.foods.forEach((f) => {
         if (foodIds.includes(f.id))
-          foods += `<div class="food-icon"><img height="30" src="${f.img}" /><p>${f.name}</p></div>`;
+          foods += `<div class="food-icon"><img src="${f.img}" /><p>${f.name}</p></div>`;
       });
+      foods += `</div>`
       return title + description + varieties + foods;
     };
 
@@ -212,7 +216,7 @@ class FoodPairingViz {
 
       let description = `<h3>Description</h3><p>Some short description ?</p>`;
 
-      let wines = `<h3>Goes well with</h3>`;
+      let wines = `<h3>Goes well with</h3><div class="grid-container">`;
       this.data.wines.forEach((w) => {
         if (wineIds.includes(w.id))
           wines += `<div class="food-icon">
@@ -224,6 +228,7 @@ class FoodPairingViz {
                         <p>${w.name}</p>
                     </div>`;
       });
+      wines += `</div>`
       return title + description + dishes + wines;
     };
 
@@ -321,7 +326,6 @@ class FoodPairingViz {
       .append("text")
       .text((d) => d.name)
       .attr("x", -20)
-      .attr("y", 6)
       .attr("fill", dark ? "#fff" : "#000")
       .attr("text-anchor", "end")
       //.style("font-size", function(d) { return Math.min(10, (innerMargin) / this.getComputedTextLength() * 10) + "px"; })
@@ -338,7 +342,6 @@ class FoodPairingViz {
       .append("text")
       .text((d) => d.name)
       .attr("x", 20)
-      .attr("y", 6)
       .attr("fill", dark ? "#fff" : "#000")
       .attr("text-anchor", "start")
       //.style("font-size", function(d) { return Math.min(10, (innerMargin) / this.getComputedTextLength() * 10) + "px"; })
