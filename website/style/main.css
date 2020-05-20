@@ -199,7 +199,8 @@ svg text {
 ********************************************************/
 
 .side-panel {
-    overflow: hidden; /*auto*/
+    overflow: hidden;
+    /*auto*/
     border-radius: 1rem;
     box-shadow: 0 0 10px #ccc;
 }
@@ -214,11 +215,11 @@ svg text {
     margin-bottom: 10px;
     padding-bottom: 10px;
     background: #4a4a4a;
-    color:white;
+    color: white;
     /*text-shadow: 2px 1px 2px black;*/
 }
 
-.title-with-quote p{
+.title-with-quote p {
     color: white;
 }
 
@@ -252,4 +253,8 @@ svg text {
     height: 30px;
     margin-left: auto;
     margin-right: auto;
+}
+
+#color_viz {
+    margin-top: -50px;
 }

@@ -51,7 +51,6 @@ hr {
   background-color: black;
   border: 1px solid #78909c;
   border-radius: 0.5em;
-  box-shadow: 0 1em 8em rgba(0, 0, 0, 0.35);
 }
 
 .material-color-picker__left-panel {
@@ -62,18 +61,21 @@ hr {
   position: relative;
   flex-grow: 1;
   overflow: hidden;
+  margin: 10px;
 }
 
 .color-selector {
   margin: 0;
   padding: 0;
+  height: auto;
   list-style: none;
   display: flex;
   flex-direction: column;
   padding: 1em 0;
   border-right: 0.25em solid #e0e0e0;
   justify-content: center;
-  min-height: 600px;
+  flex: 1;
+  min-height: 550px;
 }
 
 .color-selector input[type="radio"] {
@@ -122,8 +124,7 @@ hr {
   display: flex;
   flex-direction: column;
   visibility: hidden;
-  padding: 1.5em;
-  padding-top: 0;
+  padding: 5px;
 }
 
 .color-palette-wrapper.js-active {
@@ -163,12 +164,11 @@ hr {
   justify-content: space-around;
   -webkit-box-flex: 1;
   flex-grow: 1;
-  margin: 0.25em 0;
 }
 
 .color-palette__item {
-  margin: 0;
-  padding: 15px;
+  padding: 12px;
+  margin: 2px;
   border-radius: 0.25em;
   position: relative;
   display: flex;
@@ -209,7 +209,6 @@ hr {
   margin-left: 10px;
   border: 1px solid #78909c;
   border-radius: 0.5em;
-  box-shadow: 0 1em 8em rgba(0, 0, 0, 0.35);
   padding: 30px;
   border-radius: 1rem;
   color: white;
