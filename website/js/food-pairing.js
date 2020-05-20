@@ -125,16 +125,11 @@ class FoodPairingViz {
     };
 
     this.formatWineInfo = (w, foodIds) => {
-      let title = `<h2 style="color: ${w.color}">${w.name}</h2>`;
+      let title = `<div style="background-color: ${w.color + "cc"}" class="title-with-quote"><h2>${w.name}</h2><p>${w.description}</p></div>`;
 
-      /*let varieties = `<h3>Typical Varieties</h3>` + `<ul>`;
-      w.varieties.forEach((v) => (varieties += `<li>${v}</li>`));
-      varieties += `</ul>`;*/
       let varieties = `<h3>Typical Varieties</h3><div class="grid-container">`
       w.varieties.forEach((v) => (varieties += `<div>${v}</div>`))
       varieties += `</div>`
-
-      let description = `<h3>Description</h3><p>Some short description ?</p>`;
 
       let foods = `<h3>Goes well with</h3><div class="grid-container">`;
       this.data.foods.forEach((f) => {
@@ -142,7 +137,9 @@ class FoodPairingViz {
           foods += `<div class="food-icon"><img src="${f.img}" /><p>${f.name}</p></div>`;
       });
       foods += `</div>`
-      return title + description + varieties + foods;
+
+      let bottombar = `<div style="background-color: ${w.color + "cc"}" class="bottom-bar"></div>`;
+      return title + varieties + foods + bottombar;
     };
 
     this.onFoodSelected = (s) => {
@@ -206,13 +203,11 @@ class FoodPairingViz {
     };
 
     this.formatFoodInfo = (f, wineIds) => {
-      let title = `<h2 style="border-bottom: 3px solid black">${f.name}</h2>`;
+      let title = `<div class="title-with-quote"><h2>${f.name}</h2><p>${f.description}</p></div>`;
 
       let dishes = `<h3>Dish examples</h3><ul>`;
       //f.dishes.forEach(v => dishes += `<li>${v}</li>`)
       dishes += `</ul>`;
-
-      let description = `<h3>Description</h3><p>Some short description ?</p>`;
 
       let wines = `<h3>Goes well with</h3><div class="grid-container">`;
       this.data.wines.forEach((w) => {
@@ -227,7 +222,8 @@ class FoodPairingViz {
                     </div>`;
       });
       wines += `</div>`
-      return title + description + dishes + wines;
+      let bottombar = `<div class="bottom-bar"></div>`;
+      return title + dishes + wines + bottombar;
     };
 
     this.onRemoveSelection = () => {

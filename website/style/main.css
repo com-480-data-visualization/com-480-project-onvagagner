@@ -201,12 +201,31 @@ svg text {
 .side-panel {
     overflow: hidden; /*auto*/
     border-radius: 1rem;
-    box-shadow: 0 0 10px #ddd;
+    box-shadow: 0 0 10px #ccc;
 }
 
 .side-panel h2 {
+    /*color: black;*/
+    /*background-color: black;*/
+    margin: 0;
+}
+
+.title-with-quote {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    background: #4a4a4a;
+    color:white;
+    /*text-shadow: 2px 1px 2px black;*/
+}
+
+.title-with-quote p{
     color: white;
-    background-color: black;
+}
+
+.bottom-bar {
+    height: 2rem;
+    width: 100%;
+    background: #4a4a4a;
 }
 
 .side-panel h3 {
@@ -221,19 +240,12 @@ svg text {
 }
 
 .grid-container div {
-    padding: 1rem;
+    padding: 16px;
     font-size: 0.8rem;
 }
 
 .side-panel p {
-    padding: 1rem;
-    font-size: 0.8rem;
-    color: black;
     text-align: center;
-}
-
-.food-icon p {
-    padding: 0 !important;
 }
 
 .food-icon img, .food-icon svg {

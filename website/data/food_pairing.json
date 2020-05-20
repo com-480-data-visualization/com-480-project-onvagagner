@@ -4,6 +4,7 @@
             "id": 0,
             "name": "Dry White",
             "color": "#e5ecb8",
+            "description": "Is not wet.",
             "varieties": [
                 "White Table Wine",
                 "Sauvignon Blanc",
@@ -16,6 +17,7 @@
             "id": 1,
             "name": "Sweet White",
             "color": "#fecf03",
+            "description": "Is not acid.",
             "varieties": [
                 "Gewürztraminer",
                 "Müller-Thurgau",
@@ -28,6 +30,7 @@
             "id": 2,
             "name": "Rich White",
             "color": "#fdda7c",
+            "description": "Is not poor.",
             "varieties": [
                 "Chardonnay",
                 "Roussanne",
@@ -39,6 +42,7 @@
             "id": 3,
             "name": "Sparkling",
             "color": "#dedede",
+            "description": "Is magical.",
             "varieties": [
                 "Sparkling Wine",
                 "Champagne",
@@ -50,6 +54,7 @@
             "id": 4,
             "name": "Light Red",
             "color": "#d20331",
+            "description": "Is not heavy.",
             "varieties": [
                 "St. Laurent",
                 "Pinot Noir",
@@ -61,6 +66,7 @@
             "id": 5,
             "name": "Medium Red",
             "color": "#87032b",
+            "description": "Is probably what you're currently drinking.",
             "varieties": [
                 "Red Table Wine",
                 "Tempranillo",
@@ -74,6 +80,7 @@
             "id": 6,
             "name": "Bold Red",
             "color": "#6B2D3C",
+            "description": "Is fancy.",
             "varieties": [
                 "Cabernet Sauvignon",
                 "Monastrell",
@@ -86,6 +93,7 @@
             "id": 7,
             "name": "Dessert",
             "color": "#c94f04",
+            "description": "Is not your typical wine.",
             "varieties": [
                 "Late Harvest",
                 "Ice Wine",
@@ -98,56 +106,67 @@
         {
             "id": 0,
             "name": "Vegetables",
+            "description": "Gotta eat at least 5 per day.",
             "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32361-carrot-icon.png"
         },
         {
             "id": 1,
             "name": "Roasted Vegetables",
+            "description": "When you're out of fresh vegetables.",
             "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32367-broccoli-icon.png"
         },
         {
             "id": 2,
             "name": "Soft Cheese",
+            "description": "You can't make everyone happy. You're not cheese.",
             "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/1024/32377-cheese-wedge-icon.png"
         },
         {
             "id": 3,
             "name": "Hard Cheese",
+            "description": "You can't make everyone happy. You're not cheese.",
             "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/1024/32377-cheese-wedge-icon.png"
         },
         {
             "id": 4,
             "name": "Starches",
+            "description": "AKA carbs.",
             "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32371-bread-icon.png"
         },
         {
             "id": 5,
             "name": "Fish",
+            "description": "As the french say: comme un poisson dans l'eau.",
             "img": "http://icons.iconarchive.com/icons/apathae/poisson/128/2-Fish-icon.png"
         },
         {
             "id": 6,
             "name": "Rich Fish",
+            "description": "Basically the tuna version of Jeff Bezos.",
             "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32409-fried-shrimp-icon.png"
         },
         {
             "id": 7,
             "name": "White Meat",
+            "description": "It's all about those proteins.",
             "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32379-poultry-leg-icon.png"
         },
         {
             "id": 8,
             "name": "Red Meat",
+            "description": "Honestly, who can resist a juicy steak?",
             "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32380-cut-of-meat-icon.png"
         },
         {
             "id": 9,
             "name": "Cured Meat",
+            "description": "Perfect for apéro !",
             "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32378-meat-on-bone-icon.png"
         },
         {
             "id": 10,
             "name": "Sweets",
+            "description": "Did someone say chocolate ?",
             "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32424-pie-icon.png"
         }
     ],
