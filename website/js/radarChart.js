@@ -234,8 +234,9 @@ class RadarChart {
     var drag = d3
       .drag()
       .on("drag", function (d, i) {
-        let y = d3.event.y
-        let x = d3.event.x
+        let y = d3.mouse(this)[1] //d3.event.y
+        let x = d3.mouse(this)[0] //d3.event.x
+        if(firefox) y -= parseFloat(document.getElementById("fullpage").style.transform.split(",")[1].slice(0,-1))
         let distFromCenter = Math.sqrt(y * y + x * x)
         d.value = Math.min(Math.max(1, rScale.invert(distFromCenter)), maxValue) // clamp value to not go outside of graphic
         d3.select(this)

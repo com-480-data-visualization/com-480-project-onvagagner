@@ -250,7 +250,8 @@
             <p>Tweek the 5 components of the graph in order to fit best the taste of your wine.</p>
             <div id="radarChartMain"></div>
             <p>On the right, you will find the profiles of 3 grape varieties that are the most similar to your
-              description. Have a look at the varieties listed on the wine's bottle or label. Did you manage to describe the taste correctly?</p>
+              description. Have a look at the varieties listed on the wine's bottle or label. Did you manage to describe
+              the taste correctly?</p>
           </div>
           <div class="column">
             <div id="radarChart1"></div>
@@ -284,6 +285,11 @@
 
   </div>
 </body>
+<!-- Check if firefox -->
+<script>
+  const firefox = window.navigator.userAgent.indexOf("Firefox") > -1
+  //if (firefox) alert(`Some visualisations might not work properly in Firefox.\nPlease use a different navigator for a better experience.\nSorry for the bother and thank you for your understanding.`)
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 <script src="lib/fullpage.min.js"></script>
 <script>
@@ -318,6 +324,5 @@
 
 <script src="js/food-pairing.js"></script>
 <script src="js/label.js"></script>
-
 
 </html>
