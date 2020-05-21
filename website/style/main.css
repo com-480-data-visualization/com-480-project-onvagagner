@@ -1,49 +1,56 @@
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
-html, button, input, select, textarea {
-    color: #222;
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
 }
 
 html {
-    font-size: 1em;
-    line-height: 1.4;
+  font-size: 1em;
+  line-height: 1.4;
 }
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
-audio, canvas, img, video {
-    vertical-align: middle;
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
 }
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 body {
-    font: 16px/1.5 Helvetica, Helvetica Neue, Arial;
+  font: 16px/1.5 Helvetica, Helvetica Neue, Arial;
 }
 
 /* ==========================================================================
@@ -51,71 +58,71 @@ body {
    ========================================================================== */
 
 .project {
-    text-align: center;
-    /*padding: 200px 0;*/
-    border-bottom: 1px #ebebeb solid;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 1s ease-out;
+  text-align: center;
+  /*padding: 200px 0;*/
+  border-bottom: 1px #ebebeb solid;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-out;
 }
 
 .project.fade-in {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
-.project p {
+/* .project p {
     max-width: 300px;
     margin: 0 auto;
     color: #294D67;
-}
+} */
 
 svg {
-    text-align: center;
+  text-align: center;
 }
 
 .left {
-    width: 55%;
-    margin-right: 2%;
-    float: left;
+  width: 55%;
+  margin-right: 2%;
+  float: left;
 }
 
 .right {
-    width: 42%;
-    float: left;
+  width: 42%;
+  float: left;
 }
 
 p {
-    text-align: justify;
+  text-align: justify;
 }
 
 .section h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-.title {
+/* .title {
     padding-bottom: 50px;
     margin-top: -50px;
-}
+} */
 
 .vis-smell {
-    height: 700px;
-    width: 100%;
+  height: 700px;
+  width: 100%;
 }
 
 .fp-tooltip {
-    color: black !important;
-    font-weight: bold;
+  color: black !important;
+  font-weight: bold;
 }
 
 svg text {
-    dominant-baseline: middle;
+  dominant-baseline: middle;
 }
 
 /*******************************************************
@@ -123,16 +130,15 @@ svg text {
 ********************************************************/
 
 #intro {
-    height: 100vh;
-    background: #ffb6c1;
-    text-align: center;
-    /*color: #fff;*/
-    color: black;
+  background: #ffb6c1;
+  text-align: center;
+  /*color: #fff;*/
+  color: black;
 }
 
 #intro h1 {
-    color: white;
-    font-size: 10rem;
+  color: white;
+  font-size: 10rem;
 }
 
 /*******************************************************
@@ -140,58 +146,58 @@ svg text {
 ********************************************************/
 
 #project01 .switchable {
-    cursor: pointer;
-    background: black;
-    font-weight: bold;
-    border-radius: 1rem;
-    padding: 0 5px 3px;
+  cursor: pointer;
+  background: black;
+  font-weight: bold;
+  border-radius: 1rem;
+  padding: 0 5px 3px;
 }
 
 #basicsviz2 .handle {
-    rx: 1;
-    stroke: black;
-    stroke-opacity: 0;
-    stroke-width: 0.5;
-    stroke-dasharray: 1;
-    cursor: grab;
-    fill-opacity: 0;
+  rx: 1;
+  stroke: black;
+  stroke-opacity: 0;
+  stroke-width: 0.5;
+  stroke-dasharray: 1;
+  cursor: grab;
+  fill-opacity: 0;
 }
 
 .label_hoover {
-    rx: 1;
-    stroke: black;
-    stroke-opacity: 0;
-    stroke-width: 3;
-    stroke-dasharray: 3;
-    fill-opacity: 0;
+  rx: 1;
+  stroke: black;
+  stroke-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 3;
+  fill-opacity: 0;
 }
 
 .label_hoover_line {
-    rx: 1;
-    stroke: black;
-    stroke-opacity: 0;
-    stroke-width: 3;
-    stroke-dasharray: 3;
-    fill-opacity: 0;
+  rx: 1;
+  stroke: black;
+  stroke-opacity: 0;
+  stroke-width: 3;
+  stroke-dasharray: 3;
+  fill-opacity: 0;
 }
 
 .label_hoover:hover {
-    stroke-opacity: 1;
+  stroke-opacity: 1;
 }
 
 #basicsviz2 .handle:hover {
-    stroke-opacity: 1;
+  stroke-opacity: 1;
 }
 
 #basicsviz2 .handle:active {
-    cursor: grabbing;
+  cursor: grabbing;
 }
 
 #basicsviz2 text {
-    fill: black;
-    fill-opacity: 1;
-    text-anchor: start;
-    font-size: 10%;
+  fill: black;
+  fill-opacity: 1;
+  text-anchor: start;
+  font-size: 10%;
 }
 
 /*******************************************************
@@ -199,62 +205,88 @@ svg text {
 ********************************************************/
 
 .side-panel {
-    overflow: hidden;
-    /*auto*/
-    border-radius: 1rem;
-    box-shadow: 0 0 10px #ccc;
+  overflow: hidden;
+  /*auto*/
+  border-radius: 1rem;
+  box-shadow: 0 0 10px #ccc;
 }
 
 .side-panel h2 {
-    /*color: black;*/
-    /*background-color: black;*/
-    margin: 0;
+  /*color: black;*/
+  /*background-color: black;*/
+  margin: 0;
 }
 
 .title-with-quote {
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    background: #4a4a4a;
-    color: white;
-    /*text-shadow: 2px 1px 2px black;*/
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  background: #4a4a4a;
+  color: white;
+  /*text-shadow: 2px 1px 2px black;*/
 }
 
 .title-with-quote p {
-    color: white;
+  color: white;
 }
 
 .bottom-bar {
-    height: 2rem;
-    width: 100%;
-    background: #4a4a4a;
+  height: 2rem;
+  width: 100%;
+  background: #4a4a4a;
 }
 
 .side-panel h3 {
-    font-weight: bold;
-    color: black;
+  font-weight: bold;
+  color: black;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
 }
 
 .grid-container div {
-    padding: 16px;
-    font-size: 0.8rem;
+  padding: 16px;
+  font-size: 0.8rem;
 }
 
 .side-panel p {
-    text-align: center;
+  text-align: center;
 }
 
-.food-icon img, .food-icon svg {
-    height: 30px;
-    margin-left: auto;
-    margin-right: auto;
+.food-icon img,
+.food-icon svg {
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#color_viz {
-    margin-top: -50px;
+.content {
+  margin-top: 15px;
+}
+
+div.content ul {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+div.content ul li {
+  text-align: left;
+}
+
+html,
+body,
+.section,
+.slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  justify-content: center;
+  align-items: center;
 }
