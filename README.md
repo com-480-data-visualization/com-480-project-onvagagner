@@ -1,31 +1,56 @@
-# Project of Data Visualization (COM-480)
+# 🍷 Wine101 🍷
+Project for COM-480 Data Visualization Course at EPFL
 
-| Student's name | SCIPER |
-| -------------- | ------ |
-| Anton Alexandre Ragot | 258154 |
-| Valentin Quelquejay-Leclère | 271140 |
-| Peter Krcmar | 275071 |
+## 🔴 Abstract
 
-[Milestone 1](#milestone-1-friday-3rd-april-5pm) • [Milestone 2](#milestone-2-friday-1st-may-5pm) • [Milestone 3](#milestone-3-thursday-28th-may-5pm)
+## 👨‍👩‍👧‍👦 Target audience
 
-## Milestone 1 (Friday 3rd April, 5pm)
+Anyone interested in wine!
 
-**10% of the final grade**
+## 🚀 Project structure & Installation 
 
+Our project is structured as follows:
+
+```
+├───dataset       
+├───img           
+├───milestones    
+└───website          
+     ├───data     
+     ├───img 
+     ├───js       
+     ├───lib 
+     └───style    
+
+```
+
+
+To install our project, run ```http-server``` inside the ``website`` folder.
+
+## 💿 Dataset
+
+We scrapped our data from [Winefolly](https://winefolly.com/). 
+
+## 📍 Milestones
+**Milestone 1**: Proposals  
 You can find our first milestone in a nicer PDF format [here](milestones/Milestone1.pdf) or a markdown version [here](milestones/Milestone1.md).
 
 
-## Milestone 2 (Friday 1st May, 5pm)
-
-**10% of the final grade**
-
+**Milestone 2**: Functional project prototype review  
 You can find our second milestone [here](milestones/Milestone2.pdf).
 Please make sure to download the PDF in order to make the links work!
 
-You can also find our website [here](https://com-480-data-visualization.github.io/com-480-project-onvagagner/index.html).
-We focused on structure and visualization, a prettier version is coming soon! 
+**Milestone 3**: Final project  
 
-## Milestone 3 (Thursday 28th May, 5pm)
+Our processbook is in redaction, come back soon!
 
-**80% of the final grade**
 
+## 📽 Screen cast
+
+The screencast will be uploaded once done! Come back soon
+
+## 🤝 Authors
+
+ - [Valentin Quelquejay-Leclère](https://github.com/vquelque)
+ - [Peter Krcmar](https://github.com/PeterKrcmar0)
+ - [Anton Ragot](https://github.com/AntonRagot)
