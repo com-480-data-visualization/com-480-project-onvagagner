@@ -74,6 +74,17 @@ body {
     transition: all 1s ease-out;
 }
 
+/*
+.fp-controlArrow.fp-prev {
+    border-color: transparent transparent transparent black;
+    cursor: pointer;
+}
+.fp-controlArrow.fp-next {
+    border-color: transparent transparent transparent #722f37 ;
+    cursor: pointer;
+}
+*/
+
 .project.fade-in {
     opacity: 1;
     transform: translateY(0);

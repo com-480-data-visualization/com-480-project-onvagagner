@@ -9,10 +9,10 @@
   <title>Wine101</title>
   <meta name="author" content="Peter Krcmar, Valentin Quelquejay-Leclère, Anton Ragot" />
 
+  <link rel="stylesheet" href="lib/fullpage.min.css" />
   <link rel="stylesheet" href="style/main.css" />
   <link rel="stylesheet" href="style/vision.css" />
   <link rel="“icon”" href="favicon.ico" />
-  <link rel="stylesheet" href="lib/fullpage.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css"
     integrity="sha256-qS+snwBgqr+iFVpBB58C9UCxKFhyL03YHpZfdNUhSEw=" crossorigin="anonymous" />
   <script src="https://d3js.org/d3.v5.min.js"></script>
@@ -98,12 +98,15 @@
             </div>
             <div class="column">
 
-              <svg id="wine_label" width="500" height="450">
+              <svg id="wine_label" width="500" height="650">
                 <image xlink:href="img/label.png" src="img/label.png" width="500" height="450"/>
+
+                <g transform="translate(0 450)">
+                  <svg id="wine_label_explication" width="500" height="200" ></svg>
+                </g>
               </svg>
 
-              <svg id="wine_label_explication" width="500" height="200">
-              </svg>
+              
 
             </div>
           </div>
