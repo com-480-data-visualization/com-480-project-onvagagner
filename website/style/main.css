@@ -301,3 +301,11 @@ body,
   justify-content: center;
   align-items: center;
 }
+
+.hsl-description {
+  text-align: left;
+}
+
+.dropdown-menu {
+  min-width: 15rem;
+}
