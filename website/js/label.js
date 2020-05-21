@@ -1,6 +1,6 @@
-const label_basic = d3.select("#wine_label").attr("viewBox", "0 0 550 450");
+const label_basic = d3.select("#wine_label")//.attr("viewBox", "0 0 500 650");
 const label_basic_explication = d3.select("#wine_label_explication");
-const label_explanation_text = label_basic_explication.append("text").attr("x", 0).attr("y", "20%").attr("font-size", "20px")
+const label_explanation_text = label_basic_explication.append("text").attr("x", 0).attr("y", "20%").attr("font-size", "20px").attr("text-align", "center")
 
 milesime = {x: 215, y: 236.5, h: 33, w: 70};
 picture = {x: 120, y: 57.85, h: 168, w: 255};
@@ -14,7 +14,7 @@ size_liquid = {x: 430, y: 425, h: 25, w: 60};
 
 function add_element(el, text_to_add) {
   const line = label_basic.append('line').attr("class", "label_hoover_line")
-            .attr("x1", el.x + (el.w / 2)).attr("y1", el.y + el.h).attr("x2", el.x + (el.w / 2)).attr("y2", 450);
+            .attr("x1", el.x + (el.w / 2)).attr("y1", el.y + el.h).attr("x2", el.x + (el.w / 2)).attr("y2", 470);
 
   label_basic.append("rect").attr("class", "label_hoover")
             .attr("x", el.x).attr("y", el.y)
@@ -37,4 +37,3 @@ add_element(sepage, "Sepage")
 add_element(bottled, "...")
 add_element(alcool, "alcool")
 add_element(size_liquid, "liquid")
-
