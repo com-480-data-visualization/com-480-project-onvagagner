@@ -1,4 +1,4 @@
-const dark = true;
+const dark = false;
 
 d3.selection.prototype.moveToFront = function () {
   return this.each(function () {
@@ -11,7 +11,7 @@ class FoodPairingViz {
     const margin = { top: 10, right: 10, bottom: 10, left: 10 };
     this.data = data;
     this.panel = document.getElementById(panelDiv);
-    this.panel.style.display = "none"
+    this.panelOrigianlText = this.panel.innerHTML
 
     this.svg = d3.select("#" + parentDiv + " svg");
     const svgViewbox = this.svg.node().getBoundingClientRect();
@@ -23,7 +23,7 @@ class FoodPairingViz {
     this.width = svgViewbox.width - margin.left - margin.right;
     this.height = svgViewbox.height - margin.top - margin.bottom;
 
-    this.opacity = 0.3;
+    this.opacity = dark ? 0.3 : 0.1;
     this.strokeWidth = 7;
     this.strokeWidthLink = 2;
 
@@ -89,9 +89,7 @@ class FoodPairingViz {
         .delay(300)
         .ease(d3.easeBounceOut)
         .attr("r", 5)
-        .attr("stroke-width", (f) =>
-          relevantFoods.includes(f.id) ? 1 : this.strokeWidth
-        );
+        .attr("stroke-width", (f) => relevantFoods.includes(f.id) ? 1 : this.strokeWidth);
 
       // highlight foods
       this.svg
@@ -122,25 +120,26 @@ class FoodPairingViz {
         .attr("d", (d) => this.computePath(d, 0.9));
 
       // put info into panel
-      this.panel.style.display = "block";
       this.panel.innerHTML = this.formatWineInfo(s, relevantFoods);
+      this.panel.classList.add("side-panel")
     };
 
     this.formatWineInfo = (w, foodIds) => {
-      let title = `<h2 style="border-bottom: 3px solid ${w.color}">${w.name}</h2>`;
+      let title = `<div style="background-color: ${w.color + "cc"}" class="title-with-quote"><h2>${w.name}</h2><p>${w.description}</p></div>`;
 
-      let varieties = `<h3>Typical Varieties</h3><ul>`;
-      w.varieties.forEach((v) => (varieties += `<li>${v}</li>`));
-      varieties += `</ul>`;
+      let varieties = `<h3>Typical Varieties</h3><div class="grid-container">`
+      w.varieties.forEach((v) => (varieties += `<div>${v}</div>`))
+      varieties += `</div>`
 
-      let description = `<h3>Description</h3><p>Some short description ?</p>`;
-
-      let foods = `<h3>Goes well with</h3>`;
+      let foods = `<h3>Goes well with</h3><div class="grid-container">`;
       this.data.foods.forEach((f) => {
         if (foodIds.includes(f.id))
-          foods += `<div class="food-icon"><img height="30" src="${f.img}" /><p>${f.name}</p></div>`;
+          foods += `<div class="food-icon"><img src="${f.img}" /><p>${f.name}</p></div>`;
       });
-      return title + description + varieties + foods;
+      foods += `</div>`
+
+      let bottombar = `<div style="background-color: ${w.color + "cc"}" class="bottom-bar"></div>`;
+      return title + varieties + foods + bottombar;
     };
 
     this.onFoodSelected = (s) => {
@@ -199,20 +198,18 @@ class FoodPairingViz {
         .attr("stroke-width", this.strokeWidthLink)
         .attr("d", (d) => this.computePath(d, 0.9));
 
-      this.panel.style.display = "block"
-      this.panel.innerHTML = this.formatFoodInfo(s, relevantWines);
+      this.panel.innerHTML = this.formatFoodInfo(s, relevantWines)
+      this.panel.classList.add("side-panel")
     };
 
     this.formatFoodInfo = (f, wineIds) => {
-      let title = `<h2 style="border-bottom: 3px solid black">${f.name}</h2>`;
+      let title = `<div class="title-with-quote"><h2>${f.name}</h2><p>${f.description}</p></div>`;
 
       let dishes = `<h3>Dish examples</h3><ul>`;
       //f.dishes.forEach(v => dishes += `<li>${v}</li>`)
       dishes += `</ul>`;
 
-      let description = `<h3>Description</h3><p>Some short description ?</p>`;
-
-      let wines = `<h3>Goes well with</h3>`;
+      let wines = `<h3>Goes well with</h3><div class="grid-container">`;
       this.data.wines.forEach((w) => {
         if (wineIds.includes(w.id))
           wines += `<div class="food-icon">
@@ -224,7 +221,9 @@ class FoodPairingViz {
                         <p>${w.name}</p>
                     </div>`;
       });
-      return title + description + dishes + wines;
+      wines += `</div>`
+      let bottombar = `<div class="bottom-bar"></div>`;
+      return title + dishes + wines + bottombar;
     };
 
     this.onRemoveSelection = () => {
@@ -242,14 +241,6 @@ class FoodPairingViz {
         .attr("r", 10)
         .attr("stroke-width", this.strokeWidth);
 
-      /*
-            const factor = d3.scaleLinear()
-                .domain([innerMargin, this.width - innerMargin])
-                .range([0, 1])
-                .clamp(true)
-           
-            const f = factor(d3.mouse(this.svg.select("g").node())[0])
-            */
       this.svg
         .selectAll("path")
         .transition()
@@ -258,8 +249,8 @@ class FoodPairingViz {
         .attr("stroke-width", this.strokeWidth)
         .attr("d", (d) => this.computePath(d, 0.9));
 
-      this.panel.innerHTML = "";
-      this.panel.style.display = "none";
+      this.panel.innerHTML = this.panelOrigianlText
+      this.panel.classList.remove("side-panel")
     };
 
     const innerMargin = 150;
@@ -277,7 +268,7 @@ class FoodPairingViz {
       .attr("stroke-width", this.strokeWidth)
       .attr("fill", "transparent")
       .attr("opacity", 0.5)
-      .style("mix-blend-mode", "screen");
+      .style("mix-blend-mode", dark ? "screen" : "multiply")
 
     // Initialize the nodes
     const wineNodes = g
@@ -321,10 +312,8 @@ class FoodPairingViz {
       .append("text")
       .text((d) => d.name)
       .attr("x", -20)
-      .attr("y", 6)
       .attr("fill", dark ? "#fff" : "#000")
       .attr("text-anchor", "end")
-      //.style("font-size", function(d) { return Math.min(10, (innerMargin) / this.getComputedTextLength() * 10) + "px"; })
       .attr("opacity", 1);
 
     foodNodes
@@ -338,10 +327,8 @@ class FoodPairingViz {
       .append("text")
       .text((d) => d.name)
       .attr("x", 20)
-      .attr("y", 6)
       .attr("fill", dark ? "#fff" : "#000")
       .attr("text-anchor", "start")
-      //.style("font-size", function(d) { return Math.min(10, (innerMargin) / this.getComputedTextLength() * 10) + "px"; })
       .attr("opacity", 1);
 
     this.svg.on("click", this.onRemoveSelection);

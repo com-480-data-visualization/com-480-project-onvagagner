@@ -50,21 +50,6 @@ body {
    Our styles
    ========================================================================== */
 
-/* =Main */
-
-#intro {
-    height: 100vh;
-    background: #ffb6c1;
-    text-align: center;
-    /*color: #fff;*/
-    color: black;
-}
-
-#intro h1 {
-    color: white;
-    font-size: 10rem;
-}
-
 .project {
     text-align: center;
     /*padding: 200px 0;*/
@@ -111,55 +96,6 @@ svg {
     float: left;
 }
 
-#project01 .switchable {
-    cursor: pointer;
-    background: black;
-    font-weight: bold;
-    border-radius: 1rem;
-    padding: 0 5px 3px;
-}
-
-.food-pairing-main {
-    /* Center horizontally: */
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding: 20px;
-    background-color: black;
-    color: white;
-    border-radius: 1rem;
-    box-shadow: 0.2rem 0.2rem 0.5rem #aaa;
-}
-
-.side-panel {
-    margin: 2rem;
-    right: 0;
-    top: 0;
-    color: white;
-    background-color: black;
-    padding: 1rem;
-    border-radius: 1rem;
-    box-shadow: 0.2rem 0.2rem 0.5rem #aaa;
-    min-height: 500px;
-}
-
-.food-icon {
-    width: 30%;
-    float: left;
-    height: 6rem;
-    padding: 0.5rem;
-    font-size: 0.8rem;
-}
-
-.food-icon p {
-    text-align: center;
-}
-
-.food-icon img, .food-icon svg {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
 p {
     text-align: justify;
 }
@@ -184,14 +120,42 @@ a {
     width: 100%;
 }
 
-.tooltip {
-    stroke: white;
-    fill: white;
-}
-
 .fp-tooltip {
     color: black !important;
     font-weight: bold;
+}
+
+svg text {
+    dominant-baseline: middle;
+}
+
+/*******************************************************
+***********************  INTRO  ************************
+********************************************************/
+
+#intro {
+    height: 100vh;
+    background: #ffb6c1;
+    text-align: center;
+    /*color: #fff;*/
+    color: black;
+}
+
+#intro h1 {
+    color: white;
+    font-size: 10rem;
+}
+
+/*******************************************************
+**********************  BASICS  ************************
+********************************************************/
+
+#project01 .switchable {
+    cursor: pointer;
+    background: black;
+    font-weight: bold;
+    border-radius: 1rem;
+    padding: 0 5px 3px;
 }
 
 #basicsviz2 .handle {
@@ -239,5 +203,69 @@ a {
     fill-opacity: 1;
     text-anchor: start;
     font-size: 10%;
-    dominant-baseline: middle;
+}
+
+/*******************************************************
+*******************  FOOD PAIRING  *********************
+********************************************************/
+
+.side-panel {
+    overflow: hidden;
+    /*auto*/
+    border-radius: 1rem;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.side-panel h2 {
+    /*color: black;*/
+    /*background-color: black;*/
+    margin: 0;
+}
+
+.title-with-quote {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    background: #4a4a4a;
+    color: white;
+    /*text-shadow: 2px 1px 2px black;*/
+}
+
+.title-with-quote p {
+    color: white;
+}
+
+.bottom-bar {
+    height: 2rem;
+    width: 100%;
+    background: #4a4a4a;
+}
+
+.side-panel h3 {
+    font-weight: bold;
+    color: black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+}
+
+.grid-container div {
+    padding: 16px;
+    font-size: 0.8rem;
+}
+
+.side-panel p {
+    text-align: center;
+}
+
+.food-icon img, .food-icon svg {
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#color_viz {
+    margin-top: -50px;
 }

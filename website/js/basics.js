@@ -9,9 +9,10 @@ class FillCupViz {
 
         let currentPalette = redPalette
 
+        const maxH = 110, minH = 130
         const fillToPercent = d3.scaleLinear()
             .domain([0, 100])
-            .range([130, 110])
+            .range([minH, maxH])
 
         glass.append("path").attr("d", "m46.713 108.1-3.638 12.634c-0.2182 0.75777 0.15168 1.5488 0.6151 2.2542 0.57978 0.8824 1.2936 1.6018 2.2098 2.1084 1.5498 0.85692 3.1342 1.7152 4.614 2.6786 0.32835 0.23772 0.98746 0.80744 1.0504 1.4932 0.20259 2.2081 0.10791 4.4561 0.18222 6.6807 0.0244 2.0105 0.24687 4.0362 0.10086 6.0354-0.07063 0.96709-0.5616 1.8503-1.1717 2.5929-0.40356 0.49125-0.91915 0.8206-1.7137 0.96145-0.93382 0.16555-1.7529 0.17531-2.6538 0.3605-0.47616 0.0979-0.48577 0.48148-0.14227 0.61496 2.3617 0.91776 4.5347 0.82628 6.8916 0.78896 1.4619-0.0232 2.9639 0.0988 4.3861-0.20936 0.48318-0.10471 1.6431-0.33629 1.3247-0.74533-0.21307-0.2737-0.67761-0.38614-0.98232-0.47097-0.92795-0.25832-2.0041-0.19134-2.8867-0.5636-0.57712-0.24345-1.01-0.66304-1.3463-1.223-0.40393-0.67263-0.75454-1.4364-0.75454-2.2088v-12.549c0-1.1437 1.4016-1.8062 2.4299-2.3685 1.6518-0.90333 3.3482-1.7809 4.8378-2.9225 0.57956-0.44418 0.99677-1.0547 1.183-1.8048 0.18125-0.73007 0.229-1.5186 0.07974-2.2426-0.4556-2.21-1.2957-4.3269-1.9185-6.4967l-1.651-5.3976s-1.3724-0.42027-2.0814-0.50266c-2.3497-0.27305-4.7491-0.25347-7.0964 0.0396-0.63676 0.0795-1.8686 0.46299-1.8686 0.46299z")
             .attr("fill", "#dcdcdc")
@@ -61,11 +62,16 @@ class FillCupViz {
             text.text(verdict)
         }
 
+        const firefoxY = function(y, ratio) {
+            return y - ratio * parseFloat(document.getElementById("fullpage").style.transform.split(",")[1].slice(0,-1))
+        }
+
         fillingGlass.on("click", function () {
-            let y = d3.mouse(fillingGlass.node())[1]
-            y = Math.max(110, Math.min(y, 130))
+            let y = d3.mouse(this)[1]
+            if(firefox) y = firefoxY(y, 43.2594 / this.parentNode.getBoundingClientRect().height)
+            y = Math.max(maxH, Math.min(y, minH))
             wine.transition().ease(customEaseElastic).duration(1000)
-                .attr("y", y).attr("height", 130 - y + 10) // extra height to compensate for "bounce" during transition
+                .attr("y", y).attr("height", minH - y + 4) // extra height to compensate for "bounce" during transition
             handle.transition().duration(1000).attr("y", y - handleHeight / 2)
             updateText(fillToPercent.invert(y))
         })
@@ -76,10 +82,11 @@ class FillCupViz {
                 handle.style("cursor", "grabbing")
             })
             .on("drag", function () {
-                let y = d3.mouse(fillingGlass.node())[1]
-                y = Math.max(110, Math.min(y, 130))
+                let y = d3.mouse(this)[1]
+                if(firefox) y = firefoxY(y, 43.2594 / this.parentNode.getBoundingClientRect().height)
+                y = Math.max(maxH, Math.min(y, minH))
                 handle.attr("y", y - handleHeight / 2)
-                wine.attr("height", 130 - y).attr("y", y)
+                wine.attr("height", minH - y).attr("y", y)
                 updateText(fillToPercent.invert(y))
             })
             .on("end", function () {

@@ -37,4 +37,3 @@ add_element(sepage, "Sepage")
 add_element(bottled, "...")
 add_element(alcool, "alcool")
 add_element(size_liquid, "liquid")
-
