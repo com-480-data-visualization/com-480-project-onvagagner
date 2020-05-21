@@ -1,10 +1,10 @@
 
 # 🍷 Wine101 🍷
 
+Project for COM-480 Data Visualization Course at EPFL
+
+
 <p align="center">
-     Project for COM-480 Data Visualization Course at EPFL
-
-
      <a href="https://com-480-data-visualization.github.io/com-480-project-onvagagner/website/index.html">Go to website</a>
 </p>
 
