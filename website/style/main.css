@@ -271,15 +271,6 @@ svg text {
   margin-top: 15px;
 }
 
-div.content ul {
-  display: inline-flex;
-  flex-direction: column;
-}
-
-div.content ul li {
-  text-align: left;
-}
-
 html,
 body,
 .section,
@@ -302,4 +293,11 @@ body,
 
 .dropdown-menu {
   min-width: 15rem;
+}
+
+.list-indent-left {
+  margin-top: 0 !important;
+  text-align: left;
+  flex-direction: column;
+  display: inline-flex;
 }
