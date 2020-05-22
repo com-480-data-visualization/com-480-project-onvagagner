@@ -370,7 +370,7 @@ function getWineData() {
     let chartOptions = radarChartOptions
     chartOptions.editable = false
     chartOptions.showName = true
-    editableRadar = new RadarChart("#radarChartSearch", copy, chartOptions)
+    new RadarChart("#radarChartSearch", copy, chartOptions)
   }
   search.value = ""
 }
