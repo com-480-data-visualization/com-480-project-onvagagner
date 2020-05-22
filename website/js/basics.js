@@ -119,8 +119,8 @@ class FillCupViz {
             .attr("height", 20).attr("width", wine.attr("width"))
             .on("click", () => {
                 grabText.text("Don't warm the wine")
-                upperpart.transition().duration(500).attr("fill", "#ff0000aa")
-                lowerpart.transition().duration(500).attr("fill", "#ff0000aa")
+                upperpart.transition().duration(500).attr("fill", "#ffaaaa")
+                lowerpart.transition().duration(500).attr("fill", "#ffaaaa")
                 setTimeout(() => {
                     upperpart.transition().duration(500).attr("fill", "#dcdcdc")
                     lowerpart.transition().duration(500).attr("fill", "#dcdcdc")
