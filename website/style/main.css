@@ -155,7 +155,7 @@ svg text {
   background: black;
   font-weight: bold;
   border-radius: 1rem;
-  padding: 0 5px 3px;
+  padding: 2px 5px 2px;
 }
 
 #basicsviz2 .handle {
@@ -194,6 +194,11 @@ svg text {
   stroke-opacity: 1;
 }
 
+#basicsviz2.shake {
+  animation: shake-anim 0.5s;
+  animation-iteration-count: infinite;
+}
+
 #basicsviz2 .handle:active {
   cursor: grabbing;
 }
@@ -203,6 +208,97 @@ svg text {
   fill-opacity: 1;
   text-anchor: start;
   font-size: 10%;
+}
+
+#basicsviz2.pickup {
+  animation: pickup-anim 2s;
+}
+
+@keyframes pickup-anim {
+  0% { transform: translate(0, 0); }
+  20% { transform: translate(0, -3rem); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes shake-anim {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/*******************************************************
+**********************  TASTE  *************************
+********************************************************/
+
+#tasteSearchForm {
+  margin: 1rem;
+}
+
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+}
+#tasteSearchForm input,  #tasteSearchForm i{
+  border: 1px solid transparent;
+  border-radius: 1rem;
+  padding: 10px;
+}
+
+#tasteSearchForm input:focus {
+  outline: none;
+}
+
+#tasteSearchForm input[type=text] {
+  background-color: #f1f1f1;
+  text-align: center;
+  width: 100%;
+}
+
+#tasteSearchForm i {
+  background-color: #4a4a4a;
+  color: #fff;
+}
+
+#tasteSearchForm i:hover {
+  background-color: #3d3d3d;
+}
+
+#tasteSearchForm i:active {
+  background-color: #000;
+}
+
+.autocomplete-items {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: #f1f1f1;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 110%;
+  left: 0;
+  right: 0;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  border-bottom: 1px dashed #dadada;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: #e9e9e9 !important;
 }
 
 /*******************************************************

@@ -7,12 +7,14 @@ class RadarChart {
       levels: 5, //How many levels or inner circles should there be drawn
       maxValue: 5, //What is the value that the biggest circle will represent
       labelFactor: 1.25, //How much farther than the radius of the outer circle should the labels be placed
-      opacityArea: 0.7, //The opacity of the area of the blob
+      opacityArea: 0.5, //The opacity of the area of the blob
       dotRadius: 4, //The size of the colored circles of each blog
       opacityCircles: 0.1, //The opacity of the circles of each blob
       strokeWidth: 2, //The width of the stroke around each blob
       roundStrokes: true, //If true the area and stroke will follow a round path (cardinal-closed)
-      editable: false //If true, the user can edit it
+      editable: false, //If true, the user can edit it
+      showLabels: true,
+      showName: true
     };
 
     //Put all of the options into a variable called cfg
@@ -98,7 +100,7 @@ class RadarChart {
       feMergeNode_2 = feMerge.append("feMergeNode").attr("in", "SourceGraphic");
 
 
-    if (!cfg.editable) g.append("text").text(this.data.name).attr("y", -radius - 10).attr("text-anchor", "middle")
+    //if (cfg.showName) g.append("text").text(this.data.name).attr("y", -radius - 20).attr("text-anchor", "middle")
 
     /////////////// Draw the Circular grid //////////////////
 
@@ -138,7 +140,7 @@ class RadarChart {
       .style("stroke-opacity", 0.1)
       .style("stroke-width", "2px");
 
-    if (cfg.editable) {
+    if (cfg.showLabels) {
       //Append the labels at each axis
       axis.append("text")
         .attr("class", "legend")
@@ -175,8 +177,8 @@ class RadarChart {
       .attr("d", d => radarLine(d))
       .style("fill", this.data.color)
       .style("fill-opacity", cfg.opacityArea)
-      .on("mouseover", function () { d3.select(this).transition().duration(200).style("fill-opacity", cfg.opacityArea + 0.1) })
-      .on("mouseout", function () { d3.select(this).transition().duration(200).style("fill-opacity", cfg.opacityArea) })
+      //.on("mouseover", function () { d3.select(this).transition().duration(200).style("fill-opacity", cfg.opacityArea - 0.2) })
+      //.on("mouseout", function () { d3.select(this).transition().duration(200).style("fill-opacity", cfg.opacityArea) })
 
     //Create the outlines
     blobWrapper
@@ -202,9 +204,9 @@ class RadarChart {
 
     //Set up the small tooltip for when you hover/drag
     var tooltip = g.append("text")
-      .attr("class", "tooltip").attr("opacity", 0).attr("text-anchor", "middle")
-      .attr("fill", "white")
-      .style("pointer-events", "none")
+      .attr("class", "tooltip").attr("opacity", cfg.showName ? 1 : 0).attr("text-anchor", "middle")
+      .attr("fill", "white").text(this.data.name)
+      .style("pointer-events", "none").style("font-weight", "bold")
 
     //Append a set of invisible circles for drag
     blobCircleWrapper
@@ -222,12 +224,18 @@ class RadarChart {
       .on("mouseover", function (d) {
         tooltip.text(formatTooltip(d)).transition().duration(200).attr("opacity", 1)
         blobWrapper
-          .selectAll(".radarArea").style("fill-opacity", cfg.opacityArea - 0.1)
+          .selectAll(".radarArea").transition().duration(200).style("fill-opacity", cfg.opacityArea - 0.2)
+        blobWrapper
+          .selectAll(".radarStroke").transition().duration(200).style("stroke-opacity", 0.5)
       })
       .on("mouseout", function () {
-        tooltip.transition().duration(200).attr("opacity", 0)
         blobWrapper
-          .selectAll(".radarArea").style("fill-opacity", cfg.opacityArea)
+          .selectAll(".radarArea").transition().duration(200).style("fill-opacity", cfg.opacityArea)
+        blobWrapper
+          .selectAll(".radarStroke").transition().duration(200).style("stroke-opacity", 1)
+
+        if (cfg.showName) tooltip.text(data.name)
+        else tooltip.transition().duration(200).attr("opacity", 0)
       })
 
     // drag the invisible dots
@@ -236,7 +244,7 @@ class RadarChart {
       .on("drag", function (d, i) {
         let y = d3.mouse(this)[1] //d3.event.y
         let x = d3.mouse(this)[0] //d3.event.x
-        if(firefox) y -= parseFloat(document.getElementById("fullpage").style.transform.split(",")[1].slice(0,-1))
+        if (firefox) y -= parseFloat(document.getElementById("fullpage").style.transform.split(",")[1].slice(0, -1))
         let distFromCenter = Math.sqrt(y * y + x * x)
         d.value = Math.min(Math.max(1, rScale.invert(distFromCenter)), maxValue) // clamp value to not go outside of graphic
         d3.select(this)
@@ -254,7 +262,7 @@ class RadarChart {
           .attr("d", (d) => radarLine(d))
 
         blobWrapper
-          .selectAll(".radarArea").style("fill-opacity", cfg.opacityArea - 0.1)
+          .selectAll(".radarArea").style("fill-opacity", cfg.opacityArea - 0.2)
       })
       .on("end", function (d, i) {
         d.value = Math.round(d.value)
@@ -263,8 +271,7 @@ class RadarChart {
           .attr("cx", rScale(d.value) * Math.cos(angleSlice * i - Math.PI / 2))
           .attr("cy", rScale(d.value) * Math.sin(angleSlice * i - Math.PI / 2))
 
-        tooltip
-          .attr("opacity", 0);
+        tooltip.transition().attr("opacity", 0)
 
         //Move the blob
         blobWrapper
@@ -272,7 +279,7 @@ class RadarChart {
           .attr("d", (d) => radarLine(d));
 
         blobWrapper
-          .selectAll(".radarArea").style("fill-opacity", cfg.opacityArea)
+          .selectAll(".radarArea").transition().duration(200).style("fill-opacity", cfg.opacityArea)
 
         // show closest
         const closest = getClosestWine(data, tasteData, 3)
@@ -309,27 +316,29 @@ function getClosestWine(wine, data, nb = 3) {
   return data.sort(compare).slice(0, nb)
 }
 
-let tasteData, radarChartOptionsSmall
+let tasteData, radarChartOptionsSmall, radarChartOptions
 let editableRadar
 
 d3.json("data/taste.json").then(function (data) {
 
-  const margin = { top: 80, right: 100, bottom: 50, left: 100},
+  const margin = { top: 80, right: 100, bottom: 50, left: 100 },
     width = Math.min(500, window.innerWidth - 10) - margin.left - margin.right,
     height = Math.min(width, window.innerHeight - margin.top - margin.bottom - 20)
 
   tasteData = data
 
-  const radarChartOptions = {
+  radarChartOptions = {
     w: width,
     h: height,
     margin: margin,
-    editable: true
+    editable: true,
+    showName: false
   }
   radarChartOptionsSmall = {
     w: width / 2,
     h: height / 2,
-    margin: { top: 40, right: 50, bottom: 10, left: 50 }
+    margin: { top: 10, right: 0, bottom: 10, left: 0 },
+    showLabels: false
   }
 
   const defaultWine = {
@@ -343,8 +352,25 @@ d3.json("data/taste.json").then(function (data) {
       { axis: "Alcohol", value: 3 }
     ]
   }
-  editableRadar = new RadarChart("#radarChartMain", defaultWine, radarChartOptions);
-  document.getElementById("colorSwitch").addEventListener("click", function() {
+  editableRadar = new RadarChart("#radarChartMain", defaultWine, radarChartOptions)
+  document.getElementById("colorSwitch").addEventListener("click", function () {
     editableRadar.updateColor(this.innerText)
   })
+
+  // add search bar
+  const varieties = tasteData.map(v => v.name)
+  autocomplete(document.getElementById("tasteSearch"), varieties)
 })
+
+function getWineData() {
+  let search = document.getElementById("tasteSearch")
+  let grape = tasteData.find(v => v.name === search.value)
+  if (grape) {
+    const copy = JSON.parse(JSON.stringify(grape));
+    let chartOptions = radarChartOptions
+    chartOptions.editable = false
+    chartOptions.showName = true
+    new RadarChart("#radarChartSearch", copy, chartOptions)
+  }
+  search.value = ""
+}
