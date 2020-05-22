@@ -107,66 +107,127 @@
             "id": 0,
             "name": "Vegetables",
             "description": "Gotta eat at least 5 per day.",
+            "examples": [
+                "Asparagus",
+                "Artichokes",
+                "Chilies",
+                "Shallots"
+            ],
             "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32361-carrot-icon.png"
         },
         {
             "id": 1,
             "name": "Roasted Vegetables",
             "description": "When you're out of fresh vegetables.",
+            "examples": [
+                "Broccoli",
+                "Cauliflower",
+                "Carrots",
+                "Squash"
+            ],
             "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32367-broccoli-icon.png"
         },
         {
             "id": 2,
             "name": "Soft Cheese",
             "description": "You can't make everyone happy. You're not cheese.",
+            "examples": [
+                "Camembert",
+                "Brie",
+                "Roquefort",
+                "Gorgonzola"
+            ],
             "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/1024/32377-cheese-wedge-icon.png"
         },
         {
             "id": 3,
             "name": "Hard Cheese",
             "description": "You can't make everyone happy. You're not cheese.",
+            "examples": [
+                "Gruyère",
+                "Manchego",
+                "Cheddar",
+                "Gouda"
+            ],
             "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/1024/32377-cheese-wedge-icon.png"
         },
         {
             "id": 4,
             "name": "Starches",
             "description": "AKA carbs.",
+            "examples": [
+                "Pasta",
+                "Potatoes",
+                "Rice",
+                "Beans"
+            ],
             "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32371-bread-icon.png"
         },
         {
             "id": 5,
             "name": "Fish",
             "description": "As the french say: comme un poisson dans l'eau.",
+            "examples": [
+                "Tuna",
+                "Salmon",
+                "Bass"
+            ],
             "img": "http://icons.iconarchive.com/icons/apathae/poisson/128/2-Fish-icon.png"
         },
         {
             "id": 6,
             "name": "Rich Fish",
             "description": "Basically the tuna version of Jeff Bezos.",
+            "examples": [
+                "Lobster",
+                "Crab",
+                "Shrimp"
+            ],
             "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32409-fried-shrimp-icon.png"
         },
         {
             "id": 7,
             "name": "White Meat",
             "description": "It's all about those proteins.",
+            "examples": [
+                "Chicken",
+                "Turkey",
+                "Rabbit"
+            ],
             "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32379-poultry-leg-icon.png"
         },
         {
             "id": 8,
             "name": "Red Meat",
             "description": "Honestly, who can resist a juicy steak?",
+            "examples": [
+                "Beef",
+                "Bison",
+                "Pork"
+            ],
             "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32380-cut-of-meat-icon.png"
         },
         {
             "id": 9,
             "name": "Cured Meat",
             "description": "Perfect for apéro !",
+            "examples": [
+                "Dried meat",
+                "Salami",
+                "Bacon"
+            ],
             "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32378-meat-on-bone-icon.png"
         },
         {
             "id": 10,
             "name": "Sweets",
             "description": "Did someone say chocolate ?",
+            "examples": [
+                "Brownies",
+                "Cheesecake",
+                "Pumpkin Pie",
+                "Chocolate"
+            ],
             "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32424-pie-icon.png"
         }
     ],
