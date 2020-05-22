@@ -215,23 +215,51 @@ svg text {
 }
 
 @keyframes pickup-anim {
-  0% { transform: translate(0, 0); }
-  20% { transform: translate(0, -3rem); }
-  100% { transform: translate(0, 0); }
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(0, -3rem);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 @keyframes shake-anim {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
 }
 
 /*******************************************************
@@ -247,7 +275,8 @@ svg text {
   position: relative;
   display: inline-block;
 }
-#tasteSearchForm input,  #tasteSearchForm i{
+#tasteSearchForm input,
+#tasteSearchForm i {
   border: 1px solid transparent;
   border-radius: 1rem;
   padding: 10px;
@@ -257,7 +286,7 @@ svg text {
   outline: none;
 }
 
-#tasteSearchForm input[type=text] {
+#tasteSearchForm input[type="text"] {
   background-color: #f1f1f1;
   text-align: center;
   width: 100%;
@@ -392,8 +421,13 @@ body,
 }
 
 .list-indent-left {
-  margin-top: 0 !important;
   text-align: left;
   flex-direction: column;
   display: inline-flex;
+  list-style-type: disc;
+}
+
+.list-indent-left ul {
+  padding-left: 1.5rem;
+  list-style-type: circle;
 }
