@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="lib/fullpage.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css"
     integrity="sha256-qS+snwBgqr+iFVpBB58C9UCxKFhyL03YHpZfdNUhSEw=" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/9dca4c3ff6.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style/main.css" />
   <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
@@ -422,12 +423,18 @@
         <div class="container">
           <div class="columns is-vcentered">
             <div class="column">
+              <h2>Discover</h2>
+              <p>If you didn't manage to identify the grape variety, don't worry ! As mentioned, it takes a lot of
+                practice. Furthermore, to make things even more complex, many winemakers choose to combine different
+                grape varieties (as opposed to using just one) to achieve a very specific taste. However, getting
+                familiar with the taste profiles of well know grape varieties is already a great starting point, so you
+                can explore them here by using the search bar.</p>
               <!--Make sure the form has the autocomplete function switched off:-->
-              <form autocomplete="off" action="">
+              <form id="tasteSearchForm" autocomplete="off" action="">
                 <div class="autocomplete" style="width:300px;">
                   <input id="tasteSearch" type="text" name="grape" placeholder="Grape variety">
                 </div>
-                <input type="button" value="Search" onclick="getWineData()">
+                <i id="tasteSearchButton" class="fa fa-search" aria-hidden="true" onclick="getWineData()"></i>
               </form>
             </div>
             <div class="column">

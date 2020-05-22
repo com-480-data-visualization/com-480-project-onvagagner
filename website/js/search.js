@@ -57,12 +57,15 @@ function autocomplete(inp, arr) {
         } else if (e.keyCode == 13) {
             /*If the ENTER key is pressed, prevent the form from being submitted,*/
             e.preventDefault();
-            if (currentFocus > -1) {
+            if (currentFocus > -1 && x) {
                 /*and simulate a click on the "active" item:*/
-                if (x) x[currentFocus].click();
+                x[currentFocus].click();
+            } else {
+                document.getElementById("tasteSearchButton").click();
             }
         }
     });
+
     function addActive(x) {
         /*a function to classify an item as "active":*/
         if (!x) return false;
