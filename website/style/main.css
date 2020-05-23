@@ -131,6 +131,15 @@ body,
 #intro h1 {
   color: white;
   font-size: 10rem;
+  mix-blend-mode: screen;
+  letter-spacing: -1rem;
+}
+
+#intro svg {
+  display: block;
+  position: absolute;
+  height: 100%;
+  margin: auto;
 }
 
 /*******************************************************

@@ -11,15 +11,16 @@ $(document).ready(function() {
 	var $annim = $("#annim");
 
 	// prepare SVG
-	pathPrepare($annim);
+    pathPrepare($annim);
 
 	// build tween
 	var tween = new TimelineMax()
-		.add(TweenMax.to($annim, 1, {strokeDashoffset: 0, ease:Linear.easeNone}))
-		.add(TweenMax.to("path#annim", 1, {stroke: "white", ease:Linear.easeNone}), 0);
+        .add(TweenMax.to($annim, 1.5, {strokeDashoffset: 0, ease:Linear.easeNone}))
+        .add(TweenMax.to($annim, 0.1, {fill:"#222", ease:"expo.in"}), 1.5)
+        //.add(TweenMax.to($annim, 1, {stroke: "#222", fill: "#222", ease: "expo.out"}), 1.6)
+        .add(TweenMax.to($("#intro .container"), 1, {opacity: "1", ease:Linear.easeNone}), 1.5)
 	// build scene
-	var scene = new ScrollMagic.Scene({triggerElement: "#intro", duration: 100, tweenChanges: true})
-					.setTween(tween)
+	var scene = new ScrollMagic.Scene({triggerElement: "#intro"}).setTween(tween)
 
     var scene1 = new ScrollMagic.Scene({
         triggerElement: '#project01'
