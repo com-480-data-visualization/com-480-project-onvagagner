@@ -4,6 +4,7 @@
       "color": "Red Wine Tints",
       "mainColor": "red",
       "details": "Age",
+      "mainColorValue": "rgb(141, 15, 63)",
       "variations": [
         {
           "mainColor": "red",
@@ -83,6 +84,7 @@
       "color": "White Wine Tints",
       "mainColor": "white",
       "details": "Sweetness",
+      "mainColorValue": "rgb(184, 179, 172)",
       "variations": [
         {
           "mainColor": "white",

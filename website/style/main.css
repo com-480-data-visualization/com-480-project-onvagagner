@@ -101,15 +101,31 @@ body,
   color: rgb(184, 179, 172) !important;
 }
 
+.text-syrah {
+  color: rgb(220, 57, 43) !important;
+}
+
+.text-chardonnay {
+  color: rgb(150, 160, 43) !important;
+}
+
+.text-riesling {
+  color: rgb(197, 183, 141) !important;
+}
+
+.text-rose {
+  color: rgb(235, 177, 188) !important;
+}
+
 /*******************************************************
 ***********************  INTRO  ************************
 ********************************************************/
 
 #intro {
-  background: #ffb6c1;
+  background: #000;
   text-align: center;
   /*color: #fff;*/
-  color: black;
+  color: #fff;
 }
 
 #intro h1 {
