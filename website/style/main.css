@@ -1,60 +1,5 @@
-/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
-
-html,
-button,
-input,
-select,
-textarea {
-  color: #222;
-}
-
-html {
-  font-size: 1em;
-  line-height: 1.4;
-}
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-audio,
-canvas,
-img,
-video {
-  vertical-align: middle;
-}
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-textarea {
-  resize: vertical;
-}
-
-body {
-  font: 16px/1.5 Helvetica, Helvetica Neue, Arial;
-}
-
 /* ==========================================================================
-   Our styles
+   general
    ========================================================================== */
 
 .project {
@@ -128,6 +73,32 @@ a {
 
 svg text {
   dominant-baseline: middle;
+}
+
+html,
+body,
+.section,
+.slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  justify-content: center;
+  align-items: center;
+}
+
+/*******************COLORS*****************************/
+
+.text-red {
+  color: rgb(141, 15, 63) !important ;
+}
+
+.text-white {
+  color: rgb(184, 179, 172) !important;
 }
 
 /*******************************************************
@@ -392,25 +363,9 @@ svg text {
   margin-right: auto;
 }
 
-.content {
-  margin-top: 15px;
-}
-
-html,
-body,
-.section,
-.slide {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.slide {
-  justify-content: center;
-  align-items: center;
-}
+/*******************************************************
+*******************  Vision *********************
+********************************************************/
 
 .hsl-description {
   text-align: left;
@@ -424,10 +379,11 @@ body,
   text-align: left;
   flex-direction: column;
   display: inline-flex;
-  list-style-type: disc;
+  list-style-type: none !important;
+  margin-left: 0 !important;
 }
 
 .list-indent-left ul {
-  padding-left: 1.5rem;
-  list-style-type: circle;
+  list-style-type: none;
+  margin-left: 2em !important;
 }
