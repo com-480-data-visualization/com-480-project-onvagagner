@@ -417,3 +417,8 @@ body,
   list-style-type: none;
   margin-left: 2em !important;
 }
+
+.info-panel h3 {
+  color: white;
+  font-weight: bold;
+}

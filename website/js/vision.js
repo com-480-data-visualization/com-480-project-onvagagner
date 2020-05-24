@@ -5,13 +5,13 @@ fetch("./data/vision.json")
   });
 
 const hueGenerator = (color) => {
-  console.log(color);
+  //console.log(color);
   const r = parseInt(color.substr(1, 2), 16); // Grab the hex representation of red (chars 1-2) and convert to decimal (base 10).
   const g = parseInt(color.substr(3, 2), 16);
   const b = parseInt(color.substr(5, 2), 16);
   // console.log("r " + r + " g " + g + " b " + b);
   const hsl = rgbToHsl(r, g, b);
-  console.log("hsl " + hsl);
+  //console.log("hsl " + hsl);
   const [hue, saturation, lightness] = hsl;
   const hueVariations = [
     saturation - 0.5,
