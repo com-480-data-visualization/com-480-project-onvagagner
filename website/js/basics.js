@@ -10,12 +10,12 @@ class FillCupViz {
     const whitePalette = {
         wine: "rgb(222, 215, 130)",
         text: "white",
-        textColor: "rgb(184, 179, 172)",
+        textColor: "rgb(197, 183, 141)",
       },
       redPalette = {
         wine: "rgb(132, 38, 36)",
         text: "red",
-        textColor: "rgb(141, 15, 63)",
+        textColor: "rgb(220, 57, 43)",
       },
       bgColor = "white";
 
@@ -190,7 +190,7 @@ class FillCupViz {
 
     const colorTextSwitch = d3
       .select("#colorSwitch")
-      .style("color", currentPalette.text);
+      .style("color", currentPalette.textColor);
 
     const updateColor = function () {
       currentPalette =
