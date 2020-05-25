@@ -110,12 +110,10 @@
           <div class="container">
             <div class="column" id="basics3">
               <h2>Understanding the label</h2>
-              <p>
-                The label on the bottle can give away a lot of useful information. Hover over the different parts of the
-                label to discover their meaning.<br>
-                Once you're done, <a href="#Vision">scroll down</a> to discover more about the wine itself.
-              </p>
-              <p></p>
+                <p>The label on the bottle can give away a lot of useful information. It can be seen as the passport for the wine! Dependending on the country of origin, design and contained information can change.</p>
+                <p>Once you're done, <a href="#Vision">scroll down</a> to discover more about the wine itself.</p>
+
+                <p><br><i class="fa fa-info-circle"></i> Hover over the different parts of the label.</p>
             </div>
             <div class="column">
               <svg id="wine_label" width="1200" height="650">
@@ -424,53 +422,59 @@
     </section>
 
     <section id="project03" class="section project">
-      <div class="container">
-        <div class="columns is-vcentered">
-          <div class="column">
-            <h2>Smell</h2>
-            <p>
-              The odor of each wine is unique and recognizing every different
-              scent can be a challenge. To make it easier, we classified the
-              most common scent in different categories:
-            </p>
-            <p>
-              <b>Primary aromas</b> are scent that our nose detect that are
-              specific to the grape variety (or varieties) used to make the
-              wine.
-            </p>
-            <p>
-              <b>Secondary aromas</b> are scent due to chemical changes
-              effected on the wine by the process of fermentation.
-            </p>
-            <p>
-              <b>Tertiary aromas</b> are smells we associate with wine aging.
-            </p>
-            <p>
-              <b>Fault and Other</b> are unwanted ordor that can be present
-              due to some winemaking practice or poor storage condition.
-            </p>
-            <p>
-              To capture most aromas, we advice you to take short breaths
-              through your nose and breathe out through your mouth. We will
-              dive into the different scent in two steps.
-            </p>
-            <p>
-              First your <b>first nose</b> consists of one sniff. With this
-              sniff, you should try to identify one family of odor.
-            </p>
-            <p>
-              Then, swirl the wine to release the different aromas and for the
-              different families, try to identify the exact scent of the wine.
-            </p>
+      <div class="slide">
+        <div class="container">
+          <div class="columns is-vcentered">
+            <div class="column">
+              <h2>Smell</h2>
+              <p>
+                The odor of each wine is unique and recognizing every different
+                scent can be a challenge. To make it easier, we classified the
+                most common scent in different categories:
+              </p>
+              <p>
+                <b>Primary aromas</b> are scent that our nose detect that are
+                specific to the grape variety (or varieties) used to make the
+                wine.
+              </p>
+              <p>
+                <b>Secondary aromas</b> are scent due to chemical changes
+                effected on the wine by the process of fermentation.
+              </p>
+              <p>
+                <b>Tertiary aromas</b> are smells we associate with wine aging.
+              </p>
+              <p>
+                <b>Fault and Other</b> are unwanted ordor that can be present
+                due to some winemaking practice or poor storage condition.
+              </p>
+              <p>
+                To capture most aromas, we advice you to take short breaths
+                through your nose and breathe out through your mouth. We will
+                dive into the different scent in two steps.
+              </p>
+              <p>
+                First your <b>first nose</b> consists of one sniff. With this
+                sniff, you should try to identify one family of odor.
+              </p>
+              <p>
+                Then, swirl the wine to release the different aromas and for the
+                different families, try to identify the exact scent of the wine.
+              </p>
+            </div>
           </div>
+        </div>
+      </div>
 
           <!-- <div class="column">
               <svg class="vis-smell">
                 <g id="vis-smell-circle"></g>
               </svg>
             </div>-->
-            <div class="slide">
-             <div class="container">
+        <div class="slide">
+          <div class="container">
+            <div class="columns is-centered is-vcentered">
+              <div class="column">
                 <h1>Differents smells</h1>
                 <div id="toolbar">
                   <a id="allSwitch" class="button">All</a>
@@ -481,8 +485,9 @@
                 </div>
                 <div id="smell-viz"></div>
              </div>
+            </div>
+          </div>
         </div>
-      </div>
     </section>
 
     <section id="project04" class="section project">
@@ -692,6 +697,7 @@
       slidesNavigation: true,
       controlArrows: false,
       verticalCentered: false,
+      showActiveTooltip: true,
     });
   });
 </script>
