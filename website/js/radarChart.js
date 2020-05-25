@@ -203,10 +203,22 @@ class RadarChart {
       .attr("class", "radarCircleWrapper");
 
     //Set up the small tooltip for when you hover/drag
-    var tooltip = g.append("text")
-      .attr("class", "tooltip").attr("opacity", cfg.showName ? 1 : 0).attr("text-anchor", "middle")
-      .attr("fill", "white").text(this.data.name)
-      .style("pointer-events", "none").style("font-weight", "bold")
+    var tooltipWrapper = g.append("g").style("pointer-events", "none").attr("opacity", cfg.showName ? 1 : 0)
+
+    var tooltipBg = tooltipWrapper.append("rect").attr("rx", "1rem").attr("fill", "black").attr("fill-opacity", 0.3)
+
+    var tooltip = tooltipWrapper.append("text")
+      .attr("class", "radarTooltip").attr("text-anchor", "middle")
+      .attr("fill", "white")
+      .style("font-weight", "bold")
+
+    const updateTooltip = (val) => {
+      tooltip.text(val)
+      let textbb = tooltip.node().getBBox()
+      tooltipBg.attr("x", textbb.x - 5).attr("y", textbb.y).attr("width", textbb.width + 10).attr("height", textbb.height)
+    }
+
+    updateTooltip(this.data.name)
 
     //Append a set of invisible circles for drag
     blobCircleWrapper
@@ -222,7 +234,8 @@ class RadarChart {
       .style("pointer-events", "all")
       .style("cursor", "pointer")
       .on("mouseover", function (d) {
-        tooltip.text(formatTooltip(d)).transition().duration(200).attr("opacity", 1)
+        tooltipWrapper.transition().duration(200).attr("opacity", 1)
+        updateTooltip(formatTooltip(d))
         blobWrapper
           .selectAll(".radarArea").transition().duration(200).style("fill-opacity", cfg.opacityArea - 0.2)
         blobWrapper
@@ -234,8 +247,8 @@ class RadarChart {
         blobWrapper
           .selectAll(".radarStroke").transition().duration(200).style("stroke-opacity", 1)
 
-        if (cfg.showName) tooltip.text(data.name)
-        else tooltip.transition().duration(200).attr("opacity", 0)
+        if (cfg.showName) updateTooltip(data.name)
+        else tooltipWrapper.transition().duration(200).attr("opacity", 0)
       })
 
     // drag the invisible dots
@@ -252,9 +265,8 @@ class RadarChart {
           .attr("cy", rScale(d.value) * Math.sin(angleSlice * i - Math.PI / 2))
 
         const rounded = Math.round(d.value) // round because tooltip values are categorical/discrete
-        tooltip
-          .text(formatTooltip({ axis: d.axis, value: rounded }))
-          .attr("opacity", 1)
+        tooltipWrapper.attr("opacity", 1)
+        updateTooltip(formatTooltip({ axis: d.axis, value: rounded }))
 
         //Move the blob
         blobWrapper
@@ -271,7 +283,7 @@ class RadarChart {
           .attr("cx", rScale(d.value) * Math.cos(angleSlice * i - Math.PI / 2))
           .attr("cy", rScale(d.value) * Math.sin(angleSlice * i - Math.PI / 2))
 
-        tooltip.transition().attr("opacity", 0)
+        tooltipWrapper.attr("opacity", 0)
 
         //Move the blob
         blobWrapper
@@ -337,7 +349,7 @@ d3.json("data/taste.json").then(function (data) {
   radarChartOptionsSmall = {
     w: width / 2,
     h: height / 2,
-    margin: { top: 10, right: 0, bottom: 10, left: 0 },
+    margin: { top: 10, right: 10, bottom: 10, left: 10 },
     showLabels: false
   }
 

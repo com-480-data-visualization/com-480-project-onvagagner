@@ -107,6 +107,7 @@ body,
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Poppins';
 }
 
 .slide {
@@ -224,16 +225,15 @@ body,
 #intro {
   background: #000;
   text-align: center;
-  /*color: #fff;*/
   color: #fff;
 }
 
 #intro h1 {
   color: white;
-  font-size: 10rem;
+  font-size: 30vh;
   mix-blend-mode: screen;
   letter-spacing: -1rem;
-  font-family: "Roboto";
+  font-family: fantasy;
 }
 
 #intro svg {
@@ -324,7 +324,7 @@ body,
   0% {
     transform: translate(0, 0);
   }
-  20% {
+  30% {
     transform: translate(0, -3rem);
   }
   100% {
@@ -443,6 +443,14 @@ i.fa {
 /*******************************************************
 *******************  FOOD PAIRING  *********************
 ********************************************************/
+
+#project05 .column ul {
+  text-align: left;
+  list-style: circle inside;
+  display: inline-flex;
+  flex-direction: column;
+  margin: auto;
+}
 
 .side-panel {
   overflow: hidden;
