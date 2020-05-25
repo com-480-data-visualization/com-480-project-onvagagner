@@ -74,6 +74,8 @@ body {
 .label_body {
   font-size: "20px";
   /*text-align: center;*/
+  /*word-break: break-word;*/
+  
 }
 
 .project.fade-in {

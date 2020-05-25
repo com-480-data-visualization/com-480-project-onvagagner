@@ -155,7 +155,7 @@
                     <svg
                       id="wine_label_explication_body"
                       width="600"
-                      height="200"
+                      height="400"
                     ></svg>
                   </g>
 
@@ -380,6 +380,7 @@
       </section>
 
       <section id="project03" class="section project">
+      <div class="slide">
         <div class="container">
           <div class="columns is-vcentered">
             <div class="column">
@@ -419,13 +420,27 @@
                 different families, try to identify the exact scent of the wine.
               </p>
             </div>
+            </div>
+            </div>
 
-            <div class="column">
+           <!-- <div class="column">
               <svg class="vis-smell">
                 <g id="vis-smell-circle"></g>
               </svg>
+            </div>-->
+            <div class="slide">
+             <div class="container">
+                <h1>Differents smells</h1>
+                <div id="toolbar">
+                  <a id="allSwitch" class="button">All</a>
+                  <a id="primarySwitch" class="button">Primary aromas</a>
+                  <a id="secondarySwitch" class="button">Secondary aromas</a>
+                  <a id="tertiarySwitch"  class="button">Tertiary aromas</a>
+                  <a id="otherSwitch" class="button">Fault</a>
+                </div>
+                <div id="smell-viz"></div>
+             </div>
             </div>
-          </div>
         </div>
       </section>
 
@@ -545,7 +560,7 @@
   <script src="js/basics.js"></script>
 
   <script src="https://d3js.org/d3.v5.js"></script>
-  <script src="js/smell-circle.js"></script>
+  <script src="js/Smell-bubble.js"></script>
   <script src="js/radarChart.js"></script>
 
   <script src="js/food-pairing.js"></script>
