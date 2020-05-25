@@ -77,7 +77,7 @@ p {
   padding: 1px 5px 1px;
   color: white;
   background: linear-gradient(to right, var(--red-color), var(--syrah-color));
-  transition: all 0.5s cubic-bezier(.47,1.59,.33,1.53);
+  transition: all 0.5s cubic-bezier(0.47, 1.59, 0.33, 1.53);
 }
 
 .container a:hover {
@@ -117,6 +117,78 @@ body,
 .footer {
   background-color: #000;
   color: #fff;
+}
+
+/* Scroll Arrows */
+
+.arrow-wave {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 0;
+}
+
+.arrow-wave span {
+  display: block;
+  position: relative;
+  height: 20px;
+  width: 32px;
+  opacity: 0.2;
+}
+
+.arrow-wave span::before,
+.arrow-wave span::after {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 24px;
+  background-color: rgba(255, 255, 255, 0.568);
+}
+
+.arrow-wave span::before {
+  top: -2px;
+  left: 0;
+  transform-origin: left center;
+  transform: rotate(45deg);
+}
+
+.arrow-wave span::after {
+  top: -2px;
+  right: 0;
+  transform-origin: right center;
+  transform: rotate(-45deg);
+}
+
+.arrow-wave span:nth-child(1n) {
+  animation: animate-arrow-wave 2s infinite;
+  animation-delay: 0.25s;
+}
+.arrow-wave span:nth-child(2n) {
+  animation: animate-arrow-wave 2s infinite;
+  animation-delay: 0.5s;
+}
+
+.arrow-wave span:nth-child(3n) {
+  animation: animate-arrow-wave 2s infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes animate-arrow-wave {
+  0% {
+    opacity: 0.2;
+  }
+  25% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
 }
 
 /*******************COLORS*****************************/
@@ -161,7 +233,7 @@ body,
   font-size: 10rem;
   mix-blend-mode: screen;
   letter-spacing: -1rem;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
 #intro svg {
@@ -169,6 +241,10 @@ body,
   position: absolute;
   height: 100%;
   margin: auto;
+}
+
+.fp-viewing-Introduction #fp-nav {
+  visibility: hidden;
 }
 
 /*******************************************************
@@ -181,7 +257,7 @@ body,
   font-weight: bold;
   border-radius: 1rem;
   padding: 1px 5px 1px;
-  transition: all 0.5s cubic-bezier(.47,1.59,.33,1.53);
+  transition: all 0.5s cubic-bezier(0.47, 1.59, 0.33, 1.53);
 }
 
 #project01 .switchable:hover {
