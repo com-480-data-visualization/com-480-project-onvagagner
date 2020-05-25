@@ -218,10 +218,10 @@ class FillCupViz {
       .on("click", () => {
         grabText.text("Don't warm the wine");
         upperpart.transition().duration(500).attr("fill", "#ffaaaa");
-        lowerpart.transition().duration(500).attr("fill", "#ffaaaa");
+        //lowerpart.transition().duration(500).attr("fill", "#ffaaaa");
         setTimeout(() => {
           upperpart.transition().duration(500).attr("fill", "#dcdcdc");
-          lowerpart.transition().duration(500).attr("fill", "#dcdcdc");
+          //lowerpart.transition().duration(500).attr("fill", "#dcdcdc");
         }, 1000);
       });
 

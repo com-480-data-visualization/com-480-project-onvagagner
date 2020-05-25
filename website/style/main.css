@@ -1,4 +1,17 @@
 /* ==========================================================================
+   color palette
+   ========================================================================== */
+
+:root {
+  --red-color: rgb(141, 15, 63);
+  --white-color: rgb(184, 179, 172);
+  --syrah-color: rgb(220, 57, 43);
+  --chardonnay-color: rgb(150, 160, 43);
+  --riesling-color: rgb(197, 183, 141);
+  --rose-color: rgb(235, 177, 188);
+}
+
+/* ==========================================================================
    general
    ========================================================================== */
 
@@ -58,8 +71,17 @@ p {
   margin-bottom: 10px;
 }
 
-a {
+.container a {
   text-decoration: none;
+  border-radius: 1rem;
+  padding: 1px 5px 1px;
+  color: white;
+  background: linear-gradient(to right, var(--red-color), var(--syrah-color));
+  transition: all 0.5s cubic-bezier(.47,1.59,.33,1.53);
+}
+
+.container a:hover {
+  padding: 1px 10px 1px;
 }
 
 .vis-smell {
@@ -100,27 +122,27 @@ body,
 /*******************COLORS*****************************/
 
 .text-red {
-  color: rgb(141, 15, 63) !important ;
+  color: var(--red-color) !important ;
 }
 
 .text-white {
-  color: rgb(184, 179, 172) !important;
+  color: var(--white-color) !important;
 }
 
 .text-syrah {
-  color: rgb(220, 57, 43) !important;
+  color: var(--syrah-color) !important;
 }
 
 .text-chardonnay {
-  color: rgb(150, 160, 43) !important;
+  color: var(--chardonnay-color) !important;
 }
 
 .text-riesling {
-  color: rgb(197, 183, 141) !important;
+  color: var(--riesling-color) !important;
 }
 
 .text-rose {
-  color: rgb(235, 177, 188) !important;
+  color: var(--rose-color) !important;
 }
 
 /*******************************************************
@@ -159,6 +181,11 @@ body,
   font-weight: bold;
   border-radius: 1rem;
   padding: 1px 5px 1px;
+  transition: all 0.5s cubic-bezier(.47,1.59,.33,1.53);
+}
+
+#project01 .switchable:hover {
+  padding: 1px 10px 1px;
 }
 
 #basicsviz2 .handle {
@@ -295,13 +322,17 @@ body,
   width: 100%;
 }
 
+i.fa {
+  color: var(--chardonnay-color);
+}
+
 #tasteSearchForm i {
-  background-color: #4a4a4a;
+  background-color: var(--rose-color);
   color: #fff;
 }
 
 #tasteSearchForm i:hover {
-  background-color: #3d3d3d;
+  background-color: var(--red-color);
 }
 
 #tasteSearchForm i:active {
