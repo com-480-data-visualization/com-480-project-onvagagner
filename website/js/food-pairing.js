@@ -8,14 +8,13 @@ d3.selection.prototype.moveToFront = function () {
 
 class FoodPairingViz {
   constructor(data, parentDiv, panelDiv) {
-    const margin = { top: 10, right: 10, bottom: 10, left: 10 };
+    const margin = { top: 10, right: 20, bottom: 10, left: 20 };
     this.data = data;
     this.panel = document.getElementById(panelDiv);
     this.panelOrigianlText = this.panel.innerHTML
 
     this.svg = d3.select("#" + parentDiv + " svg");
     const svgViewbox = this.svg.node().getBoundingClientRect();
-    console.log(svgViewbox);
 
     const g = this.svg
       .append("g")
@@ -51,8 +50,8 @@ class FoodPairingViz {
     };
 
     this.computePath = (d, factor) => {
-      const start = { x: innerMargin, y: wineY(d.wine) },
-        end = { x: this.width - innerMargin, y: foodY(d.food) },
+      const start = { x: innerMargin.left, y: wineY(d.wine) },
+        end = { x: this.width - innerMargin.right, y: foodY(d.food) },
         mid = {
           x: (start.x + end.x) / 2,
           y: factor * start.y + (1 - factor) * end.y,
@@ -205,9 +204,9 @@ class FoodPairingViz {
     this.formatFoodInfo = (f, wineIds) => {
       let title = `<div class="title-with-quote"><h2>${f.name}</h2><p>${f.description}</p></div>`;
 
-      let dishes = `<h3>Dish examples</h3><ul>`;
-      //f.dishes.forEach(v => dishes += `<li>${v}</li>`)
-      dishes += `</ul>`;
+      let examples = `<h3>Examples</h3><div class="grid-container">`;
+      f.examples.forEach(e => examples += `<div>${e}</div>`)
+      examples += `</div>`;
 
       let wines = `<h3>Goes well with</h3><div class="grid-container">`;
       this.data.wines.forEach((w) => {
@@ -223,7 +222,7 @@ class FoodPairingViz {
       });
       wines += `</div>`
       let bottombar = `<div class="bottom-bar"></div>`;
-      return title + dishes + wines + bottombar;
+      return title + examples + wines + bottombar;
     };
 
     this.onRemoveSelection = () => {
@@ -253,7 +252,7 @@ class FoodPairingViz {
       this.panel.classList.remove("side-panel")
     };
 
-    const innerMargin = 150;
+    const innerMargin = {left: 100, right: 160};
 
     // Initialize the links
     const lineContainer = g.append("g");
@@ -278,7 +277,7 @@ class FoodPairingViz {
       .append("g")
       .attr(
         "transform",
-        (d) => "translate(" + innerMargin + "," + wineY(d.id) + ")"
+        (d) => "translate(" + innerMargin.left + "," + wineY(d.id) + ")"
       )
       .attr("class", "wineNode")
       .style("cursor", "pointer")
@@ -294,7 +293,7 @@ class FoodPairingViz {
       .attr(
         "transform",
         (d) =>
-          "translate(" + (this.width - innerMargin) + "," + foodY(d.id) + ")"
+          "translate(" + (this.width - innerMargin.right) + "," + foodY(d.id) + ")"
       )
       .attr("class", "foodNode")
       .style("cursor", "pointer")
@@ -319,7 +318,7 @@ class FoodPairingViz {
     foodNodes
       .append("circle")
       .attr("r", 10)
-      .style("fill", dark ? "#fff" : "#000")
+      .style("fill", dark ? "#fff" : "#4a4a4a")
       .attr("stroke", dark ? "#000" : "#fff")
       .attr("stroke-width", this.strokeWidth);
 
