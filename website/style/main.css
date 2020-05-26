@@ -121,6 +121,10 @@ body,
   color: #fff;
 }
 
+.footer span {
+  font-weight: bold;
+}
+
 /* Scroll Arrows */
 
 .arrow-wave {
@@ -217,6 +221,11 @@ body,
 
 .text-rose {
   color: var(--rose-color) !important;
+}
+
+/* LOL */
+.text-grey {
+  color: white !important;
 }
 
 /*******************************************************
