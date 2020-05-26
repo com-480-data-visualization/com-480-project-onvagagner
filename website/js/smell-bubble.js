@@ -1,14 +1,12 @@
 d3.json("./data/winefolly_aroma.json", function (d) {
   return d;
 }).then(function (data) {
-  var width = 1200,
+  var width = 800,
     height = 500;
 
   var node_size = 50;
 
   data = classes(data).children;
-
-  // console.log(data);
 
   var svg = d3
     .select("#smell-viz")
@@ -37,7 +35,7 @@ d3.json("./data/winefolly_aroma.json", function (d) {
     })
     .on("click", function (d) {
       if (d.level < 3) {
-        changeFocusBubbleGroups(d.className, 3);
+        changeFocusBubbleGroups(d.className, 3, d);
       }
     });
 
@@ -64,15 +62,14 @@ d3.json("./data/winefolly_aroma.json", function (d) {
 
   function getColor(d) {
     if (d.packageName == "Primary Aroma") {
-      return "#722f37";
+      return "rgb(141, 15, 63)";
     } else if (d.packageName == "Secondary Aroma") {
-      return "lightblue";
+      return "rgb(197, 183, 141)";
     } else if (d.packageName == "Tertiary Aroma") {
-      return "lightgreen";
-    } else if (d.packageName == "Faults & Other") {
-      return "lightyellow";
+      return "rgb(150, 160, 43)";
+    } else{
+      return "rgb(235, 177, 188)";
     }
-    return "orange";
   }
 
   function classes(root) {
@@ -104,7 +101,7 @@ d3.json("./data/winefolly_aroma.json", function (d) {
     };
   }
 
-  function changeFocusBubbleGroups(focus, level) {
+  function changeFocusBubbleGroups(focus, level, from=null) {
     new_data = data.filter((d) => d.level == level);
     if (focus != "all") {
       new_data = data.filter((d) => d.packageName == focus);
@@ -125,19 +122,19 @@ d3.json("./data/winefolly_aroma.json", function (d) {
       .append("circle")
       .attr("class", "circle")
       .attr("stroke", "black")
-      .attr("r", function (d) {
+      .attr("r", function () {
         return node_size;
       })
       .attr("fill", function (d) {
         if (d.level == 3) {
-          return "#722f37";
+          return getColor(from);
         } else {
           return getColor(d);
         }
       })
       .on("click", function (d) {
         if (d.level < 3) {
-          changeFocusBubbleGroups(d.className, 3);
+          changeFocusBubbleGroups(d.className, 3, d);
         }
       });
 
