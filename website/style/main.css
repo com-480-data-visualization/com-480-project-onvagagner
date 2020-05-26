@@ -124,9 +124,9 @@ body,
 /* Scroll Arrows */
 
 .arrow-wave {
-  display: inline-block;
   cursor: pointer;
   font-size: 0;
+  display: inline-block;
 }
 
 .arrow-wave span {
@@ -234,7 +234,25 @@ body,
   font-size: 30vh;
   mix-blend-mode: screen;
   letter-spacing: -1.5rem;
-  font-family: 'Poppins';
+  font-family: "Poppins";
+}
+#intro h3 {
+  transform: rotate(-90deg);
+  margin-left: -7rem;
+  letter-spacing: 5px;
+  font-size: 8vh;
+  font-weight: bolder;
+  font-family: "Poppins";
+  text-transform: uppercase;
+}
+
+#title-2 {
+  margin-top: -110px;
+  margin-left: 12px;
+}
+
+.title-container {
+  padding-left: 120px;
 }
 
 #intro svg {
