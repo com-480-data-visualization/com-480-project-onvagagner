@@ -266,7 +266,7 @@ body,
 }
 
 #basicsviz2 .handle {
-  rx: 1;
+  /*rx: 1; <-- doesnt work in firefox*/
   stroke: black;
   stroke-opacity: 0;
   stroke-width: 0.5;
@@ -276,25 +276,21 @@ body,
 }
 
 .label_hoover {
-  rx: 1;
-  stroke: black;
+  /*rx: 10; <-- doesnt work in firefox*/
+  stroke: var(--red-color);
   stroke-opacity: 0;
-  stroke-width: 3;
-  stroke-dasharray: 3;
+  stroke-width: 5;
   fill-opacity: 0;
+  cursor: pointer;
 }
 
 .label_hoover_line {
-  rx: 1;
-  stroke: black;
+  stroke-linecap: round;
   stroke-opacity: 0;
-  stroke-width: 3;
-  stroke-dasharray: 3;
-  fill-opacity: 0;
-}
-
-.label_hoover:hover {
-  stroke-opacity: 1;
+  stroke-width: 5;
+  stroke: var(--red-color);
+  pointer-events: none;
+  fill: none;
 }
 
 #basicsviz2 .handle:hover {

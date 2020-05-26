@@ -1,46 +1,68 @@
 const label_basic = d3.select("#wine_label")//.attr("viewBox", "0 0 500 650");
 const label_basic_explication_title = d3.select("#wine_label_explication_title");
 const label_basic_explication_body = d3.select("#wine_label_explication_body");
-const label_explanation_text_title = label_basic_explication_title.append("text").attr("x", "20%").attr("y", "20%").attr("class", "label_title").attr("font-size", "30px")
-const label_explanation_text_body = label_basic_explication_body.append("text").attr("x", "10%").attr("y", "10%").attr("class", "label_body").attr("font-size", "20px")
+const label_explanation_text_title = label_basic_explication_title.append("text").attr("class", "label_title").attr("font-size", "1.5rem")
+const label_explanation_text_body = label_basic_explication_body.append("text").attr("x", 0).attr("y", 0).attr("class", "label_body").attr("font-size", "1rem")
 
 
-chateau = {x: 115, y: 7, h: 45, w: 355};
-picture = {x: 172, y: 66, h: 180, w: 258};
-milesime = {x: 265, y: 265, h: 33, w: 70};
-origin = {x: 240, y: 332, h: 23.5, w: 120};
-sepage = {x: 250, y: 375, h: 20, w: 100};
-bottled = {x: 145, y: 412, h: 48, w: 310};
-alcool = {x: 45, y: 475, h: 25, w: 115};
-size_liquid = {x: 500, y: 475, h: 25, w: 60};
+chateau = { x: 115, y: 7, h: 45, w: 355 };
+picture = { x: 172, y: 66, h: 180, w: 258 };
+milesime = { x: 265, y: 265, h: 33, w: 70 };
+origin = { x: 240, y: 332, h: 23.5, w: 120 };
+sepage = { x: 250, y: 375, h: 20, w: 100 };
+bottled = { x: 145, y: 412, h: 48, w: 310 };
+alcool = { x: 45, y: 475, h: 25, w: 115 };
+size_liquid = { x: 500, y: 475, h: 25, w: 60 };
 
+function computeLinePath(el) {
+  const start = { x: el.x + el.w + 10, y: el.y + (el.h / 2)},
+    end = { x: 680, y: 140 },
+    mid1 = { x: 600, y: start.y },
+    mid2 = { x: mid1.x, y: end.y }
+
+  let rx = 10
+  rx = (start.y - end.y < rx) ? rx / 2 : rx
+
+  let higher = (start.y < end.y)
+  let i = higher ? -1 : 1
+
+  return 'M ' + start.x + ' ' + (start.y+1)
+    + ' A ' + 5 + ' ' + 5 + ' 0 1 1 ' + start.x + ' ' + start.y // circle at beginning
+    + ' L ' + (mid1.x - rx) + ' ' + mid1.y
+    + ' A ' + rx + ' ' + rx + ' 0 0 ' + (1 - (i+1)/2) + ' ' + mid1.x + ' ' + (mid1.y - i*rx)
+    + ' L ' + mid2.x + ' ' + (mid2.y + i*rx)
+    + ' A ' + rx + ' ' + rx + ' 0 0 ' + ((i+1)/2) + ' ' + (mid2.x + rx) + ' ' + mid2.y
+    + ' L ' + end.x + ' ' + end.y
+    + ' A ' + 5 + ' ' + 5 + ' 0 1 1 ' + end.x + ' ' + (end.y+1) // circle at end
+};
+
+function initializeLinePath(path) {
+  var lineLength = path.node().getTotalLength();
+  path.style("stroke-dasharray", lineLength);
+  path.style("stroke-dashoffset", lineLength);
+}
 
 function add_element(el, title, body) {
-  const midLine = 830 - (el.x + el.w);
-  const line = label_basic.append('line').attr("class", "label_hoover_line")
-            .attr("x1", el.x + el.w).attr("y1", el.y + (el.h / 2)).attr("x2", el.x + el.w + midLine/4).attr("y2", el.y + (el.h / 2));
-  const line2 = label_basic.append('line').attr("class", "label_hoover_line")
-            .attr("x1", el.x + el.w + midLine/4).attr("y1", el.y + (el.h / 2)).attr("x2", el.x + el.w + midLine/4).attr("y2", 20);
-  const line3 = label_basic.append('line').attr("class", "label_hoover_line")
-            .attr("x1", el.x + el.w + midLine/4).attr("y1", 20).attr("x2", 700).attr("y2", 20);
+
+  const line = label_basic.append("path").attr("class", "label_hoover_line")
+    .attr("d", computeLinePath(el))
+  initializeLinePath(line);
 
   label_basic.append("rect").attr("class", "label_hoover")
-            .attr("x", el.x).attr("y", el.y)
-            .attr("height", el.h).attr("width", el.w)
-            .on("mouseover", () => {
-              line.style("stroke-opacity", 1);
-              line2.style("stroke-opacity", 1);
-              line3.style("stroke-opacity", 1);
-              label_explanation_text_title.text(title);
-              label_explanation_text_body.text(body).call(wrap, 400);
-            })
-            .on("mouseleave", () => {
-              line.style("stroke-opacity", 0);
-              line2.style("stroke-opacity", 0);
-              line3.style("stroke-opacity", 0);
-              label_explanation_text_title.text("");
-              label_explanation_text_body.text("");
-            });
+    .attr("x", el.x).attr("y", el.y).attr("rx", 10)
+    .attr("height", el.h).attr("width", el.w)
+    .on("mouseenter", () => {
+      if (firefox) line.style("stroke-dashoffset", 0).style("stroke-opacity", 1)
+      else line.style("stroke-opacity", 1).transition().duration(1000).style("stroke-dashoffset", 0)
+      label_explanation_text_title.text(title);
+      label_explanation_text_body.text(body).call(wrap, 400);
+    })
+    .on("mouseleave", () => {
+      if (firefox) line.style("stroke-dashoffset", line.node().getTotalLength()).style("stroke-opacity", 0);
+      else line.transition().style("stroke-dashoffset", line.node().getTotalLength()).style("stroke-opacity", 0);
+      label_explanation_text_title.text("");
+      label_explanation_text_body.text("");
+    });
 }
 
 add_element(milesime, "Millesime", "Millesime or age of the wine. Contrary to popular belief, the millesime mention is not compulsary on a label. For a producer to add this mention, he need to proove that the wine is composed of at least 85% of wine grapes that have been harvest this year (this is known as the 85/15 rule).");
@@ -55,33 +77,33 @@ add_element(size_liquid, "Bottle capacity with the unit")
 
 function wrap(text, width) {
   text.each(function () {
-      var text = d3.select(this),
-          words = text.text().split(/\s+/).reverse(),
-          word,
-          line = [],
-          lineNumber = 0,
-          lineHeight = 1.1, // ems
-          x = text.attr("x"),
-          y = text.attr("y"),
-          dy = 0, //parseFloat(text.attr("dy")),
-          tspan = text.text(null)
-                      .append("tspan")
-                      .attr("x", x)
-                      .attr("y", y)
-                      .attr("dy", dy + "em");
-      while (word = words.pop()) {
-          line.push(word);
-          tspan.text(line.join(" "));
-          if (tspan.node().getComputedTextLength() > width) {
-              line.pop();
-              tspan.text(line.join(" "));
-              line = [word];
-              tspan = text.append("tspan")
-                          .attr("x", x)
-                          .attr("y", y)
-                          .attr("dy", ++lineNumber * lineHeight + dy + "em")
-                          .text(word);
-          }
+    var text = d3.select(this),
+      words = text.text().split(/\s+/).reverse(),
+      word,
+      line = [],
+      lineNumber = 0,
+      lineHeight = 1.1, // ems
+      x = text.attr("x"),
+      y = text.attr("y"),
+      dy = 0, //parseFloat(text.attr("dy")),
+      tspan = text.text(null)
+        .append("tspan")
+        .attr("x", x)
+        .attr("y", y)
+        .attr("dy", dy + "em");
+    while (word = words.pop()) {
+      line.push(word);
+      tspan.text(line.join(" "));
+      if (tspan.node().getComputedTextLength() > width) {
+        line.pop();
+        tspan.text(line.join(" "));
+        line = [word];
+        tspan = text.append("tspan")
+          .attr("x", x)
+          .attr("y", y)
+          .attr("dy", ++lineNumber * lineHeight + dy + "em")
+          .text(word);
       }
+    }
   });
 }

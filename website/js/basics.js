@@ -253,12 +253,8 @@ class FillCupViz {
         setTimeout(() => grabSvg.classed("shake", false), 1000);
       });
 
-    /*grabGlass.selectAll(".handle").on("mouseup", () => {
-            grabText.text("")
-            grabSvg.classed("shake", false)
-            upperpart.transition().attr("fill", "#dcdcdc")
-            lowerpart.transition().attr("fill", "#dcdcdc")
-        })*/
+    grabGlass.selectAll(".handle").attr("rx", 1)
+
     const grabText = d3
       .select("#" + grabSvgId)
       .append("text")
