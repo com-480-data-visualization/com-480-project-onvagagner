@@ -284,7 +284,6 @@ body,
 }
 
 #basicsviz2 .handle {
-  /*rx: 1; <-- doesnt work in firefox*/
   stroke: black;
   stroke-opacity: 0;
   stroke-width: 0.5;
@@ -294,7 +293,6 @@ body,
 }
 
 .label_hoover {
-  /*rx: 10; <-- doesnt work in firefox*/
   stroke: var(--red-color);
   stroke-opacity: 0;
   stroke-width: 5;

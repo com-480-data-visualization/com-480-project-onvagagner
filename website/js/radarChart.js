@@ -205,12 +205,13 @@ class RadarChart {
     //Set up the small tooltip for when you hover/drag
     var tooltipWrapper = g.append("g").style("pointer-events", "none").attr("opacity", cfg.showName ? 1 : 0)
 
-    var tooltipBg = tooltipWrapper.append("rect").attr("rx", "1rem").attr("fill", "black").attr("fill-opacity", 0.3)
+    var tooltipBg = tooltipWrapper.append("rect").attr("rx", "0.5rem").attr("fill", "black").attr("fill-opacity", 0.3)
 
     var tooltip = tooltipWrapper.append("text")
       .attr("class", "radarTooltip").attr("text-anchor", "middle")
       .attr("fill", "white")
       .style("font-weight", "bold")
+      .attr("font-size", radius > 100 ? "1rem" : "0.8rem")
 
     const updateTooltip = (val) => {
       tooltip.text(val)
