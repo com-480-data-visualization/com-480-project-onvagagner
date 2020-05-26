@@ -234,8 +234,8 @@ body,
   color: white;
   font-size: 30vh;
   mix-blend-mode: screen;
-  letter-spacing: -1rem;
-  font-family: fantasy;
+  letter-spacing: -1.5rem;
+  font-family: 'Poppins';
 }
 
 #intro svg {
