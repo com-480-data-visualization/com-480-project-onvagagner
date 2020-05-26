@@ -116,15 +116,6 @@ body,
   align-items: center;
 }
 
-.footer {
-  background-color: #000;
-  color: #fff;
-}
-
-.footer span {
-  font-weight: bold;
-}
-
 /* Scroll Arrows */
 
 .arrow-wave {
@@ -565,4 +556,17 @@ i.fa {
 #smell-viz {
   max-height: 500px;
   display: flex;
+}
+
+/*******************************************************
+**********************  FOOTER  ************************
+********************************************************/
+
+#footer {
+  background-color: #000;
+  color: #fff;
+}
+
+#footer span {
+  font-weight: bold;
 }
