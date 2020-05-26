@@ -14,51 +14,7 @@ d3.json("./data/winefolly_aroma.json", function (d) {
     .attr("height", height)
     .attr("width", width);
 
-  var data_initial = data.filter((d) => d.level == 2);
-
-  var elem = svg
-    .selectAll("g")
-    .data(data_initial)
-    .enter()
-    .append("g")
-    .attr("class", "circleContainer");
-
-  var circle = elem
-    .append("circle")
-    .attr("class", "circle")
-    .attr("stroke", "black")
-    .attr("r", function (d) {
-      return node_size;
-    })
-    .attr("fill", function (d) {
-      return getColor(d);
-    })
-    .on("click", function (d) {
-      if (d.level < 3) {
-        changeFocusBubbleGroups(d.className, 3, d);
-      }
-    });
-
-  var text = elem
-    .append("text")
-    .attr("class", "text")
-    .attr("text-anchor", "middle")
-    .text(function (d) {
-      return d.className;
-    });
-
-  var simulation = d3
-    .forceSimulation()
-    .force("x", d3.forceX(width / 2))
-    .force("y", d3.forceY(height / 2))
-    .force("collision", d3.forceCollide().radius(node_size))
-    .on("tick", function (d) {
-      elem.attr("transform", function (d) {
-        return "translate(" + d.x + "," + d.y + ")";
-      });
-    });
-
-  simulation.nodes(data_initial);
+ changeFocusBubbleGroups("all", 2);
 
   function getColor(d) {
     if (d.packageName == "Primary Aroma") {
@@ -69,6 +25,20 @@ d3.json("./data/winefolly_aroma.json", function (d) {
       return "rgb(150, 160, 43)";
     } else{
       return "rgb(235, 177, 188)";
+    }
+  }
+
+  function getButton(d) {
+    if (d == "Primary Aroma") {
+      return d3.select("#primarySwitch");
+    } else if (d == "Secondary Aroma") {
+      return d3.select("#secondarySwitch");
+    } else if (d == "Tertiary Aroma") {
+      return d3.select("#tertiarySwitch");
+    } else if (d == "Fault and Other"){
+      return d3.select("#otherSwitch");
+    } else {
+      return d3.select("#allSwitch");
     }
   }
 
@@ -102,14 +72,23 @@ d3.json("./data/winefolly_aroma.json", function (d) {
   }
 
   function changeFocusBubbleGroups(focus, level, from=null) {
+
+    if(d3.event) d3.event.stopPropagation();
+
+    if(from) updateActive(getButton(from.packageName), from.className);
+    else {
+      updateActive(getButton(focus), focus);
+      resetButtons();
+    }
+    
     new_data = data.filter((d) => d.level == level);
     if (focus != "all") {
       new_data = data.filter((d) => d.packageName == focus);
     }
 
     svg.selectAll(".circleContainer").remove();
-    svg.selectAll(".circle").remove();
-    svg.selectAll(".text").remove();
+    svg.selectAll("circle").remove();
+    svg.selectAll("text").remove();
 
     var elem_updated = svg
       .selectAll("g")
@@ -120,8 +99,8 @@ d3.json("./data/winefolly_aroma.json", function (d) {
 
     elem_updated
       .append("circle")
-      .attr("class", "circle")
-      .attr("stroke", "black")
+      .style("cursor", d => d.level < 3 ? "pointer" : "auto")
+      //.attr("stroke", "black")
       .attr("r", function () {
         return node_size;
       })
@@ -135,12 +114,13 @@ d3.json("./data/winefolly_aroma.json", function (d) {
       .on("click", function (d) {
         if (d.level < 3) {
           changeFocusBubbleGroups(d.className, 3, d);
+        } else {
+          d3.event.stopPropagation();
         }
       });
 
     elem_updated
       .append("text")
-      .attr("class", "text")
       .attr("text-anchor", "middle")
       .text(function (d) {
         return d.className;
@@ -161,6 +141,21 @@ d3.json("./data/winefolly_aroma.json", function (d) {
     simulation.nodes(new_data);
   }
 
+  function updateActive(e, text) {
+    //console.log(e)
+    d3.selectAll("#toolbar span").classed("active", false)
+    e.classed("active", true)
+    e.node().innerText = text
+  }
+
+  function resetButtons() {
+    d3.select("#primarySwitch").node().innerText = "Primary Aromas"
+    d3.select("#secondarySwitch").node().innerText = "Secondary aromas"
+    d3.select("#tertiarySwitch").node().innerText = "Tertiary aromas"
+    d3.select("#otherSwitch").node().innerText = "Fault & Others"
+    d3.select("#allSwitch").node().innerText = "All aromas"
+  }
+
   d3.select("#allSwitch").on("click", function () {
     changeFocusBubbleGroups("all", 2);
   });
@@ -176,4 +171,6 @@ d3.json("./data/winefolly_aroma.json", function (d) {
   d3.select("#otherSwitch").on("click", function () {
     changeFocusBubbleGroups("Fault and Other", 2);
   });
+
+  svg.on("click", () => changeFocusBubbleGroups("all", 2));
 });

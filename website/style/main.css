@@ -382,6 +382,48 @@ body,
 }
 
 /*******************************************************
+**********************  SMELL  *************************
+********************************************************/
+
+#smell-viz text {
+  pointer-events: none;
+}
+
+#toolbar span {
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 1rem;
+  padding: 1px 5px 1px;
+  transition: padding 0.5s cubic-bezier(0.47, 1.59, 0.33, 1.53);
+}
+
+#toolbar span:hover, #toolbar span.active {
+  color: white !important;
+  padding: 1px 10px 1px;
+}
+
+#toolbar #allSwitch:hover, #toolbar #allSwitch.active {
+  background: #4a4a4a;
+}
+
+#toolbar #primarySwitch:hover, #toolbar #primarySwitch.active {
+  background: var(--red-color);
+}
+
+#toolbar #secondarySwitch:hover, #toolbar #secondarySwitch.active {
+  background: var(--riesling-color);
+}
+
+#toolbar #tertiarySwitch:hover, #toolbar #tertiarySwitch.active {
+  background: var(--chardonnay-color);
+}
+
+#toolbar #otherSwitch:hover,  #toolbar #otherSwitch.active{
+  background: var(--rose-color);
+}
+
+
+/*******************************************************
 **********************  TASTE  *************************
 ********************************************************/
 
@@ -467,14 +509,11 @@ i.fa {
 
 .side-panel {
   overflow: hidden;
-  /*auto*/
   border-radius: 1rem;
   box-shadow: 0 0 10px #ccc;
 }
 
 .side-panel h2 {
-  /*color: black;*/
-  /*background-color: black;*/
   margin: 0;
 }
 
@@ -483,7 +522,6 @@ i.fa {
   padding-bottom: 10px;
   background: #4a4a4a;
   color: white;
-  /*text-shadow: 2px 1px 2px black;*/
 }
 
 .title-with-quote p {
