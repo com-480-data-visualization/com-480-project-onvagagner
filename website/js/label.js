@@ -15,7 +15,7 @@ alcool = { x: 45, y: 475, h: 25, w: 115 };
 size_liquid = { x: 500, y: 475, h: 25, w: 60 };
 
 function computeLinePath(el) {
-  const start = { x: el.x + el.w + 10, y: el.y + (el.h / 2)},
+  const start = { x: el.x + el.w + 10, y: el.y + (el.h / 2) },
     end = { x: 680, y: 140 },
     mid1 = { x: 600, y: start.y },
     mid2 = { x: mid1.x, y: end.y }
@@ -26,14 +26,14 @@ function computeLinePath(el) {
   let higher = (start.y < end.y)
   let i = higher ? -1 : 1
 
-  return 'M ' + start.x + ' ' + (start.y+1)
+  return 'M ' + start.x + ' ' + (start.y + 1)
     + ' A ' + 5 + ' ' + 5 + ' 0 1 1 ' + start.x + ' ' + start.y // circle at beginning
     + ' L ' + (mid1.x - rx) + ' ' + mid1.y
-    + ' A ' + rx + ' ' + rx + ' 0 0 ' + (1 - (i+1)/2) + ' ' + mid1.x + ' ' + (mid1.y - i*rx)
-    + ' L ' + mid2.x + ' ' + (mid2.y + i*rx)
-    + ' A ' + rx + ' ' + rx + ' 0 0 ' + ((i+1)/2) + ' ' + (mid2.x + rx) + ' ' + mid2.y
+    + ' A ' + rx + ' ' + rx + ' 0 0 ' + (1 - (i + 1) / 2) + ' ' + mid1.x + ' ' + (mid1.y - i * rx)
+    + ' L ' + mid2.x + ' ' + (mid2.y + i * rx)
+    + ' A ' + rx + ' ' + rx + ' 0 0 ' + ((i + 1) / 2) + ' ' + (mid2.x + rx) + ' ' + mid2.y
     + ' L ' + end.x + ' ' + end.y
-    + ' A ' + 5 + ' ' + 5 + ' 0 1 1 ' + end.x + ' ' + (end.y+1) // circle at end
+    + ' A ' + 5 + ' ' + 5 + ' 0 1 1 ' + end.x + ' ' + (end.y + 1) // circle at end
 };
 
 function initializeLinePath(path) {
@@ -58,8 +58,8 @@ function add_element(el, title, body) {
       label_explanation_text_body.text(body).call(wrap, 400);
     })
     .on("mouseleave", () => {
-      if (firefox) line.style("stroke-dashoffset", line.node().getTotalLength()).style("stroke-opacity", 0);
-      else line.transition().style("stroke-dashoffset", line.node().getTotalLength()).style("stroke-opacity", 0);
+      if (firefox) line.style("stroke-dashoffset", line.node().getTotalLength()).style("stroke-opacity", 0)
+      else line.transition().style("stroke-dashoffset", line.node().getTotalLength())
       label_explanation_text_title.text("");
       label_explanation_text_body.text("");
     });
