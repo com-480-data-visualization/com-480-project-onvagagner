@@ -1,8 +1,8 @@
 const label_basic = d3.select("#wine_label")//.attr("viewBox", "0 0 500 650");
 const label_basic_explication_title = d3.select("#wine_label_explication_title");
 const label_basic_explication_body = d3.select("#wine_label_explication_body");
-const label_explanation_text_title = label_basic_explication_title.append("text").attr("class", "label_title").attr("font-size", "1.5rem")
-const label_explanation_text_body = label_basic_explication_body.append("text").attr("x", 0).attr("y", 0).attr("class", "label_body").attr("font-size", "1rem")
+const label_explanation_text_title = label_basic_explication_title.append("text").attr("class", "label_title").attr("font-size", "1.5rem").style("font-weight", "bold").attr("fill", "#4a4a4a")
+const label_explanation_text_body = label_basic_explication_body.append("text").attr("x", 0).attr("y", 0).attr("class", "label_body").attr("font-size", "1rem").attr("fill", "#4a4a4a")
 
 
 chateau = { x: 115, y: 7, h: 45, w: 355 };
