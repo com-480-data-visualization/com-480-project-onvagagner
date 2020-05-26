@@ -149,11 +149,11 @@ d3.json("./data/winefolly_aroma.json", function (d) {
   }
 
   function resetButtons() {
+    d3.select("#allSwitch").node().innerText = "All Aromas"
     d3.select("#primarySwitch").node().innerText = "Primary Aromas"
-    d3.select("#secondarySwitch").node().innerText = "Secondary aromas"
-    d3.select("#tertiarySwitch").node().innerText = "Tertiary aromas"
+    d3.select("#secondarySwitch").node().innerText = "Secondary Aromas"
+    d3.select("#tertiarySwitch").node().innerText = "Tertiary Aromas"
     d3.select("#otherSwitch").node().innerText = "Fault & Others"
-    d3.select("#allSwitch").node().innerText = "All aromas"
   }
 
   d3.select("#allSwitch").on("click", function () {
