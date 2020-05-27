@@ -2,7 +2,7 @@
 
 class RadarChart {
   constructor(id, data, options) {
-    var cfg = {
+    let cfg = {
       margin: { top: 20, right: 20, bottom: 20, left: 20 }, //The margins of the SVG
       levels: 5, //How many levels or inner circles should there be drawn
       maxValue: 5, //What is the value that the biggest circle will represent
@@ -13,11 +13,10 @@ class RadarChart {
       strokeWidth: 2, //The width of the stroke around each blob
       roundStrokes: true, //If true the area and stroke will follow a round path (cardinal-closed)
       editable: false, //If true, the user can edit it
-      showLabels: true,
-      showName: true
+      showLabels: true, // If you want to show the labels
+      showName: true // If you want to show the name of the wine
     };
 
-    //Put all of the options into a variable called cfg
     if ("undefined" !== typeof options)
       for (var i in options)
         if ("undefined" !== typeof options[i])
@@ -71,24 +70,21 @@ class RadarChart {
     //Scale for the radius
     const rScale = d3.scaleLinear().range([0, radius]).domain([0, maxValue]);
 
-    //////////// Create the container SVG and g /////////////
-
-    //Remove whatever chart with the same id/class was present before
+    // Create the container SVG and g
     d3.select(id).select("svg").remove();
 
-    //Initiate the radar chart SVG
     const svg = d3
       .select(id)
       .append("svg")
       .attr("width", cfg.w + cfg.margin.left + cfg.margin.right)
       .attr("height", cfg.h + cfg.margin.top + cfg.margin.bottom)
       .attr("class", "radar" + id);
-    //Append a g element
+
     const g = svg
       .append("g")
       .attr("transform", "translate(" + (cfg.w / 2 + cfg.margin.left) + "," + (cfg.h / 2 + cfg.margin.top) + ")");
 
-    /////// GLOW ///////
+    // GLOW
 
     const filter = g.append("defs").append("filter").attr("id", "glow"),
       feGaussianBlur = filter
@@ -99,17 +95,12 @@ class RadarChart {
       feMergeNode_1 = feMerge.append("feMergeNode").attr("in", "coloredBlur"),
       feMergeNode_2 = feMerge.append("feMergeNode").attr("in", "SourceGraphic");
 
+    // DRAW CIRCULAR GRID
 
-    //if (cfg.showName) g.append("text").text(this.data.name).attr("y", -radius - 20).attr("text-anchor", "middle")
-
-    /////////////// Draw the Circular grid //////////////////
-
-    //Wrapper for the grid & axes
-    var axisGrid = g.append("g").attr("class", "axisWrapper");
+    const axisGrid = g.append("g").attr("class", "axisWrapper");
 
     axisGrid.append("circle").attr("r", radius).style("fill", "black")
 
-    //Draw the background circles
     axisGrid
       .selectAll(".levels")
       .data(d3.range(1, cfg.levels + 1).reverse())
@@ -120,16 +111,15 @@ class RadarChart {
       .style("fill", "white")
       .style("fill-opacity", cfg.opacityCircles)
 
-    //////////////////// Draw the axes //////////////////////
+    // DRAW AXES
 
-    //Create the straight lines radiating outward from the center
-    var axis = axisGrid
+    const axis = axisGrid
       .selectAll(".axis")
       .data(allAxis)
       .enter()
       .append("g")
       .attr("class", "axis");
-    //Append the lines
+
     axis.append("line")
       .attr("x1", 0)
       .attr("y1", 0)
@@ -151,10 +141,9 @@ class RadarChart {
         .text(d => d)
     }
 
-    ///////////// Draw the radar chart blob ////////////////
+    // DRAW BLOB
 
-    //The radial line function
-    var radarLine = d3
+    const radarLine = d3
       .lineRadial()
       .curve(d3.curveLinearClosed)
       .radius((d) => rScale(d.value))
@@ -162,25 +151,20 @@ class RadarChart {
 
     if (cfg.roundStrokes) radarLine.curve(d3.curveCardinalClosed)
 
-    //Create a wrapper for the blobs
-    var blobWrapper = g
+    const blobWrapper = g
       .selectAll(".radarWrapper")
       .data([data.profile])
       .enter()
       .append("g")
       .attr("class", "radarWrapper");
 
-    //Append the backgrounds
     blobWrapper
       .append("path")
       .attr("class", "radarArea")
       .attr("d", d => radarLine(d))
       .style("fill", this.data.color)
       .style("fill-opacity", cfg.opacityArea)
-      //.on("mouseover", function () { d3.select(this).transition().duration(200).style("fill-opacity", cfg.opacityArea - 0.2) })
-      //.on("mouseout", function () { d3.select(this).transition().duration(200).style("fill-opacity", cfg.opacityArea) })
 
-    //Create the outlines
     blobWrapper
       .append("path")
       .attr("class", "radarStroke")
@@ -192,22 +176,20 @@ class RadarChart {
       .style("fill", "none")
       .style("filter", "url(#glow)");
 
-    //////// Append invisible circles for dragging + tooltip ///////////
+    // INVISIBLE CIRCLES FOR DRAG + TOOLTIP
 
-    //Wrapper for the invisible circles on top
-    var blobCircleWrapper = g
+    const blobCircleWrapper = g
       .selectAll(".radarCircleWrapper")
       .data([data.profile])
       .enter()
       .append("g")
       .attr("class", "radarCircleWrapper");
 
-    //Set up the small tooltip for when you hover/drag
-    var tooltipWrapper = g.append("g").style("pointer-events", "none").attr("opacity", cfg.showName ? 1 : 0)
+    const tooltipWrapper = g.append("g").style("pointer-events", "none").attr("opacity", cfg.showName ? 1 : 0)
 
-    var tooltipBg = tooltipWrapper.append("rect").attr("rx", "0.5rem").attr("fill", "black").attr("fill-opacity", 0.3)
+    const tooltipBg = tooltipWrapper.append("rect").attr("rx", "0.5rem").attr("fill", "black").attr("fill-opacity", 0.3)
 
-    var tooltip = tooltipWrapper.append("text")
+    const tooltip = tooltipWrapper.append("text")
       .attr("class", "radarTooltip").attr("text-anchor", "middle")
       .attr("fill", "white")
       .style("font-weight", "bold")
@@ -221,7 +203,6 @@ class RadarChart {
 
     updateTooltip(this.data.name)
 
-    //Append a set of invisible circles for drag
     blobCircleWrapper
       .selectAll(".radarInvisibleCircle")
       .data(d => d)
@@ -252,12 +233,10 @@ class RadarChart {
         else tooltipWrapper.transition().duration(200).attr("opacity", 0)
       })
 
-    // drag the invisible dots
-    var drag = d3
-      .drag()
+    const drag = d3.drag()
       .on("drag", function (d, i) {
-        let y = d3.mouse(this)[1] //d3.event.y
-        let x = d3.mouse(this)[0] //d3.event.x
+        let y = d3.mouse(this)[1]
+        let x = d3.mouse(this)[0]
         if (firefox) y -= parseFloat(document.getElementById("fullpage").style.transform.split(",")[1].slice(0, -1))
         let distFromCenter = Math.sqrt(y * y + x * x)
         d.value = Math.min(Math.max(1, rScale.invert(distFromCenter)), maxValue) // clamp value to not go outside of graphic
@@ -269,7 +248,6 @@ class RadarChart {
         tooltipWrapper.attr("opacity", 1)
         updateTooltip(formatTooltip({ axis: d.axis, value: rounded }))
 
-        //Move the blob
         blobWrapper
           .selectAll(".radarArea, .radarStroke")
           .attr("d", (d) => radarLine(d))
@@ -286,7 +264,6 @@ class RadarChart {
 
         tooltipWrapper.attr("opacity", 0)
 
-        //Move the blob
         blobWrapper
           .selectAll(".radarArea, .radarStroke")
           .attr("d", (d) => radarLine(d));
@@ -329,8 +306,7 @@ function getClosestWine(wine, data, nb = 3) {
   return data.sort(compare).slice(0, nb)
 }
 
-let tasteData, radarChartOptionsSmall, radarChartOptions
-let editableRadar
+let tasteData, radarChartOptionsSmall, radarChartOptions, editableRadar
 
 d3.json("data/taste.json").then(function (data) {
 
@@ -365,6 +341,7 @@ d3.json("data/taste.json").then(function (data) {
       { axis: "Alcohol", value: 3 }
     ]
   }
+  // update color according to color switch
   editableRadar = new RadarChart("#radarChartMain", defaultWine, radarChartOptions)
   document.getElementById("colorSwitch").addEventListener("click", function () {
     editableRadar.updateColor(this.innerText)
