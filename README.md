@@ -62,8 +62,7 @@ You can find our second milestone [here](milestones/Milestone2.pdf).
 Please make sure to download the PDF in order to make the links work!
 
 **Milestone 3**: Final project  
-Our processbook is in redaction, come back soon!
-
+You can find our process book [here](milestones/ProcessBook.pdf).
 
 ## 📽 Screen cast
 
