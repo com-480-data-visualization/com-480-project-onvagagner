@@ -60,14 +60,13 @@ class FoodPairingViz {
       return `M ${start.x} ${start.y} Q ${mid.x} ${mid.y} ${end.x} ${end.y}`;
     };
 
-    // INTERACTION FUNCTIONS
+    // Interaction functions
     this.onWineSelected = (s) => {
       d3.event.stopPropagation();
 
       const relevantLinks = this.data.links.filter((l) => l.wine == s.id);
       const relevantFoods = relevantLinks.map((l) => l.food);
 
-      // highlight wine
       this.svg
         .selectAll(".wineNode text")
         .transition()
@@ -90,17 +89,12 @@ class FoodPairingViz {
         .attr("r", 5)
         .attr("stroke-width", (f) => relevantFoods.includes(f.id) ? 1 : this.strokeWidth);
 
-      // highlight foods
       this.svg
         .selectAll(".foodNode text")
         .transition()
-        .attr("opacity", (f) =>
-          relevantFoods.includes(f.id) ? 1 : this.opacity
-        );
+        .attr("opacity", (f) =>relevantFoods.includes(f.id) ? 1 : this.opacity);
 
-      // highlight links
       const links = this.svg.selectAll("path");
-      //.attr("x2", innerMargin).attr("y2", d => wineY(d.wine))
 
       links
         .filter((d) => relevantLinks.includes(d))
@@ -110,7 +104,7 @@ class FoodPairingViz {
         .attr("d", (d) => this.computePath(d, 0.1))
         .attr("opacity", 1)
         .attr("stroke-width", this.strokeWidth);
-      //.attr("x2", this.width - innerMargin).attr("y2", d => foodY(d.food))
+
       links
         .filter((d) => !relevantLinks.includes(d))
         .transition()
@@ -118,7 +112,6 @@ class FoodPairingViz {
         .attr("stroke-width", this.strokeWidthLink)
         .attr("d", (d) => this.computePath(d, 0.9));
 
-      // put info into panel
       this.panel.innerHTML = this.formatWineInfo(s, relevantFoods);
       this.panel.classList.add("side-panel")
     };
@@ -147,7 +140,6 @@ class FoodPairingViz {
       const relevantLinks = this.data.links.filter((l) => l.food == s.id);
       const relevantWines = relevantLinks.map((l) => l.wine);
 
-      // highlight food
       this.svg
         .selectAll(".foodNode text")
         .transition()
@@ -168,19 +160,13 @@ class FoodPairingViz {
         .delay(300)
         .ease(d3.easeBounceOut)
         .attr("r", 5)
-        .attr("stroke-width", (w) =>
-          relevantWines.includes(w.id) ? 1 : this.strokeWidth
-        );
+        .attr("stroke-width", (w) => relevantWines.includes(w.id) ? 1 : this.strokeWidth);
 
-      // highlight wines
       this.svg
         .selectAll(".wineNode text")
         .transition()
-        .attr("opacity", (w) =>
-          relevantWines.includes(w.id) ? 1 : this.opacity
-        );
+        .attr("opacity", (w) => relevantWines.includes(w.id) ? 1 : this.opacity);
 
-      // highlight links
       const links = this.svg.selectAll("path");
       links
         .filter((d) => relevantLinks.includes(d))
@@ -213,9 +199,7 @@ class FoodPairingViz {
         if (wineIds.includes(w.id))
           wines += `<div class="food-icon">
                         <svg height="20" width="20">
-                            <circle r="10" transform="translate(10,10)" fill="${color(
-                              w.id
-                            )}"></circle>
+                            <circle r="10" transform="translate(10,10)" fill="${color(w.id)}"></circle>
                         </svg>
                         <p>${w.name}</p>
                     </div>`;
@@ -226,7 +210,6 @@ class FoodPairingViz {
     };
 
     this.onRemoveSelection = () => {
-      // highlight all
       this.svg
         .selectAll(".foodNode text, .wineNode text")
         .transition()
@@ -252,7 +235,7 @@ class FoodPairingViz {
       this.panel.classList.remove("side-panel")
     };
 
-    const innerMargin = {left: 100, right: 160};
+    const innerMargin = { left: 100, right: 160 };
 
     // Initialize the links
     const lineContainer = g.append("g");
@@ -269,36 +252,18 @@ class FoodPairingViz {
       .attr("opacity", 0.5)
       .style("mix-blend-mode", dark ? "screen" : "multiply")
 
-    // Initialize the nodes
+    // Initialize the wine nodes
     const wineNodes = g
       .selectAll(".wineNode")
       .data(this.data.wines)
       .enter()
       .append("g")
-      .attr(
-        "transform",
-        (d) => "translate(" + innerMargin.left + "," + wineY(d.id) + ")"
+      .attr("transform", (d) => "translate(" + innerMargin.left + "," + wineY(d.id) + ")"
       )
       .attr("class", "wineNode")
       .style("cursor", "pointer")
       .attr("opacity", 1)
       .on("click", this.onWineSelected);
-
-    // Initialize the nodes
-    const foodNodes = g
-      .selectAll(".foodNode")
-      .data(data.foods)
-      .enter()
-      .append("g")
-      .attr(
-        "transform",
-        (d) =>
-          "translate(" + (this.width - innerMargin.right) + "," + foodY(d.id) + ")"
-      )
-      .attr("class", "foodNode")
-      .style("cursor", "pointer")
-      .attr("opacity", 1)
-      .on("click", this.onFoodSelected);
 
     wineNodes
       .append("circle")
@@ -314,6 +279,19 @@ class FoodPairingViz {
       .attr("fill", dark ? "#fff" : "#000")
       .attr("text-anchor", "end")
       .attr("opacity", 1);
+
+    // Initialize the food nodes
+    const foodNodes = g
+      .selectAll(".foodNode")
+      .data(data.foods)
+      .enter()
+      .append("g")
+      .attr("transform", (d) => "translate(" + (this.width - innerMargin.right) + "," + foodY(d.id) + ")"
+      )
+      .attr("class", "foodNode")
+      .style("cursor", "pointer")
+      .attr("opacity", 1)
+      .on("click", this.onFoodSelected);
 
     foodNodes
       .append("circle")
@@ -335,9 +313,5 @@ class FoodPairingViz {
 }
 
 d3.json("./data/food_pairing.json").then((data) => {
-  const foodPairingViz = new FoodPairingViz(
-    data,
-    "food-pairing-viz",
-    "food-pairing-info-panel"
-  );
+  const foodPairingViz = new FoodPairingViz(data, "food-pairing-viz", "food-pairing-info-panel");
 });
