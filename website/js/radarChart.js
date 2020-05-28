@@ -237,7 +237,13 @@ class RadarChart {
       .on("drag", function (d, i) {
         let y = d3.mouse(this)[1]
         let x = d3.mouse(this)[0]
-        if (firefox) y -= parseFloat(document.getElementById("fullpage").style.transform.split(",")[1].slice(0, -1))
+        if (firefox) {
+          let xOffset = d3.select("#project04 .fp-slidesContainer").node().style.transform.split(",")[0]
+          xOffset = parseFloat(xOffset.slice(xOffset.indexOf('(') + 1, -2))
+          let yOffset = parseFloat(document.getElementById("fullpage").style.transform.split(",")[1].slice(0, -2))
+          x -= xOffset
+          y -= yOffset
+        }
         let distFromCenter = Math.sqrt(y * y + x * x)
         d.value = Math.min(Math.max(1, rScale.invert(distFromCenter)), maxValue) // clamp value to not go outside of graphic
         d3.select(this)
