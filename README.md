@@ -29,8 +29,7 @@ Beginners can step into the world of wine using our website, and experts can tes
 
 Our project is structured as follows:
 
-```
-├───dataset       
+```       
 ├───img             (Images used in milestones)
 ├───milestones      (Milestones)
 └───website         (Website files)
@@ -43,13 +42,14 @@ Our project is structured as follows:
 ```
 
 To run our project locally, you need to do:
-     - Clone the repo
-     - Move into ```website``` folder
-     - Run ```http-server``` to start a local server, the website is generally available at ```http://127.0.0.1:8080```
+
+- Clone the repo
+- Move into the ```website``` folder
+- Start a local server (e.g. using ```http-server```), the website is generally available at ```http://127.0.0.1:8080```
 
 ## 💿 Dataset
 
-[Winefolly's website](https://winefolly.com/) kindly authorised us to scrapped our data from their website.
+[Winefolly's website](https://winefolly.com/) kindly authorised us to scrape part of their data from their website.
 
 
 ## 📍 Milestones
@@ -61,12 +61,15 @@ You can find our first milestone in a nicer PDF format [here](milestones/Milesto
 You can find our second milestone [here](milestones/Milestone2.pdf).
 Please make sure to download the PDF in order to make the links work!
 
+
 **Milestone 3**: Final project  
-You can find our process book [here](milestones/ProcessBook.pdf).
+You can find our process book [here](milestones/ProcessBook.pdf) and our website [here](https://com-480-data-visualization.github.io/com-480-project-onvagagner/website/index.html).
 
 ## 📽 Screen cast
 
 The screencast will be uploaded once done! Come back soon
+
+[![Alt text](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 ## 🤝 Authors
 
