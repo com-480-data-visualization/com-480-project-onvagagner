@@ -569,6 +569,10 @@ i.fa {
   text-align: left;
 }
 
+.dropdown {
+  cursor: pointer;
+}
+
 .dropdown-menu {
   min-width: 15rem;
 }
