@@ -80,7 +80,7 @@
             "id": 6,
             "name": "Bold Red",
             "color": "#6B2D3C",
-            "description": "Is fancy.",
+            "description": "Is not to be confused with bald.",
             "varieties": [
                 "Cabernet Sauvignon",
                 "Monastrell",
@@ -93,7 +93,7 @@
             "id": 7,
             "name": "Dessert",
             "color": "#c94f04",
-            "description": "Is not your typical wine.",
+            "description": "Is highly sweet.",
             "varieties": [
                 "Late Harvest",
                 "Ice Wine",
@@ -113,31 +113,31 @@
                 "Chilies",
                 "Shallots"
             ],
-            "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32361-carrot-icon.png"
+            "img": "./img/32361-carrot-icon.png"
         },
         {
             "id": 1,
             "name": "Roasted Vegetables",
-            "description": "When you're out of fresh vegetables.",
+            "description": "Or eating healthy but not too healthy.",
             "examples": [
                 "Broccoli",
                 "Cauliflower",
                 "Carrots",
                 "Squash"
             ],
-            "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32367-broccoli-icon.png"
+            "img": "./img/32367-broccoli-icon.png"
         },
         {
             "id": 2,
             "name": "Soft Cheese",
-            "description": "You can't make everyone happy. You're not cheese.",
+            "description": "Mmmm so creamy !",
             "examples": [
                 "Camembert",
                 "Brie",
                 "Roquefort",
                 "Gorgonzola"
             ],
-            "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/1024/32377-cheese-wedge-icon.png"
+            "img": "./img/32377-cheese-wedge-icon.png"
         },
         {
             "id": 3,
@@ -149,7 +149,7 @@
                 "Cheddar",
                 "Gouda"
             ],
-            "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/1024/32377-cheese-wedge-icon.png"
+            "img": "./img/32377-cheese-wedge-icon.png"
         },
         {
             "id": 4,
@@ -161,7 +161,7 @@
                 "Rice",
                 "Beans"
             ],
-            "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32371-bread-icon.png"
+            "img": "./img/32371-bread-icon.png"
         },
         {
             "id": 5,
@@ -172,7 +172,7 @@
                 "Salmon",
                 "Bass"
             ],
-            "img": "http://icons.iconarchive.com/icons/apathae/poisson/128/2-Fish-icon.png"
+            "img": "./img/2-Fish-icon.png"
         },
         {
             "id": 6,
@@ -183,7 +183,7 @@
                 "Crab",
                 "Shrimp"
             ],
-            "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32409-fried-shrimp-icon.png"
+            "img": "./img/32409-fried-shrimp-icon.png"
         },
         {
             "id": 7,
@@ -194,7 +194,7 @@
                 "Turkey",
                 "Rabbit"
             ],
-            "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32379-poultry-leg-icon.png"
+            "img": "./img/32379-poultry-leg-icon.png"
         },
         {
             "id": 8,
@@ -205,7 +205,7 @@
                 "Bison",
                 "Pork"
             ],
-            "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32380-cut-of-meat-icon.png"
+            "img": "./img/32380-cut-of-meat-icon.png"
         },
         {
             "id": 9,
@@ -216,7 +216,7 @@
                 "Salami",
                 "Bacon"
             ],
-            "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32378-meat-on-bone-icon.png"
+            "img": "./img/32378-meat-on-bone-icon.png"
         },
         {
             "id": 10,
@@ -226,9 +226,9 @@
                 "Brownies",
                 "Cheesecake",
                 "Pumpkin Pie",
-                "Chocolate"
+                "Ripe Peaches"
             ],
-            "img": "http://icons.iconarchive.com/icons/google/noto-emoji-food-drink/128/32424-pie-icon.png"
+            "img": "./img/32424-pie-icon.png"
         }
     ],
     "links": [
