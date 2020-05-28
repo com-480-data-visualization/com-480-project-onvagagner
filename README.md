@@ -67,9 +67,9 @@ You can find our process book [here](milestones/ProcessBook.pdf) and our website
 
 ## 📽 Screen cast
 
-The screencast will be uploaded once done! Come back soon
+The screencast is available on youtube:
 
-[![Alt text](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+[![Alt text](https://img.youtube.com/vi/41W3CXFNCsc/0.jpg)](https://www.youtube.com/watch?v=41W3CXFNCsc)
 
 ## 🤝 Authors
 
