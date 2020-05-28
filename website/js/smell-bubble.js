@@ -126,7 +126,6 @@ d3.json("./data/winefolly_aroma.json", function (d) {
         return d.className;
       });
 
-    //simulation.nodes(new_data)
     var simulation = d3
       .forceSimulation()
       .force("x", d3.forceX(width / 2))
@@ -142,7 +141,6 @@ d3.json("./data/winefolly_aroma.json", function (d) {
   }
 
   function updateActive(e, text) {
-    //console.log(e)
     d3.selectAll("#toolbar span").classed("active", false)
     e.classed("active", true)
     e.node().innerText = text
