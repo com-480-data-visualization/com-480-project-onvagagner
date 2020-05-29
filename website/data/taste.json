@@ -1,7 +1,7 @@
 [
     {
         "name": "Agiorgitiko",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(206,27,116)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -27,7 +27,7 @@
     },
     {
         "name": "Aglianico",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(206,27,116)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -53,7 +53,7 @@
     },
     {
         "name": "Airén",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(253,194,21)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -79,7 +79,7 @@
     },
     {
         "name": "Albariño (Alvarinho)",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -105,7 +105,7 @@
     },
     {
         "name": "Alicante Bouschet",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(206,27,116)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -131,7 +131,7 @@
     },
     {
         "name": "Aligoté",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -157,7 +157,7 @@
     },
     {
         "name": "Arinto",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(253,194,21)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -183,7 +183,7 @@
     },
     {
         "name": "Arneis",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -209,7 +209,7 @@
     },
     {
         "name": "Assyrtiko",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -235,7 +235,7 @@
     },
     {
         "name": "Baga",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(206,27,116)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -261,7 +261,7 @@
     },
     {
         "name": "Barbera",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(232,48,50)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -287,7 +287,7 @@
     },
     {
         "name": "Castelão",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(232,48,50)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -313,7 +313,7 @@
     },
     {
         "name": "Blaufränkisch",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(232,48,50)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -339,7 +339,7 @@
     },
     {
         "name": "Bobal",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(232,48,50)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -365,7 +365,7 @@
     },
     {
         "name": "Bonarda",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(232,48,50)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -391,7 +391,7 @@
     },
     {
         "name": "Brachetto",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(240,86,87)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -417,7 +417,7 @@
     },
     {
         "name": "Cabernet Franc",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(232,48,50)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -443,7 +443,7 @@
     },
     {
         "name": "Cabernet Sauvignon",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(206,27,116)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -469,7 +469,7 @@
     },
     {
         "name": "Carignan",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(232,48,50)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -495,7 +495,7 @@
     },
     {
         "name": "Carménère",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(232,48,50)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -521,7 +521,7 @@
     },
     {
         "name": "Catarratto",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -547,7 +547,7 @@
     },
     {
         "name": "Catawba",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(248,168,145)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -573,7 +573,7 @@
     },
     {
         "name": "Chardonnay",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(253,194,21)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -599,7 +599,7 @@
     },
     {
         "name": "Chasselas",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -625,7 +625,7 @@
     },
     {
         "name": "Chenin Blanc",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -651,7 +651,7 @@
     },
     {
         "name": "Concord",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(232,48,50)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -677,7 +677,7 @@
     },
     {
         "name": "Cinsault",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(232,48,50)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -703,7 +703,7 @@
     },
     {
         "name": "Colombard",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -729,7 +729,7 @@
     },
     {
         "name": "Cortese",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -755,7 +755,7 @@
     },
     {
         "name": "Corvina",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(232,48,50)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -781,7 +781,7 @@
     },
     {
         "name": "Cserszegi Fűszeres",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(246,146,34)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -807,7 +807,7 @@
     },
     {
         "name": "Encruzado",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(253,194,21)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -833,7 +833,7 @@
     },
     {
         "name": "Godello",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -859,7 +859,7 @@
     },
     {
         "name": "Dolcetto",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(232,48,50)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -885,7 +885,7 @@
     },
     {
         "name": "Erbaluce",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -911,7 +911,7 @@
     },
     {
         "name": "Falanghina",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(253,194,21)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -937,7 +937,7 @@
     },
     {
         "name": "Fernão Pires",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(246,146,34)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -963,7 +963,7 @@
     },
     {
         "name": "Fiano",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -989,7 +989,7 @@
     },
     {
         "name": "Frappato",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(240,86,87)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1015,7 +1015,7 @@
     },
     {
         "name": "Friulano",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1041,7 +1041,7 @@
     },
     {
         "name": "Furmint",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1067,7 +1067,7 @@
     },
     {
         "name": "Gaglioppo",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(232,48,50)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1093,7 +1093,7 @@
     },
     {
         "name": "Gamay",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(240,86,87)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1119,7 +1119,7 @@
     },
     {
         "name": "Garganega",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1145,7 +1145,7 @@
     },
     {
         "name": "Gewürztraminer",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(246,146,34)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1171,7 +1171,7 @@
     },
     {
         "name": "Graševina",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1197,7 +1197,7 @@
     },
     {
         "name": "Loureiro",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1223,7 +1223,7 @@
     },
     {
         "name": "Grechetto",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1249,7 +1249,7 @@
     },
     {
         "name": "Grenache",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(232,48,50)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1275,7 +1275,7 @@
     },
     {
         "name": "Grenache Blanc",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(253,194,21)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1301,7 +1301,7 @@
     },
     {
         "name": "Grillo",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1327,7 +1327,7 @@
     },
     {
         "name": "Grüner Veltliner",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1353,7 +1353,7 @@
     },
     {
         "name": "Listán Negro",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(232,48,50)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1379,7 +1379,7 @@
     },
     {
         "name": "Malbec",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(206,27,116)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1405,7 +1405,7 @@
     },
     {
         "name": "Malvasia Fina",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(220,99,51)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1431,7 +1431,7 @@
     },
     {
         "name": "Marsanne",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(253,194,21)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1457,7 +1457,7 @@
     },
     {
         "name": "Melon",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1483,7 +1483,7 @@
     },
     {
         "name": "Mencía",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(232,48,50)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1509,7 +1509,7 @@
     },
     {
         "name": "Merlot",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(232,48,50)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1535,7 +1535,7 @@
     },
     {
         "name": "Monastrell (Mourvèdre)",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(206,27,116)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1561,7 +1561,7 @@
     },
     {
         "name": "Montepulciano",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(232,48,50)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1587,7 +1587,7 @@
     },
     {
         "name": "Moschofilero",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(246,146,34)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1613,7 +1613,7 @@
     },
     {
         "name": "Müller-Thurgau",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(246,146,34)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1639,7 +1639,7 @@
     },
     {
         "name": "Muscadine",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(248,168,145)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1665,7 +1665,7 @@
     },
     {
         "name": "Muscat Blanc",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(246,146,34)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1691,7 +1691,7 @@
     },
     {
         "name": "Muscat of Alexandria",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(220,99,51)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1717,7 +1717,7 @@
     },
     {
         "name": "Nebbiolo",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(232,48,50)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1743,7 +1743,7 @@
     },
     {
         "name": "Negroamaro",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(232,48,50)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1769,7 +1769,7 @@
     },
     {
         "name": "Nerello Mascalese",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(240,86,87)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1795,7 +1795,7 @@
     },
     {
         "name": "Nero d’Avola",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(206,27,116)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1821,7 +1821,7 @@
     },
     {
         "name": "Norton",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(232,48,50)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1847,7 +1847,7 @@
     },
     {
         "name": "País",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(232,48,50)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1873,7 +1873,7 @@
     },
     {
         "name": "Palomino Fino",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1899,7 +1899,7 @@
     },
     {
         "name": "Pedro Ximénez",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(220,99,51)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1925,7 +1925,7 @@
     },
     {
         "name": "Petit Verdot",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(206,27,116)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1951,7 +1951,7 @@
     },
     {
         "name": "Pinotage",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(206,27,116)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -1977,7 +1977,7 @@
     },
     {
         "name": "Refosco",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(232,48,50)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2003,7 +2003,7 @@
     },
     {
         "name": "Ribolla Gialla",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(253,194,21)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2029,7 +2029,7 @@
     },
     {
         "name": "Riesling",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(246,146,34)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2055,7 +2055,7 @@
     },
     {
         "name": "Pinot Noir",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(240,86,87)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2081,7 +2081,7 @@
     },
     {
         "name": "Rkatsiteli",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2107,7 +2107,7 @@
     },
     {
         "name": "Roussanne",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(253,194,21)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2133,7 +2133,7 @@
     },
     {
         "name": "Petite Sirah",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(206,27,116)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2159,7 +2159,7 @@
     },
     {
         "name": "Picpoul",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2185,7 +2185,7 @@
     },
     {
         "name": "Pinot Blanc",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2211,7 +2211,7 @@
     },
     {
         "name": "Pinot Gris",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2237,7 +2237,7 @@
     },
     {
         "name": "Pinot Meunier",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(240,86,87)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2263,7 +2263,7 @@
     },
     {
         "name": "Sagrantino",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(206,27,116)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2289,7 +2289,7 @@
     },
     {
         "name": "Sangiovese",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(232,48,50)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2315,7 +2315,7 @@
     },
     {
         "name": "Sauvignon Blanc",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2341,7 +2341,7 @@
     },
     {
         "name": "Savatiano",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(253,194,21)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2367,7 +2367,7 @@
     },
     {
         "name": "Schiava",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(240,86,87)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2393,7 +2393,7 @@
     },
     {
         "name": "Sémillon",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(253,194,21)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2419,7 +2419,7 @@
     },
     {
         "name": "Silvaner (Sylvaner)",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2445,7 +2445,7 @@
     },
     {
         "name": "St. Laurent",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(240,86,87)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2471,7 +2471,7 @@
     },
     {
         "name": "Syrah",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(206,27,116)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2497,7 +2497,7 @@
     },
     {
         "name": "Tannat",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(206,27,116)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2523,7 +2523,7 @@
     },
     {
         "name": "Tempranillo",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(232,48,50)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2549,7 +2549,7 @@
     },
     {
         "name": "Torrontés",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(246,146,34)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2575,7 +2575,7 @@
     },
     {
         "name": "Touriga Franca",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(232,48,50)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2601,7 +2601,7 @@
     },
     {
         "name": "Touriga Nacional",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(206,27,116)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2627,7 +2627,7 @@
     },
     {
         "name": "Trebbiano Toscano",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(253,194,21)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2653,7 +2653,7 @@
     },
     {
         "name": "Verdejo",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2679,7 +2679,7 @@
     },
     {
         "name": "Verdelho",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2705,7 +2705,7 @@
     },
     {
         "name": "Verdicchio",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2731,7 +2731,7 @@
     },
     {
         "name": "Vermentino",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2757,7 +2757,7 @@
     },
     {
         "name": "Vidal",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(246,146,34)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2783,7 +2783,7 @@
     },
     {
         "name": "Viognier",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(253,194,21)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2809,7 +2809,7 @@
     },
     {
         "name": "Viura",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2835,7 +2835,7 @@
     },
     {
         "name": "Xarel-lo",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2861,7 +2861,7 @@
     },
     {
         "name": "Xinomavro",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(232,48,50)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2887,7 +2887,7 @@
     },
     {
         "name": "Zinfandel (Primitivo)",
-        "color": "rgb(255, 255, 102)",
+        "color": "rgb(232,48,50)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2913,7 +2913,7 @@
     },
     {
         "name": "Zweigelt",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(240,86,87)",
         "profile": [
             {
                 "axis": "Sweetness",
@@ -2939,7 +2939,7 @@
     },
     {
         "name": "Vernaccia di San Gimignano",
-        "color": "rgb(255,100,100)",
+        "color": "rgb(249,235,11)",
         "profile": [
             {
                 "axis": "Sweetness",
